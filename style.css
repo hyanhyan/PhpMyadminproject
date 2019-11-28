@@ -1,0 +1,32 @@
+body {
+    margin:0;
+    padding:0;
+}
+.img-fluid {
+    max-width:50%;
+    height:auto;
+}
+.btn {
+    background: #fff;
+    border:1px solid gray;
+}
+.drop-text {
+    font-size:14px;
+    text-align: center;
+}
+.nav-menu {
+    background: lightgray;
+    display:flex;
+}
+.nav-item {
+    display: flex;
+    padding: 20px;
+    list-style-type: none;
+}
+.nav-link {
+    font-size:20px;
+    color:darkblue;
+}
+.drop {
+    margin-top:50px;
+}
