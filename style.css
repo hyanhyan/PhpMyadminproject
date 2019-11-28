@@ -19,6 +19,7 @@ body {
     display:flex;
 }
 .nav-item {
+    width:14.2857143%;
     text-align: center;
     display: flex;
     padding: 13px;
@@ -27,12 +28,11 @@ body {
 .nav-link {
     font-size:20px;
     color:darkblue;
-    padding-left: 23px;
     margin-left:8px;
 }
 .drop {
     margin-top:50px;
 }
 .fa {
-    margin-right: 20px;
+    margin-top:16px;
 }
