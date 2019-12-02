@@ -65,7 +65,7 @@ a:link,a:visited,a:active {
     cursor: pointer;
     outline: none;
 }
-.general {
+#general {
     width:100%;
     display:flex;
     flex-direction: column;
@@ -80,10 +80,29 @@ a:link,a:visited,a:active {
     border-radius: 2%;
 }
 .child {
-    margin: 0;
     width:100%;
     height:50px;
     background:#cccccc;
+    margin-bottom: 20px;
+}
+.gen {
+    width:100%;
+    height:150px;
+    background: #ffffff;
+    margin-top:50px;
+    border:1px solid #ccc;
+    box-shadow: 2px 3px #cccccc;
+    border-radius: 2%;
+}
+.desc {
+    margin-top:20px;
+}
+#table {
+    margin-top:50px;
+    display:none;
+    width:100%;
+    height:500px;
+    background:#ccc;
 }
 .gen2 {
     width:100%;
@@ -94,7 +113,12 @@ a:link,a:visited,a:active {
     box-shadow: 2px 3px #cccccc;
     border-radius: 2%;
 }
-
+.database {
+    width:100%;
+    border: 1px solid #ccc;
+    box-shadow: 2px 3px #cccccc;
+    border-radius: 2%;
+}
 .bbb {
     margin-top:-60px;
     margin-bottom: 13px;
