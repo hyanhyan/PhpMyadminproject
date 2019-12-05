@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 <div class="container-fluid">
@@ -35,15 +37,17 @@
     </div>
         </div>
         <div id="all">
+            <!--
         <p>
-            <img src="img/b_plus.png" class="12" data-toggle="collapse"  href="#multiCollapseExample1" aria-expanded="true" aria-controls="multiCollapseExample1" alt="" width="16px" height="16px">
+            <img src="img/b_plus.png" class="plus"  data-toggle="collapse"  href="#multiCollapseExample1" aria-expanded="true" aria-controls="multiCollapseExample1" alt="" width="16px" height="16px">
+            <img src="img/b_minus.png" class="minus" width="16px" height="16px" data-toggle="collapse"  href="#multiCollapseExample1" aria-expanded="true" aria-controls="multiCollapseExample1" alt="">
         <a class="btn btn" data-toggle="collapse" href="#multiCollapseExample1" onclick="myFunction(1)" role="button" aria-expanded="true" aria-controls="multiCollapseExample1">Toggle 1 element</a>
         </p>
         <div class="row">
             <div class="col">
                 <div class="collapse multi-collapse inner" id="multiCollapseExample1">
                     <p>
-                        <img src="img/b_plus.png" class="12" data-toggle="collapse"  href="#multiCollapseExample11" aria-expanded="true" aria-controls="multiCollapseExample11" alt="" width="16px" height="16px">
+                        <img src="img/b_plus.png" class="plus" data-toggle="collapse"  href="#multiCollapseExample11" aria-expanded="true" aria-controls="multiCollapseExample11" alt="" width="16px" height="16px">
                         <img src="img/s_db.png">
                         <a class="btn btn"  data-toggle="collapse"  href="#multiCollapseExample11" role="button"
                           aria-expanded="true" aria-controls="multiCollapseExample1.1">Toggle 1.1 element</a></p>
@@ -61,14 +65,14 @@
         </div>
 
         <p>
-            <img src="img/b_plus.png" class="12" data-toggle="collapse"  href="#multiCollapseExample2" aria-expanded="true" aria-controls="multiCollapseExample2" alt="" width="16px" height="16px">
+            <img src="img/b_plus.png" class="plus" data-toggle="collapse"  href="#multiCollapseExample2" aria-expanded="true" aria-controls="multiCollapseExample2" alt="" width="16px" height="16px">
             <a class="btn btn" data-toggle="collapse" href="#multiCollapseExample2" role="button" onclick="myFunction(2)" aria-expanded="true" aria-controls="multiCollapseExample2">Toggle 2 element</a>
         </p>
         <div class="row">
             <div class="col">
                 <div class="collapse multi-collapse inner" id="multiCollapseExample2">
                     <p>
-                        <img src="img/b_plus.png" class="12" data-toggle="collapse"  href="#multiCollapseExample22" aria-expanded="true" aria-controls="multiCollapseExample22" alt="" width="16px" height="16px">
+                        <img src="img/b_plus.png" class="plus" data-toggle="collapse"  href="#multiCollapseExample22" aria-expanded="true" aria-controls="multiCollapseExample22" alt="" width="16px" height="16px">
                         <a class="btn btn" data-toggle="collapse"  href="#multiCollapseExample22" role="button"
                           aria-expanded="true" aria-controls="multiCollapseExample2.1">Toggle 2.1 element</a></p>
                     <div class="row">
@@ -92,7 +96,7 @@
             <div class="col">
                 <div class="collapse multi-collapse inner" id="multiCollapseExample3">
                     <p>
-                        <img src="img/b_plus.png" class="12" data-toggle="collapse"  href="#multiCollapseExample33" aria-expanded="true" aria-controls="multiCollapseExample33" alt="" width="16px" height="16px">
+                        <img src="img/b_plus.png" class="plus" data-toggle="collapse"  href="#multiCollapseExample33" aria-expanded="true" aria-controls="multiCollapseExample33" alt="" width="16px" height="16px">
                         <a class="btn btn" data-toggle="collapse"  href="#multiCollapseExample33" role="button"
                            aria-expanded="true" aria-controls="multiCollapseExample3.1">Toggle 3.1 element</a></p>
                     <div class="row">
@@ -108,14 +112,14 @@
             </div>
         </div>
         <p>
-            <img src="img/b_plus.png" class="12" data-toggle="collapse"  href="#multiCollapseExample4" aria-expanded="true" aria-controls="multiCollapseExample4" alt="" width="16px" height="16px">
+            <img src="img/b_plus.png" class="plus" data-toggle="collapse"  href="#multiCollapseExample4" aria-expanded="true" aria-controls="multiCollapseExample4" alt="" width="16px" height="16px">
             <a class="btn btn" data-toggle="collapse" href="#multiCollapseExample4" onclick="myFunction(4)" role="button" aria-expanded="true" aria-controls="multiCollapseExample4">Toggle 4 element</a>
         </p>
         <div class="row">
             <div class="col">
                 <div class="collapse multi-collapse inner" id="multiCollapseExample4">
                     <p>
-                        <img src="img/b_plus.png" class="12" data-toggle="collapse"  href="#multiCollapseExample44" aria-expanded="true" aria-controls="multiCollapseExample44" alt="" width="16px" height="16px">
+                        <img src="img/b_plus.png" class="plus" data-toggle="collapse"  href="#multiCollapseExample44" aria-expanded="true" aria-controls="multiCollapseExample44" alt="" width="16px" height="16px">
                         <a class="btn btn" data-toggle="collapse" href="#multiCollapseExample44" role="button"
                            aria-expanded="true" aria-controls="multiCollapseExample4.1">Toggle 4.1 element</a></p>
                     <div class="row">
@@ -131,14 +135,14 @@
             </div>
         </div>
         <p>
-            <img src="img/b_plus.png" class="12" data-toggle="collapse"  href="#multiCollapseExample5" aria-expanded="true" aria-controls="multiCollapseExample5" alt="" width="16px" height="16px">
+            <img src="img/b_plus.png" class="plus" data-toggle="collapse"  href="#multiCollapseExample5" aria-expanded="true" aria-controls="multiCollapseExample5" alt="" width="16px" height="16px">
             <a class="btn btn" data-toggle="collapse" href="#multiCollapseExample5" onclick="myFunction(5)" role="button" aria-expanded="true" aria-controls="multiCollapseExample5">Toggle 5 element</a>
         </p>
         <div class="row">
             <div class="col">
                 <div class="collapse multi-collapse inner" id="multiCollapseExample5">
                     <p>
-                        <img src="img/b_plus.png" class="12" data-toggle="collapse"  href="#multiCollapseExample55" aria-expanded="true" aria-controls="multiCollapseExample55" alt="" width="16px" height="16px">
+                        <img src="img/b_plus.png" class="plus" data-toggle="collapse"  href="#multiCollapseExample55" aria-expanded="true" aria-controls="multiCollapseExample55" alt="" width="16px" height="16px">
                         <a class="btn btn" data-toggle="collapse" href="#multiCollapseExample55" role="button"
                            aria-expanded="true" aria-controls="multiCollapseExample5.1">Toggle 5.1 element</a></p>
                     <div class="row">
@@ -153,9 +157,13 @@
                 </div>
             </div>
         </div>
+        -->
     </div>
     </div>
-</div>
+    </div>
+
+
+
     <div class="col-lg-10">
         <div class="d-flex flex-row">
             <nav class="w-100">
@@ -320,7 +328,7 @@
 </div>
 </div>
 <script src="index.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
