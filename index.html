@@ -13,8 +13,8 @@
 <body>
 <div class="container-fluid">
 <div class="row">
-<div class="col-lg-2 px-0">
-    <div class="d-flex flex-column align-items-center #ddd">
+<div class="col-lg-1 px-0">
+    <div class="rut d-flex flex-column  align-items-center #ddd">
         <div class="flex-1">
            <img src="img/logo_left.png" class="logo" alt="">
             <div class="thumbs">
@@ -33,7 +33,11 @@
         </div>
 
 <div id="all">
+    <p class="near">Create db</p>
+    <img src="img/b_plus.png" class="plus" id="Div1" href="#multiCollapseExample" onclick="switchVisible(),myFunction(5)" data-toggle="collapse" aria-expanded="true" aria-controls="multiCollapseExample1" alt="" width="16px" height="16px">
+               <img src="img/b_minus.png" id="Div2" href="#multiCollapseExample" onclick="switchVisible(),myFunction(4)" class="minus" width="16px" height="16px" data-toggle="collapse" aria-expanded="true" aria-controls="multiCollapseExample1" alt="">
 <!--        <p>-->
+
 <!--            <img src="img/b_plus.png" class="plus"  data-toggle="collapse"  href="#multiCollapseExample1" aria-expanded="true" aria-controls="multiCollapseExample1" alt="" width="16px" height="16px">-->
 <!--            <img src="img/b_minus.png" class="minus" width="16px" height="16px" data-toggle="collapse"  href="#multiCollapseExample1" aria-expanded="true" aria-controls="multiCollapseExample1" alt="">-->
 <!--        <a class="btn btn" data-toggle="collapse" href="#multiCollapseExample1" onclick="myFunction(1)" role="button" aria-expanded="true" aria-controls="multiCollapseExample1">Toggle 1 element</a>-->
@@ -97,7 +101,7 @@
         </div>
 </div>
 </div>
-    <div class="col-lg-10">
+    <div class="col-lg-11">
         <div class="d-flex flex-row">
             <nav class="w-100">
             <ul class="nav-menu" id="navigate">
@@ -131,6 +135,153 @@
             </ul>
         </nav>
         </div>
+        <!--<table id="structureTable" class="data">
+            <thead>
+            <tr>
+                <th class="print_ignore"></th>
+                <th><a href="index.php?route=/database/structure&amp;db=information_schema&amp;pos=0&amp;sort=table&amp;sort_order=DESC" title="Отсортировать">Таблица </a></th>
+
+                <th colspan="4" class="print_ignore">
+                    Действие</th>
+                <th>
+                    <a href="index.php?route=/database/structure&amp;db=information_schema&amp;pos=0&amp;sort=records&amp;sort_order=DESC" title="Отсортировать">Строки</a>
+                </th>
+                <th><a href="index.php?route=/database/structure&amp;db=information_schema&amp;pos=0&amp;sort=type&amp;sort_order=ASC" title="Отсортировать">Тип</a></th>
+                <th><a href="index.php?route=/database/structure&amp;db=information_schema&amp;pos=0&amp;sort=collation&amp;sort_order=ASC" title="Отсортировать">Сравнение</a></th>
+            </tr>
+            </thead>
+            <thbody>
+            <tr id="row_tbl_1" class="is_view" data-filter-row="CHARACTER_SETS">
+                <td class="text-center print_ignore">
+                    <input type="checkbox" name="selected_tbl[]" class="checkall" value="CHARACTER_SETS" id="checkbox_tbl_1">
+                </td>
+                <th>
+                    <a href="index.php?route=/sql&amp;db=information_schema&amp;table=CHARACTER_SETS&amp;pos=0" title="">
+                        CHARACTER_SETS
+                    </a>
+                </th>
+                <td class="text-center print_ignore">
+                    <a id="7db57eec4b97d698ee5050078fd74dee_favorite_anchorr" class="ajax favorite_table_anchor" href="index.php?route=/database/structure/favorite-table&amp;db=information_schema&amp;ajax_request=1&amp;favorite_table=CHARACTER_SETS&amp;add_favorite=1" title="Добавить в Избранное" data-favtargets="6a7169e432a959576d70fee96ae17555">
+                        <span class="nowrap"><img src="img/b_no_favorite.png" title="" alt="" class="icon ic_b_no_favorite">&nbsp;</span>
+                    </a>
+                </td>
+                <td class="text-center print_ignore">
+                    <a href="index.php?route=/sql&amp;db=information_schema&amp;table=CHARACTER_SETS&amp;pos=0">
+                        <span class="nowrap"><img src="img/b_browse.png" title="Обзор"  class="icon ic_b_browse">&nbsp;Обзор</span>
+                    </a>
+                </td>
+                <td class="text-center print_ignore">
+                    <a href="index.php?route=/table/structure&amp;db=information_schema&amp;table=CHARACTER_SETS">
+                        <span class="nowrap"><img src="img/b_props.png" title="Структура"  class="icon ic_b_props">&nbsp;Структура</span>
+                    </a>
+                </td>
+                <td class="text-center print_ignore">
+                    <a href="index.php?route=/table/search&amp;db=information_schema&amp;table=CHARACTER_SETS">
+                        <span class="nowrap"><img src="img/b_select.png" title="Поиск"  class="icon ic_b_select">&nbsp;Поиск</span>
+                    </a>
+                </td>
+                <td class="value tbl_rows" data-table="CHARACTER_SETS">
+                    <a href="index.php?route=/database/structure/real-row-count&amp;ajax_request=1&amp;db=information_schema&amp;table=CHARACTER_SETS" class="ajax real_row_count">
+                        <bdi>
+                            ~0
+                        </bdi>
+                    </a>
+                    <span class="pma_hint"><img src="img/b_help.png" title="" alt="" class="icon ic_b_help"><span class="hide"><a href="./url.php?url=https%3A%2F%2Fdocs.phpmyadmin.net%2Fen%2Flatest%2Fconfig.html%23cfg_MaxExactCountViews" target="documentation"></a></span></span>
+                </td>
+
+                <td class="nowrap">
+                    Представление</td>
+                <td class="nowrap">
+                </td>
+            </tr>
+            <tr id="row_tbl_2" class="is_view" data-filter-row="CHARACTER_SETS">
+                <td class="text-center print_ignore">
+                    <input type="checkbox" name="selected_tbl[]" class="checkall" value="CHARACTER_SETS" id="checkbo_tbl_1">
+                </td>
+                <th>
+                    <a href="index.php?route=/sql&amp;db=information_schema&amp;table=CHARACTER_SETS&amp;pos=0" title="">
+                        CHARACTER_SETS
+                    </a>
+                </th>
+                <td class="text-center print_ignore">
+                    <a id="7db57eec4b97d698ee5050078fd74dee_favorite_ancho" class="ajax favorite_table_anchor" href="index.php?route=/database/structure/favorite-table&amp;db=information_schema&amp;ajax_request=1&amp;favorite_table=CHARACTER_SETS&amp;add_favorite=1" title="Добавить в Избранное" data-favtargets="6a7169e432a959576d70fee96ae17555">
+                        <span class="nowrap"><img src="img/b_no_favorite.png" title="" alt="" class="icon ic_b_no_favorite">&nbsp;</span>
+                    </a>
+                </td>
+                <td class="text-center print_ignore">
+                    <a href="index.php?route=/sql&amp;db=information_schema&amp;table=CHARACTER_SETS&amp;pos=0">
+                        <span class="nowrap"><img src="img/b_browse.png" title="Обзор"  class="icon ic_b_browse">&nbsp;Обзор</span>
+                    </a>
+                </td>
+                <td class="text-center print_ignore">
+                    <a href="index.php?route=/table/structure&amp;db=information_schema&amp;table=CHARACTER_SETS">
+                        <span class="nowrap"><img src="img/b_props.png" title="Структура"  class="icon ic_b_props">&nbsp;Структура</span>
+                    </a>
+                </td>
+                <td class="text-center print_ignore">
+                    <a href="index.php?route=/table/search&amp;db=information_schema&amp;table=CHARACTER_SETS">
+                        <span class="nowrap"><img src="img/b_select.png" title="Поиск"  class="icon ic_b_select">&nbsp;Поиск</span>
+                    </a>
+                </td>
+                <td class="value tbl_rows" data-table="CHARACTER_SETS">
+                    <a href="index.php?route=/database/structure/real-row-count&amp;ajax_request=1&amp;db=information_schema&amp;table=CHARACTER_SETS" class="ajax real_row_count">
+                        <bdi>
+                            ~0
+                        </bdi>
+                    </a>
+                    <span class="pma_hint"><img src="img/b_help.png" title="" alt="" class="icon ic_b_help"><span class="hide"><a href="./url.php?url=https%3A%2F%2Fdocs.phpmyadmin.net%2Fen%2Flatest%2Fconfig.html%23cfg_MaxExactCountViews" target="documentation"></a></span></span>
+                </td>
+
+                <td class="nowrap">
+                    Представление</td>
+                <td class="nowrap">
+                </td>
+            </tr>
+            <tr id="row_tbl_3" class="is_view" data-filter-row="CHARACTER_SETS">
+                <td class="text-center print_ignore">
+                    <input type="checkbox" name="selected_tbl[]" class="checkall" value="CHARACTER_SETS" id="checkbox_tb_1">
+                </td>
+                <th>
+                    <a href="index.php?route=/sql&amp;db=information_schema&amp;table=CHARACTER_SETS&amp;pos=0" title="">
+                        CHARACTER_SETS
+                    </a>
+                </th>
+                <td class="text-center print_ignore">
+                    <a id="7db57eec4b97d698ee5050078fd74dee_favorite_anchor" class="ajax favorite_table_anchor" href="index.php?route=/database/structure/favorite-table&amp;db=information_schema&amp;ajax_request=1&amp;favorite_table=CHARACTER_SETS&amp;add_favorite=1" title="Добавить в Избранное" data-favtargets="6a7169e432a959576d70fee96ae17555">
+                        <span class="nowrap"><img src="img/b_no_favorite.png" title="" alt="" class="icon ic_b_no_favorite">&nbsp;</span>
+                    </a>
+                </td>
+                <td class="text-center print_ignore">
+                    <a href="index.php?route=/sql&amp;db=information_schema&amp;table=CHARACTER_SETS&amp;pos=0">
+                        <span class="nowrap"><img src="img/b_browse.png" title="Обзор"  class="icon ic_b_browse">&nbsp;Обзор</span>
+                    </a>
+                </td>
+                <td class="text-center print_ignore">
+                    <a href="index.php?route=/table/structure&amp;db=information_schema&amp;table=CHARACTER_SETS">
+                        <span class="nowrap"><img src="img/b_props.png" title="Структура"  class="icon ic_b_props">&nbsp;Структура</span>
+                    </a>
+                </td>
+                <td class="text-center print_ignore">
+                    <a href="index.php?route=/table/search&amp;db=information_schema&amp;table=CHARACTER_SETS">
+                        <span class="nowrap"><img src="img/b_select.png" title="Поиск"  class="icon ic_b_select">&nbsp;Поиск</span>
+                    </a>
+                </td>
+                <td class="value tbl_rows" data-table="CHARACTER_SETS">
+                    <a href="index.php?route=/database/structure/real-row-count&amp;ajax_request=1&amp;db=information_schema&amp;table=CHARACTER_SETS" class="ajax real_row_count">
+                        <bdi>
+                            ~0
+                        </bdi>
+                    </a>
+                    <span class="pma_hint"><img src="img/b_help.png" title="" alt="" class="icon ic_b_help"><span class="hide"><a href="./url.php?url=https%3A%2F%2Fdocs.phpmyadmin.net%2Fen%2Flatest%2Fconfig.html%23cfg_MaxExactCountViews" target="documentation"></a></span></span>
+                </td>
+
+                <td class="nowrap">
+                    Представление</td>
+                <td class="nowrap">
+                </td>
+            </tr>
+            </thbody>
+        </table>-->
         <div id="general">
         <div class="row">
             <div class="col-8">
@@ -254,6 +405,7 @@
         </div>
         </div>
         </div>
+
 </div>
 </div>
 </div>
