@@ -191,10 +191,10 @@ var arr=[
      {img:"img/b_plus.png",inner:"collapse multi-collapse inner",thirdName:"Toggle 1.1.2",type:"button",id:"multiCollapseExample1",tog:"row",thirdId:"demo",child:"col",btn:"btn btn",classname:"btn btn-link",secondControls:"multiCollapseExample11",data:"collapse",href:"#multiCollapseExample1",secondName:"Toggle 1.1 element",onclick:"myFunction(1)", secondId:"multiCollapseExample11",target:"#demo",name:"Toggle 1 element",class:"plus",controls:"multiCollapseExample1",role:"button",secondHref:"#multiCollapseExample11",src:"multiCollapseExample1",expanded:"true"
      },
 
-     {img:"img/b_plus.png",inner:"collapse multi-collapse inner",thirdName:"Toggle 2.1.2",type:"button",id:"multiCollapseExample2",tog:"row",thirdId:"demo",child:"col",btn:"btn btn",classname:"btn btn-link",secondControls:"multiCollapseExample11",data:"collapse", href:"#multiCollapseExample2",secondName:"Toggle 2.1 element",onclick:"myFunction(2)", secondId:"multiCollapseExample22",target:"#demo1",name:"Toggle 2 element",class:"plus",controls:"multiCollapseExample2",role:"button",secondHref:"#multiCollapseExample22",src:"multiCollapseExample2",expanded:"true"
+     {img:"img/b_plus.png",inner:"collapse multi-collapse inner",thirdName:"Toggle 2.1.2",type:"button",id:"multiCollapseExample2",tog:"row",thirdId:"demo",child:"col",btn:"btn btn",classname:"btn btn-link",secondControls:"multiCollapseExample22",data:"collapse", href:"#multiCollapseExample2",secondName:"Toggle 2.1 element",onclick:"myFunction(2)", secondId:"multiCollapseExample22",target:"#demo1",name:"Toggle 2 element",class:"plus",controls:"multiCollapseExample2",role:"button",secondHref:"#multiCollapseExample22",src:"multiCollapseExample2",expanded:"true"
      },
 
-     {img:"img/b_plus.png",inner:"collapse multi-collapse inner",thirdName:"Toggle 3.1.2",type:"button",id:"multiCollapseExample3",tog:"row",thirdId:"demo",child:"col",btn:"btn btn",classname:"btn btn-link",secondControls:"multiCollapseExample11",data:"collapse", href:"#multiCollapseExample3",secondName:"Toggle 3.1 element",onclick:"myFunction(3)", target:"#demo3",name:"Toggle 3 element", secondId:"multiCollapseExample33",class:"plus",controls:"multiCollapseExample3",role:"button",secondHref:"#multiCollapseExample33",src:"multiCollapseExample3",expanded:"true"
+     {img:"img/b_plus.png",inner:"collapse multi-collapse inner",thirdName:"Toggle 3.1.2",type:"button",id:"multiCollapseExample3",tog:"row",thirdId:"demo",child:"col",btn:"btn btn",classname:"btn btn-link",secondControls:"multiCollapseExample33",data:"collapse", href:"#multiCollapseExample3",secondName:"Toggle 3.1 element",onclick:"myFunction(3)", target:"#demo3",name:"Toggle 3 element", secondId:"multiCollapseExample33",class:"plus",controls:"multiCollapseExample3",role:"button",secondHref:"#multiCollapseExample33",src:"multiCollapseExample3",expanded:"true"
      }
 
  ];
@@ -249,7 +249,7 @@ var arr=[
          ah1.setAttribute('class',i.btn);
          ah1.setAttribute('role',i.role);
          ah1.setAttribute('data-toggle',i.data);
-         ah1.setAttribute('aria-controls',i.thirdHref);
+         ah1.setAttribute('aria-controls',i.secondId);
          ah1.setAttribute('aria-expanded',i.expanded);
          ah1.setAttribute('href',i.secondHref);
          $(ah1).text(i.secondName);
