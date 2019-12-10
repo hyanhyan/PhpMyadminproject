@@ -25,7 +25,7 @@
                 <img src="img/s_cog.png" class="1" alt="">
                 <img src="img/s_reload.png" class="1" alt="">
             </div>
-            <h3 class="drop-text">Current server:</h3>
+            <h4 class="drop-text">Current server:</h4>
         </div>
         <div class="flex-2"><a class="btn btn" href="#general" role="button" id="dropdownMenuLink"  onclick="myFunction(0)" data-toggle="dropdown" aria-haspopup="true">
        PhpMyAdmin demo-my
@@ -34,7 +34,7 @@
 
 <div id="all">
     <p class="near">Create db</p>
-    <img src="img/b_plus.png" class="plus" id="Div1" href="#multiCollapseExample" onclick="switchVisible(),myFunction(5)" data-toggle="collapse" aria-expanded="true" aria-controls="multiCollapseExample1" alt="" width="16px" height="16px">
+    <img src="img/b_plus.png" class="pluss" id="Div1" href="#multiCollapseExample" onclick="switchVisible(),myFunction(5)" data-toggle="collapse" aria-expanded="true" aria-controls="multiCollapseExample1" alt="" width="16px" height="16px">
                <img src="img/b_minus.png" id="Div2" href="#multiCollapseExample" onclick="switchVisible(),myFunction(4)" class="minus" width="16px" height="16px" data-toggle="collapse" aria-expanded="true" aria-controls="multiCollapseExample1" alt="">
 <!--        <p>-->
 
@@ -151,150 +151,653 @@
             </tr>
             </thead>
             <thbody>
-            <tr id="row_tbl_1" class="is_view" data-filter-row="CHARACTER_SETS">
-                <td class="text-center print_ignore">
-                    <input type="checkbox" name="selected_tbl[]" class="checkall" value="CHARACTER_SETS" id="checkbox_tbl_1">
-                </td>
-                <th>
-                    <a href="index.php?route=/sql&amp;db=information_schema&amp;table=CHARACTER_SETS&amp;pos=0" title="">
-                        CHARACTER_SETS
-                    </a>
-                </th>
-                <td class="text-center print_ignore">
-                    <a id="7db57eec4b97d698ee5050078fd74dee_favorite_anchorr" class="ajax favorite_table_anchor" href="index.php?route=/database/structure/favorite-table&amp;db=information_schema&amp;ajax_request=1&amp;favorite_table=CHARACTER_SETS&amp;add_favorite=1" title="Добавить в Избранное" data-favtargets="6a7169e432a959576d70fee96ae17555">
-                        <span class="nowrap"><img src="img/b_no_favorite.png" title="" alt="" class="icon ic_b_no_favorite">&nbsp;</span>
-                    </a>
-                </td>
-                <td class="text-center print_ignore">
-                    <a href="index.php?route=/sql&amp;db=information_schema&amp;table=CHARACTER_SETS&amp;pos=0">
-                        <span class="nowrap"><img src="img/b_browse.png" title="Обзор"  class="icon ic_b_browse">&nbsp;Обзор</span>
-                    </a>
-                </td>
-                <td class="text-center print_ignore">
-                    <a href="index.php?route=/table/structure&amp;db=information_schema&amp;table=CHARACTER_SETS">
-                        <span class="nowrap"><img src="img/b_props.png" title="Структура"  class="icon ic_b_props">&nbsp;Структура</span>
-                    </a>
-                </td>
-                <td class="text-center print_ignore">
-                    <a href="index.php?route=/table/search&amp;db=information_schema&amp;table=CHARACTER_SETS">
-                        <span class="nowrap"><img src="img/b_select.png" title="Поиск"  class="icon ic_b_select">&nbsp;Поиск</span>
-                    </a>
-                </td>
-                <td class="value tbl_rows" data-table="CHARACTER_SETS">
-                    <a href="index.php?route=/database/structure/real-row-count&amp;ajax_request=1&amp;db=information_schema&amp;table=CHARACTER_SETS" class="ajax real_row_count">
-                        <bdi>
-                            ~0
-                        </bdi>
-                    </a>
-                    <span class="pma_hint"><img src="img/b_help.png" title="" alt="" class="icon ic_b_help"><span class="hide"><a href="./url.php?url=https%3A%2F%2Fdocs.phpmyadmin.net%2Fen%2Flatest%2Fconfig.html%23cfg_MaxExactCountViews" target="documentation"></a></span></span>
-                </td>
+                <tr id="row_tbl_1" class="is_view" data-filter-row="CHARACTER_SETS">
+                    <td class="text-center print_ignore">
+                        <input type="checkbox" name="selected_tbl[]" class="checkall" value="CHARACTER_SETS" id="chekbox_tbl_1">
+                    </td>
+                    <th>
+                        <a href="index.php?route=/sql&amp;db=information_schema&amp;table=CHARACTER_SETS&amp;pos=0" title="">
+                            CHARACTER_SETS
+                        </a>
+                    </th>
+                    <td class="text-center print_ignore">
+                        <a id="7db57eec4b97d698ee5050078fd74dee_favrite_anchorr" class="ajax favorite_table_anchor" href="index.php?route=/database/structure/favorite-table&amp;db=information_schema&amp;ajax_request=1&amp;favorite_table=CHARACTER_SETS&amp;add_favorite=1" title="Добавить в Избранное" data-favtargets="6a7169e432a959576d70fee96ae17555">
+                            <span class="nowrap"><img src="img/b_no_favorite.png" title="" alt="" class="icon ic_b_no_favorite">&nbsp;</span>
+                        </a>
+                    </td>
+                    <td class="text-center print_ignore">
+                        <a href="index.php?route=/sql&amp;db=information_schema&amp;table=CHARACTER_SETS&amp;pos=0">
+                            <span class="nowrap"><img src="img/b_browse.png" title="Обзор"  class="icon ic_b_browse">&nbsp;Обзор</span>
+                        </a>
+                    </td>
+                    <td class="text-center print_ignore">
+                        <a href="index.php?route=/table/structure&amp;db=information_schema&amp;table=CHARACTER_SETS">
+                            <span class="nowrap"><img src="img/b_props.png" title="Структура"  class="icon ic_b_props">&nbsp;Структура</span>
+                        </a>
+                    </td>
+                    <td class="text-center print_ignore">
+                        <a href="index.php?route=/table/search&amp;db=information_schema&amp;table=CHARACTER_SETS">
+                            <span class="nowrap"><img src="img/b_select.png" title="Поиск"  class="icon ic_b_select">&nbsp;Поиск</span>
+                        </a>
+                    </td>
+                    <td class="value tbl_rows" data-table="CHARACTER_SETS">
+                        <a href="index.php?route=/database/structure/real-row-count&amp;ajax_request=1&amp;db=information_schema&amp;table=CHARACTER_SETS" class="ajax real_row_count">
+                            <bdi>
+                                ~0
+                            </bdi>
+                        </a>
+                        <span class="pma_hint"><img src="img/b_help.png" title="" alt="" class="icon ic_b_help"><span class="hide"><a href="./url.php?url=https%3A%2F%2Fdocs.phpmyadmin.net%2Fen%2Flatest%2Fconfig.html%23cfg_MaxExactCountViews" target="documentation"></a></span></span>
+                    </td>
 
-                <td class="nowrap">
-                    Представление</td>
-                <td class="nowrap">
-                </td>
-            </tr>
-            <tr id="row_tbl_2" class="is_view" data-filter-row="CHARACTER_SETS">
-                <td class="text-center print_ignore">
-                    <input type="checkbox" name="selected_tbl[]" class="checkall" value="CHARACTER_SETS" id="checkbo_tbl_1">
-                </td>
-                <th>
-                    <a href="index.php?route=/sql&amp;db=information_schema&amp;table=CHARACTER_SETS&amp;pos=0" title="">
-                        CHARACTER_SETS
-                    </a>
-                </th>
-                <td class="text-center print_ignore">
-                    <a id="7db57eec4b97d698ee5050078fd74dee_favorite_ancho" class="ajax favorite_table_anchor" href="index.php?route=/database/structure/favorite-table&amp;db=information_schema&amp;ajax_request=1&amp;favorite_table=CHARACTER_SETS&amp;add_favorite=1" title="Добавить в Избранное" data-favtargets="6a7169e432a959576d70fee96ae17555">
-                        <span class="nowrap"><img src="img/b_no_favorite.png" title="" alt="" class="icon ic_b_no_favorite">&nbsp;</span>
-                    </a>
-                </td>
-                <td class="text-center print_ignore">
-                    <a href="index.php?route=/sql&amp;db=information_schema&amp;table=CHARACTER_SETS&amp;pos=0">
-                        <span class="nowrap"><img src="img/b_browse.png" title="Обзор"  class="icon ic_b_browse">&nbsp;Обзор</span>
-                    </a>
-                </td>
-                <td class="text-center print_ignore">
-                    <a href="index.php?route=/table/structure&amp;db=information_schema&amp;table=CHARACTER_SETS">
-                        <span class="nowrap"><img src="img/b_props.png" title="Структура"  class="icon ic_b_props">&nbsp;Структура</span>
-                    </a>
-                </td>
-                <td class="text-center print_ignore">
-                    <a href="index.php?route=/table/search&amp;db=information_schema&amp;table=CHARACTER_SETS">
-                        <span class="nowrap"><img src="img/b_select.png" title="Поиск"  class="icon ic_b_select">&nbsp;Поиск</span>
-                    </a>
-                </td>
-                <td class="value tbl_rows" data-table="CHARACTER_SETS">
-                    <a href="index.php?route=/database/structure/real-row-count&amp;ajax_request=1&amp;db=information_schema&amp;table=CHARACTER_SETS" class="ajax real_row_count">
-                        <bdi>
-                            ~0
-                        </bdi>
-                    </a>
-                    <span class="pma_hint"><img src="img/b_help.png" title="" alt="" class="icon ic_b_help"><span class="hide"><a href="./url.php?url=https%3A%2F%2Fdocs.phpmyadmin.net%2Fen%2Flatest%2Fconfig.html%23cfg_MaxExactCountViews" target="documentation"></a></span></span>
-                </td>
+                    <td class="nowrap">
+                        Представление</td>
+                    <td class="nowrap">
+                    </td>
+                </tr>
+                <tr id="row_tbl_" class="is_view" data-filter-row="CHARACTER_SETS">
+                    <td class="text-center print_ignore">
+                        <input type="checkbox" name="selected_tbl[]" class="checkall" value="CHARACTER_SETS" id="chckbox_tbl_1">
+                    </td>
+                    <th>
+                        <a href="index.php?route=/sql&amp;db=information_schema&amp;table=CHARACTER_SETS&amp;pos=0" title="">
+                            CHARACTER_SETS
+                        </a>
+                    </th>
+                    <td class="text-center print_ignore">
+                        <a id="7db57eec4b97d698e5050078fd74dee_favorite_anchorr" class="ajax favorite_table_anchor" href="index.php?route=/database/structure/favorite-table&amp;db=information_schema&amp;ajax_request=1&amp;favorite_table=CHARACTER_SETS&amp;add_favorite=1" title="Добавить в Избранное" data-favtargets="6a7169e432a959576d70fee96ae17555">
+                            <span class="nowrap"><img src="img/b_no_favorite.png" title="" alt="" class="icon ic_b_no_favorite">&nbsp;</span>
+                        </a>
+                    </td>
+                    <td class="text-center print_ignore">
+                        <a href="index.php?route=/sql&amp;db=information_schema&amp;table=CHARACTER_SETS&amp;pos=0">
+                            <span class="nowrap"><img src="img/b_browse.png" title="Обзор"  class="icon ic_b_browse">&nbsp;Обзор</span>
+                        </a>
+                    </td>
+                    <td class="text-center print_ignore">
+                        <a href="index.php?route=/table/structure&amp;db=information_schema&amp;table=CHARACTER_SETS">
+                            <span class="nowrap"><img src="img/b_props.png" title="Структура"  class="icon ic_b_props">&nbsp;Структура</span>
+                        </a>
+                    </td>
+                    <td class="text-center print_ignore">
+                        <a href="index.php?route=/table/search&amp;db=information_schema&amp;table=CHARACTER_SETS">
+                            <span class="nowrap"><img src="img/b_select.png" title="Поиск"  class="icon ic_b_select">&nbsp;Поиск</span>
+                        </a>
+                    </td>
+                    <td class="value tbl_rows" data-table="CHARACTER_SETS">
+                        <a href="index.php?route=/database/structure/real-row-count&amp;ajax_request=1&amp;db=information_schema&amp;table=CHARACTER_SETS" class="ajax real_row_count">
+                            <bdi>
+                                ~0
+                            </bdi>
+                        </a>
+                        <span class="pma_hint"><img src="img/b_help.png" title="" alt="" class="icon ic_b_help"><span class="hide"><a href="./url.php?url=https%3A%2F%2Fdocs.phpmyadmin.net%2Fen%2Flatest%2Fconfig.html%23cfg_MaxExactCountViews" target="documentation"></a></span></span>
+                    </td>
 
-                <td class="nowrap">
-                    Представление</td>
-                <td class="nowrap">
-                </td>
-            </tr>
-            <tr id="row_tbl_3" class="is_view" data-filter-row="CHARACTER_SETS">
-                <td class="text-center print_ignore">
-                    <input type="checkbox" name="selected_tbl[]" class="checkall" value="CHARACTER_SETS" id="checkbox_tb_1">
-                </td>
-                <th>
-                    <a href="index.php?route=/sql&amp;db=information_schema&amp;table=CHARACTER_SETS&amp;pos=0" title="">
-                        CHARACTER_SETS
-                    </a>
-                </th>
-                <td class="text-center print_ignore">
-                    <a id="7db57eec4b97d698ee5050078fd74dee_favorite_anchor" class="ajax favorite_table_anchor" href="index.php?route=/database/structure/favorite-table&amp;db=information_schema&amp;ajax_request=1&amp;favorite_table=CHARACTER_SETS&amp;add_favorite=1" title="Добавить в Избранное" data-favtargets="6a7169e432a959576d70fee96ae17555">
-                        <span class="nowrap"><img src="img/b_no_favorite.png" title="" alt="" class="icon ic_b_no_favorite">&nbsp;</span>
-                    </a>
-                </td>
-                <td class="text-center print_ignore">
-                    <a href="index.php?route=/sql&amp;db=information_schema&amp;table=CHARACTER_SETS&amp;pos=0">
-                        <span class="nowrap"><img src="img/b_browse.png" title="Обзор"  class="icon ic_b_browse">&nbsp;Обзор</span>
-                    </a>
-                </td>
-                <td class="text-center print_ignore">
-                    <a href="index.php?route=/table/structure&amp;db=information_schema&amp;table=CHARACTER_SETS">
-                        <span class="nowrap"><img src="img/b_props.png" title="Структура"  class="icon ic_b_props">&nbsp;Структура</span>
-                    </a>
-                </td>
-                <td class="text-center print_ignore">
-                    <a href="index.php?route=/table/search&amp;db=information_schema&amp;table=CHARACTER_SETS">
-                        <span class="nowrap"><img src="img/b_select.png" title="Поиск"  class="icon ic_b_select">&nbsp;Поиск</span>
-                    </a>
-                </td>
-                <td class="value tbl_rows" data-table="CHARACTER_SETS">
-                    <a href="index.php?route=/database/structure/real-row-count&amp;ajax_request=1&amp;db=information_schema&amp;table=CHARACTER_SETS" class="ajax real_row_count">
-                        <bdi>
-                            ~0
-                        </bdi>
-                    </a>
-                    <span class="pma_hint"><img src="img/b_help.png" title="" alt="" class="icon ic_b_help"><span class="hide"><a href="./url.php?url=https%3A%2F%2Fdocs.phpmyadmin.net%2Fen%2Flatest%2Fconfig.html%23cfg_MaxExactCountViews" target="documentation"></a></span></span>
-                </td>
+                    <td class="nowrap">
+                        Представление</td>
+                    <td class="nowrap">
+                    </td>
+                </tr>
+                <tr id="row_tbl" class="is_view" data-filter-row="CHARACTER_SETS">
+                    <td class="text-center print_ignore">
+                        <input type="checkbox" name="selected_tbl[]" class="checkall" value="CHARACTER_SETS" id="chkbox_tbl_1">
+                    </td>
+                    <th>
+                        <a href="index.php?route=/sql&amp;db=information_schema&amp;table=CHARACTER_SETS&amp;pos=0" title="">
+                            CHARACTER_SETS
+                        </a>
+                    </th>
+                    <td class="text-center print_ignore">
+                        <a id="7db57eec4b97d698ee5050078fd74dee_avorite_anchorr" class="ajax favorite_table_anchor" href="index.php?route=/database/structure/favorite-table&amp;db=information_schema&amp;ajax_request=1&amp;favorite_table=CHARACTER_SETS&amp;add_favorite=1" title="Добавить в Избранное" data-favtargets="6a7169e432a959576d70fee96ae17555">
+                            <span class="nowrap"><img src="img/b_no_favorite.png" title="" alt="" class="icon ic_b_no_favorite">&nbsp;</span>
+                        </a>
+                    </td>
+                    <td class="text-center print_ignore">
+                        <a href="index.php?route=/sql&amp;db=information_schema&amp;table=CHARACTER_SETS&amp;pos=0">
+                            <span class="nowrap"><img src="img/b_browse.png" title="Обзор"  class="icon ic_b_browse">&nbsp;Обзор</span>
+                        </a>
+                    </td>
+                    <td class="text-center print_ignore">
+                        <a href="index.php?route=/table/structure&amp;db=information_schema&amp;table=CHARACTER_SETS">
+                            <span class="nowrap"><img src="img/b_props.png" title="Структура"  class="icon ic_b_props">&nbsp;Структура</span>
+                        </a>
+                    </td>
+                    <td class="text-center print_ignore">
+                        <a href="index.php?route=/table/search&amp;db=information_schema&amp;table=CHARACTER_SETS">
+                            <span class="nowrap"><img src="img/b_select.png" title="Поиск"  class="icon ic_b_select">&nbsp;Поиск</span>
+                        </a>
+                    </td>
+                    <td class="value tbl_rows" data-table="CHARACTER_SETS">
+                        <a href="index.php?route=/database/structure/real-row-count&amp;ajax_request=1&amp;db=information_schema&amp;table=CHARACTER_SETS" class="ajax real_row_count">
+                            <bdi>
+                                ~0
+                            </bdi>
+                        </a>
+                        <span class="pma_hint"><img src="img/b_help.png" title="" alt="" class="icon ic_b_help"><span class="hide"><a href="./url.php?url=https%3A%2F%2Fdocs.phpmyadmin.net%2Fen%2Flatest%2Fconfig.html%23cfg_MaxExactCountViews" target="documentation"></a></span></span>
+                    </td>
 
-                <td class="nowrap">
-                    Представление</td>
-                <td class="nowrap">
-                </td>
-            </tr>
+                    <td class="nowrap">
+                        Представление</td>
+                    <td class="nowrap">
+                    </td>
+                </tr>
+                <tr id="row_t1" class="is_view" data-filter-row="CHARACTER_SETS">
+                    <td class="text-center print_ignore">
+                        <input type="checkbox" name="selected_tbl[]" class="checkall" value="CHARACTER_SETS" id="chbox_tbl_1">
+                    </td>
+                    <th>
+                        <a href="index.php?route=/sql&amp;db=information_schema&amp;table=CHARACTER_SETS&amp;pos=0" title="">
+                            CHARACTER_SETS
+                        </a>
+                    </th>
+                    <td class="text-center print_ignore">
+                        <a id="7db57eec4b998ee5050078fd74dee_favorite_anchorr" class="ajax favorite_table_anchor" href="index.php?route=/database/structure/favorite-table&amp;db=information_schema&amp;ajax_request=1&amp;favorite_table=CHARACTER_SETS&amp;add_favorite=1" title="Добавить в Избранное" data-favtargets="6a7169e432a959576d70fee96ae17555">
+                            <span class="nowrap"><img src="img/b_no_favorite.png" title="" alt="" class="icon ic_b_no_favorite">&nbsp;</span>
+                        </a>
+                    </td>
+                    <td class="text-center print_ignore">
+                        <a href="index.php?route=/sql&amp;db=information_schema&amp;table=CHARACTER_SETS&amp;pos=0">
+                            <span class="nowrap"><img src="img/b_browse.png" title="Обзор"  class="icon ic_b_browse">&nbsp;Обзор</span>
+                        </a>
+                    </td>
+                    <td class="text-center print_ignore">
+                        <a href="index.php?route=/table/structure&amp;db=information_schema&amp;table=CHARACTER_SETS">
+                            <span class="nowrap"><img src="img/b_props.png" title="Структура"  class="icon ic_b_props">&nbsp;Структура</span>
+                        </a>
+                    </td>
+                    <td class="text-center print_ignore">
+                        <a href="index.php?route=/table/search&amp;db=information_schema&amp;table=CHARACTER_SETS">
+                            <span class="nowrap"><img src="img/b_select.png" title="Поиск"  class="icon ic_b_select">&nbsp;Поиск</span>
+                        </a>
+                    </td>
+                    <td class="value tbl_rows" data-table="CHARACTER_SETS">
+                        <a href="index.php?route=/database/structure/real-row-count&amp;ajax_request=1&amp;db=information_schema&amp;table=CHARACTER_SETS" class="ajax real_row_count">
+                            <bdi>
+                                ~0
+                            </bdi>
+                        </a>
+                        <span class="pma_hint"><img src="img/b_help.png" title="" alt="" class="icon ic_b_help"><span class="hide"><a href="./url.php?url=https%3A%2F%2Fdocs.phpmyadmin.net%2Fen%2Flatest%2Fconfig.html%23cfg_MaxExactCountViews" target="documentation"></a></span></span>
+                    </td>
+
+                    <td class="nowrap">
+                        Представление</td>
+                    <td class="nowrap">
+                    </td>
+                </tr>
+                <tr id="row__1" class="is_view" data-filter-row="CHARACTER_SETS">
+                    <td class="text-center print_ignore">
+                        <input type="checkbox" name="selected_tbl[]" class="checkall" value="CHARACTER_SETS" id="cckbox_tbl_1">
+                    </td>
+                    <th>
+                        <a href="index.php?route=/sql&amp;db=information_schema&amp;table=CHARACTER_SETS&amp;pos=0" title="">
+                            CHARACTER_SETS
+                        </a>
+                    </th>
+                    <td class="text-center print_ignore">
+                        <a id="7db57eec4b97d698ee5050078fd7h4dee_favorite_anchorr" class="ajax favorite_table_anchor" href="index.php?route=/database/structure/favorite-table&amp;db=information_schema&amp;ajax_request=1&amp;favorite_table=CHARACTER_SETS&amp;add_favorite=1" title="Добавить в Избранное" data-favtargets="6a7169e432a959576d70fee96ae17555">
+                            <span class="nowrap"><img src="img/b_no_favorite.png" title="" alt="" class="icon ic_b_no_favorite">&nbsp;</span>
+                        </a>
+                    </td>
+                    <td class="text-center print_ignore">
+                        <a href="index.php?route=/sql&amp;db=information_schema&amp;table=CHARACTER_SETS&amp;pos=0">
+                            <span class="nowrap"><img src="img/b_browse.png" title="Обзор"  class="icon ic_b_browse">&nbsp;Обзор</span>
+                        </a>
+                    </td>
+                    <td class="text-center print_ignore">
+                        <a href="index.php?route=/table/structure&amp;db=information_schema&amp;table=CHARACTER_SETS">
+                            <span class="nowrap"><img src="img/b_props.png" title="Структура"  class="icon ic_b_props">&nbsp;Структура</span>
+                        </a>
+                    </td>
+                    <td class="text-center print_ignore">
+                        <a href="index.php?route=/table/search&amp;db=information_schema&amp;table=CHARACTER_SETS">
+                            <span class="nowrap"><img src="img/b_select.png" title="Поиск"  class="icon ic_b_select">&nbsp;Поиск</span>
+                        </a>
+                    </td>
+                    <td class="value tbl_rows" data-table="CHARACTER_SETS">
+                        <a href="index.php?route=/database/structure/real-row-count&amp;ajax_request=1&amp;db=information_schema&amp;table=CHARACTER_SETS" class="ajax real_row_count">
+                            <bdi>
+                                ~0
+                            </bdi>
+                        </a>
+                        <span class="pma_hint"><img src="img/b_help.png" title="" alt="" class="icon ic_b_help"><span class="hide"><a href="./url.php?url=https%3A%2F%2Fdocs.phpmyadmin.net%2Fen%2Flatest%2Fconfig.html%23cfg_MaxExactCountViews" target="documentation"></a></span></span>
+                    </td>
+
+                    <td class="nowrap">
+                        Представление</td>
+                    <td class="nowrap">
+                    </td>
+                </tr>
+                <tr id="rowl_1" class="is_view" data-filter-row="CHARACTER_SETS">
+                    <td class="text-center print_ignore">
+                        <input type="checkbox" name="selected_tbl[]" class="checkall" value="CHARACTER_SETS" id="checkbox_tbl_1">
+                    </td>
+                    <th>
+                        <a href="index.php?route=/sql&amp;db=information_schema&amp;table=CHARACTER_SETS&amp;pos=0" title="">
+                            CHARACTER_SETS
+                        </a>
+                    </th>
+                    <td class="text-center print_ignore">
+                        <a id="7db57eec4b97d698ee5050078fd74dee_favorite_anchorr" class="ajax favorite_table_anchor" href="index.php?route=/database/structure/favorite-table&amp;db=information_schema&amp;ajax_request=1&amp;favorite_table=CHARACTER_SETS&amp;add_favorite=1" title="Добавить в Избранное" data-favtargets="6a7169e432a959576d70fee96ae17555">
+                            <span class="nowrap"><img src="img/b_no_favorite.png" title="" alt="" class="icon ic_b_no_favorite">&nbsp;</span>
+                        </a>
+                    </td>
+                    <td class="text-center print_ignore">
+                        <a href="index.php?route=/sql&amp;db=information_schema&amp;table=CHARACTER_SETS&amp;pos=0">
+                            <span class="nowrap"><img src="img/b_browse.png" title="Обзор"  class="icon ic_b_browse">&nbsp;Обзор</span>
+                        </a>
+                    </td>
+                    <td class="text-center print_ignore">
+                        <a href="index.php?route=/table/structure&amp;db=information_schema&amp;table=CHARACTER_SETS">
+                            <span class="nowrap"><img src="img/b_props.png" title="Структура"  class="icon ic_b_props">&nbsp;Структура</span>
+                        </a>
+                    </td>
+                    <td class="text-center print_ignore">
+                        <a href="index.php?route=/table/search&amp;db=information_schema&amp;table=CHARACTER_SETS">
+                            <span class="nowrap"><img src="img/b_select.png" title="Поиск"  class="icon ic_b_select">&nbsp;Поиск</span>
+                        </a>
+                    </td>
+                    <td class="value tbl_rows" data-table="CHARACTER_SETS">
+                        <a href="index.php?route=/database/structure/real-row-count&amp;ajax_request=1&amp;db=information_schema&amp;table=CHARACTER_SETS" class="ajax real_row_count">
+                            <bdi>
+                                ~0
+                            </bdi>
+                        </a>
+                        <span class="pma_hint"><img src="img/b_help.png" title="" alt="" class="icon ic_b_help"><span class="hide"><a href="./url.php?url=https%3A%2F%2Fdocs.phpmyadmin.net%2Fen%2Flatest%2Fconfig.html%23cfg_MaxExactCountViews" target="documentation"></a></span></span>
+                    </td>
+
+                    <td class="nowrap">
+                        Представление</td>
+                    <td class="nowrap">
+                    </td>
+                </tr>
+                <tr id="row_tbl_2" class="is_view" data-filter-row="CHARACTER_SETS">
+                    <td class="text-center print_ignore">
+                        <input type="checkbox" name="selected_tbl[]" class="checkall" value="CHARACTER_SETS" id="checkbo_tbl_1">
+                    </td>
+                    <th>
+                        <a href="index.php?route=/sql&amp;db=information_schema&amp;table=CHARACTER_SETS&amp;pos=0" title="">
+                            CHARACTER_SETS
+                        </a>
+                    </th>
+                    <td class="text-center print_ignore">
+                        <a id="7db57eec4b97d698ee5050078fd74dee_favorite_ancho" class="ajax favorite_table_anchor" href="index.php?route=/database/structure/favorite-table&amp;db=information_schema&amp;ajax_request=1&amp;favorite_table=CHARACTER_SETS&amp;add_favorite=1" title="Добавить в Избранное" data-favtargets="6a7169e432a959576d70fee96ae17555">
+                            <span class="nowrap"><img src="img/b_no_favorite.png" title="" alt="" class="icon ic_b_no_favorite">&nbsp;</span>
+                        </a>
+                    </td>
+                    <td class="text-center print_ignore">
+                        <a href="index.php?route=/sql&amp;db=information_schema&amp;table=CHARACTER_SETS&amp;pos=0">
+                            <span class="nowrap"><img src="img/b_browse.png" title="Обзор"  class="icon ic_b_browse">&nbsp;Обзор</span>
+                        </a>
+                    </td>
+                    <td class="text-center print_ignore">
+                        <a href="index.php?route=/table/structure&amp;db=information_schema&amp;table=CHARACTER_SETS">
+                            <span class="nowrap"><img src="img/b_props.png" title="Структура"  class="icon ic_b_props">&nbsp;Структура</span>
+                        </a>
+                    </td>
+                    <td class="text-center print_ignore">
+                        <a href="index.php?route=/table/search&amp;db=information_schema&amp;table=CHARACTER_SETS">
+                            <span class="nowrap"><img src="img/b_select.png" title="Поиск"  class="icon ic_b_select">&nbsp;Поиск</span>
+                        </a>
+                    </td>
+                    <td class="value tbl_rows" data-table="CHARACTER_SETS">
+                        <a href="index.php?route=/database/structure/real-row-count&amp;ajax_request=1&amp;db=information_schema&amp;table=CHARACTER_SETS" class="ajax real_row_count">
+                            <bdi>
+                                ~0
+                            </bdi>
+                        </a>
+                        <span class="pma_hint"><img src="img/b_help.png" title="" alt="" class="icon ic_b_help"><span class="hide"><a href="./url.php?url=https%3A%2F%2Fdocs.phpmyadmin.net%2Fen%2Flatest%2Fconfig.html%23cfg_MaxExactCountViews" target="documentation"></a></span></span>
+                    </td>
+
+                    <td class="nowrap">
+                        Представление</td>
+                    <td class="nowrap">
+                    </td>
+                </tr>
+                <tr id="row_tbl_3" class="is_view" data-filter-row="CHARACTER_SETS">
+                    <td class="text-center print_ignore">
+                        <input type="checkbox" name="selected_tbl[]" class="checkall" value="CHARACTER_SETS" id="checkbox_tb_1">
+                    </td>
+                    <th>
+                        <a href="index.php?route=/sql&amp;db=information_schema&amp;table=CHARACTER_SETS&amp;pos=0" title="">
+                            CHARACTER_SETS
+                        </a>
+                    </th>
+                    <td class="text-center print_ignore">
+                        <a id="7db57eec4b97d698ee5050078fd74dee_favorite_anchor" class="ajax favorite_table_anchor" href="index.php?route=/database/structure/favorite-table&amp;db=information_schema&amp;ajax_request=1&amp;favorite_table=CHARACTER_SETS&amp;add_favorite=1" title="Добавить в Избранное" data-favtargets="6a7169e432a959576d70fee96ae17555">
+                            <span class="nowrap"><img src="img/b_no_favorite.png" title="" alt="" class="icon ic_b_no_favorite">&nbsp;</span>
+                        </a>
+                    </td>
+                    <td class="text-center print_ignore">
+                        <a href="index.php?route=/sql&amp;db=information_schema&amp;table=CHARACTER_SETS&amp;pos=0">
+                            <span class="nowrap"><img src="img/b_browse.png" title="Обзор"  class="icon ic_b_browse">&nbsp;Обзор</span>
+                        </a>
+                    </td>
+                    <td class="text-center print_ignore">
+                        <a href="index.php?route=/table/structure&amp;db=information_schema&amp;table=CHARACTER_SETS">
+                            <span class="nowrap"><img src="img/b_props.png" title="Структура"  class="icon ic_b_props">&nbsp;Структура</span>
+                        </a>
+                    </td>
+                    <td class="text-center print_ignore">
+                        <a href="index.php?route=/table/search&amp;db=information_schema&amp;table=CHARACTER_SETS">
+                            <span class="nowrap"><img src="img/b_select.png" title="Поиск"  class="icon ic_b_select">&nbsp;Поиск</span>
+                        </a>
+                    </td>
+                    <td class="value tbl_rows" data-table="CHARACTER_SETS">
+                        <a href="index.php?route=/database/structure/real-row-count&amp;ajax_request=1&amp;db=information_schema&amp;table=CHARACTER_SETS" class="ajax real_row_count">
+                            <bdi>
+                                ~0
+                            </bdi>
+                        </a>
+                        <span class="pma_hint"><img src="img/b_help.png" title="" alt="" class="icon ic_b_help"><span class="hide"><a href="./url.php?url=https%3A%2F%2Fdocs.phpmyadmin.net%2Fen%2Flatest%2Fconfig.html%23cfg_MaxExactCountViews" target="documentation"></a></span></span>
+                    </td>
+
+                    <td class="nowrap">
+                        Представление</td>
+                    <td class="nowrap">
+                    </td>
+                </tr>
             </thbody>
+        </table>-->
+       <!-- <table id="tabledatabases" class="data">
+            <thead>
+            <tr>
+                <th></th>
+                <th>
+                    <a href="index.php?route=/server/databases&amp;statistics=0&amp;pos=0&amp;sort_by=SCHEMA_NAME&amp;sort_order=desc">
+                        База данных<img src="img/s_asc.png" title="По возрастанию"  class="icon ic_s_asc">
+                    </a>
+                </th>
+
+                <th>
+                    <a href="index.php?route=/server/databases&amp;statistics=0&amp;pos=0&amp;sort_by=DEFAULT_COLLATION_NAME&amp;sort_order=asc">
+                        Сравнение                                  </a>
+                </th>
+
+
+                <th>Репликация головного сервера</th>
+
+
+                <th>Действие</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr class="db-row" data-filter-row="DB96">
+                <td class="tool">
+                    <input type="checkbox" name="selected_dbs[]" class="checkall" title="db96" value="db96">
+                </td>
+
+                <td class="name">
+                    <a href="index.php?route=/database/structure&amp;db=db96" title="Перейти к базе данных 'db96'">
+                        db96
+                    </a>
+                </td>
+
+                <td class="value">
+                    <dfn title="Юникод (UCA 9.0.0), акценто-независимый, регистро-независимый">
+                        utf8mb4_0900_ai_ci
+                    </dfn>
+                </td>
+
+
+                <td class="tool text-center">
+                    <span class="nowrap"><img src="img/s_cancel.png" title="Не реплицировано"  class="icon ic_s_cancel">&nbsp;Не реплицировано</span>
+                </td>
+
+
+                <td class="tool">
+                    <a class="server_databases" data="`db96`" href="index.php?route=/server/privileges&amp;db=db96&amp;checkprivsdb=db96" title="Проверить привилегии для базы данных &quot;db96&quot;.">
+                        <span class="nowrap"><img src="img/s_rights.png" title="Проверить привилегии" alt="Проверить привилегии" class="icon ic_s_rights">&nbsp;Проверить привилегии</span>
+                    </a>
+                </td>
+            </tr>
+            <tr class="db-row" data-filter-row="DB96">
+                <td class="tool">
+                    <input type="checkbox" name="selected_dbs[]" class="checkall" title="db96" value="db96">
+                </td>
+
+                <td class="name">
+                    <a href="index.php?route=/database/structure&amp;db=db96" title="Перейти к базе данных 'db96'">
+                        db96
+                    </a>
+                </td>
+
+                <td class="value">
+                    <dfn title="Юникод (UCA 9.0.0), акценто-независимый, регистро-независимый">
+                        utf8mb4_0900_ai_ci
+                    </dfn>
+                </td>
+
+
+                <td class="tool text-center">
+                    <span class="nowrap"><img src="img/s_cancel.png" title="Не реплицировано"  class="icon ic_s_cancel">&nbsp;Не реплицировано</span>
+                </td>
+
+
+                <td class="tool">
+                    <a class="server_databases" data="`db96`" href="index.php?route=/server/privileges&amp;db=db96&amp;checkprivsdb=db96" title="Проверить привилегии для базы данных &quot;db96&quot;.">
+                        <span class="nowrap"><img src="img/s_rights.png" title="Проверить привилегии" alt="Проверить привилегии" class="icon ic_s_rights">&nbsp;Проверить привилегии</span>
+                    </a>
+                </td>
+            </tr>
+            <tr class="db-row" data-filter-row="DB96">
+                <td class="tool">
+                    <input type="checkbox" name="selected_dbs[]" class="checkall" title="db96" value="db96">
+                </td>
+
+                <td class="name">
+                    <a href="index.php?route=/database/structure&amp;db=db96" title="Перейти к базе данных 'db96'">
+                        db96
+                    </a>
+                </td>
+
+                <td class="value">
+                    <dfn title="Юникод (UCA 9.0.0), акценто-независимый, регистро-независимый">
+                        utf8mb4_0900_ai_ci
+                    </dfn>
+                </td>
+
+
+                <td class="tool text-center">
+                    <span class="nowrap"><img src="img/s_cancel.png" title="Не реплицировано"  class="icon ic_s_cancel">&nbsp;Не реплицировано</span>
+                </td>
+
+
+                <td class="tool">
+                    <a class="server_databases" data="`db96`" href="index.php?route=/server/privileges&amp;db=db96&amp;checkprivsdb=db96" title="Проверить привилегии для базы данных &quot;db96&quot;.">
+                        <span class="nowrap"><img src="img/s_rights.png" title="Проверить привилегии" alt="Проверить привилегии" class="icon ic_s_rights">&nbsp;Проверить привилегии</span>
+                    </a>
+                </td>
+            </tr>
+            <tr class="db-row" data-filter-row="DB96">
+                <td class="tool">
+                    <input type="checkbox" name="selected_dbs[]" class="checkall" title="db96" value="db96">
+                </td>
+
+                <td class="name">
+                    <a href="index.php?route=/database/structure&amp;db=db96" title="Перейти к базе данных 'db96'">
+                        db96
+                    </a>
+                </td>
+
+                <td class="value">
+                    <dfn title="Юникод (UCA 9.0.0), акценто-независимый, регистро-независимый">
+                        utf8mb4_0900_ai_ci
+                    </dfn>
+                </td>
+
+
+                <td class="tool text-center">
+                    <span class="nowrap"><img src="img/s_cancel.png" title="Не реплицировано"  class="icon ic_s_cancel">&nbsp;Не реплицировано</span>
+                </td>
+
+
+                <td class="tool">
+                    <a class="server_databases" data="`db96`" href="index.php?route=/server/privileges&amp;db=db96&amp;checkprivsdb=db96" title="Проверить привилегии для базы данных &quot;db96&quot;.">
+                        <span class="nowrap"><img src="img/s_rights.png" title="Проверить привилегии" alt="Проверить привилегии" class="icon ic_s_rights">&nbsp;Проверить привилегии</span>
+                    </a>
+                </td>
+            </tr>
+            <tr class="db-row" data-filter-row="DB96">
+                <td class="tool">
+                    <input type="checkbox" name="selected_dbs[]" class="checkall" title="db96" value="db96">
+                </td>
+
+                <td class="name">
+                    <a href="index.php?route=/database/structure&amp;db=db96" title="Перейти к базе данных 'db96'">
+                        db96
+                    </a>
+                </td>
+
+                <td class="value">
+                    <dfn title="Юникод (UCA 9.0.0), акценто-независимый, регистро-независимый">
+                        utf8mb4_0900_ai_ci
+                    </dfn>
+                </td>
+
+
+                <td class="tool text-center">
+                    <span class="nowrap"><img src="img/s_cancel.png" title="Не реплицировано"  class="icon ic_s_cancel">&nbsp;Не реплицировано</span>
+                </td>
+
+
+                <td class="tool">
+                    <a class="server_databases" data="`db96`" href="index.php?route=/server/privileges&amp;db=db96&amp;checkprivsdb=db96" title="Проверить привилегии для базы данных &quot;db96&quot;.">
+                        <span class="nowrap"><img src="img/s_rights.png" title="Проверить привилегии" alt="Проверить привилегии" class="icon ic_s_rights">&nbsp;Проверить привилегии</span>
+                    </a>
+                </td>
+            </tr>
+            <tr class="db-row" data-filter-row="DB96">
+                <td class="tool">
+                    <input type="checkbox" name="selected_dbs[]" class="checkall" title="db96" value="db96">
+                </td>
+
+                <td class="name">
+                    <a href="index.php?route=/database/structure&amp;db=db96" title="Перейти к базе данных 'db96'">
+                        db96
+                    </a>
+                </td>
+
+                <td class="value">
+                    <dfn title="Юникод (UCA 9.0.0), акценто-независимый, регистро-независимый">
+                        utf8mb4_0900_ai_ci
+                    </dfn>
+                </td>
+
+
+                <td class="tool text-center">
+                    <span class="nowrap"><img src="img/s_cancel.png" title="Не реплицировано"  class="icon ic_s_cancel">&nbsp;Не реплицировано</span>
+                </td>
+
+
+                <td class="tool">
+                    <a class="server_databases" data="`db96`" href="index.php?route=/server/privileges&amp;db=db96&amp;checkprivsdb=db96" title="Проверить привилегии для базы данных &quot;db96&quot;.">
+                        <span class="nowrap"><img src="img/s_rights.png" title="Проверить привилегии" alt="Проверить привилегии" class="icon ic_s_rights">&nbsp;Проверить привилегии</span>
+                    </a>
+                </td>
+            </tr>
+            <tr class="db-row" data-filter-row="DB96">
+                <td class="tool">
+                    <input type="checkbox" name="selected_dbs[]" class="checkall" title="db96" value="db96">
+                </td>
+
+                <td class="name">
+                    <a href="index.php?route=/database/structure&amp;db=db96" title="Перейти к базе данных 'db96'">
+                        db96
+                    </a>
+                </td>
+
+                <td class="value">
+                    <dfn title="Юникод (UCA 9.0.0), акценто-независимый, регистро-независимый">
+                        utf8mb4_0900_ai_ci
+                    </dfn>
+                </td>
+
+
+                <td class="tool text-center">
+                    <span class="nowrap"><img src="img/s_cancel.png" title="Не реплицировано"  class="icon ic_s_cancel">&nbsp;Не реплицировано</span>
+                </td>
+
+
+                <td class="tool">
+                    <a class="server_databases" data="`db96`" href="index.php?route=/server/privileges&amp;db=db96&amp;checkprivsdb=db96" title="Проверить привилегии для базы данных &quot;db96&quot;.">
+                        <span class="nowrap"><img src="img/s_rights.png" title="Проверить привилегии" alt="Проверить привилегии" class="icon ic_s_rights">&nbsp;Проверить привилегии</span>
+                    </a>
+                </td>
+            </tr>
+            <tr class="db-row" data-filter-row="DB96">
+                <td class="tool">
+                    <input type="checkbox" name="selected_dbs[]" class="checkall" title="db96" value="db96">
+                </td>
+
+                <td class="name">
+                    <a href="index.php?route=/database/structure&amp;db=db96" title="Перейти к базе данных 'db96'">
+                        db96
+                    </a>
+                </td>
+
+                <td class="value">
+                    <dfn title="Юникод (UCA 9.0.0), акценто-независимый, регистро-независимый">
+                        utf8mb4_0900_ai_ci
+                    </dfn>
+                </td>
+
+
+                <td class="tool text-center">
+                    <span class="nowrap"><img src="img/s_cancel.png" title="Не реплицировано"  class="icon ic_s_cancel">&nbsp;Не реплицировано</span>
+                </td>
+
+
+                <td class="tool">
+                    <a class="server_databases" data="`db96`" href="index.php?route=/server/privileges&amp;db=db96&amp;checkprivsdb=db96" title="Проверить привилегии для базы данных &quot;db96&quot;.">
+                        <span class="nowrap"><img src="img/s_rights.png" title="Проверить привилегии" alt="Проверить привилегии" class="icon ic_s_rights">&nbsp;Проверить привилегии</span>
+                    </a>
+                </td>
+            </tr>
+            <tr class="db-row" data-filter-row="DB96">
+                <td class="tool">
+                    <input type="checkbox" name="selected_dbs[]" class="checkall" title="db96" value="db96">
+                </td>
+
+                <td class="name">
+                    <a href="index.php?route=/database/structure&amp;db=db96" title="Перейти к базе данных 'db96'">
+                        db96
+                    </a>
+                </td>
+
+                <td class="value">
+                    <dfn title="Юникод (UCA 9.0.0), акценто-независимый, регистро-независимый">
+                        utf8mb4_0900_ai_ci
+                    </dfn>
+                </td>
+
+
+                <td class="tool text-center">
+                    <span class="nowrap"><img src="img/s_cancel.png" title="Не реплицировано"  class="icon ic_s_cancel">&nbsp;Не реплицировано</span>
+                </td>
+
+
+                <td class="tool">
+                    <a class="server_databases" data="`db96`" href="index.php?route=/server/privileges&amp;db=db96&amp;checkprivsdb=db96" title="Проверить привилегии для базы данных &quot;db96&quot;.">
+                        <span class="nowrap"><img src="img/s_rights.png" title="Проверить привилегии" alt="Проверить привилегии" class="icon ic_s_rights">&nbsp;Проверить привилегии</span>
+                    </a>
+                </td>
+            </tr>
+
+            </tbody>
         </table>-->
         <div id="general">
         <div class="row">
             <div class="col-8">
                  <div class="gen">
                      <div class="child">
-                         <h3>Demo server phpMyAdmin</h3>
+                         <h5>Demo server phpMyAdmin</h5>
                          <p class="desc">simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
                              ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                      </div>
                  </div>
                  <div class="gen1">
                      <div class="child">
-                         <h3>General settings</h3>
+                         <h5>General settings</h5>
                      </div>
                      <img src="img/s_passwd.png"  alt="" width="16px" height="16px">
                          <a href="#">Change password</a>
@@ -313,7 +816,7 @@
                  </div>
                      <div class="gen2">
                          <div class="child">
-                        <h3>Appearance Settings</h3>
+                        <h5>Appearance Settings</h5>
                      </div>
                          <img src="img/s_lang.png"  alt="" width="16px" height="16px">
                          <a href="#">Server connection collation</a>
@@ -344,7 +847,7 @@
                              </option>
                          </select>
                          <br>
-                             <li></li>
+                             <li class="aa"></li>
                              <select class="bbb">
                                  <option>
                                      Font size
@@ -362,7 +865,7 @@
                 <div class="general">
                         <div class="gen2">
                             <div class="child">
-                                <h3>Database server</h3>
+                                <h5>Database server</h5>
                             </div>
                             <ul>
                                 <li>Version information</li>
@@ -375,7 +878,7 @@
                     </div>
                         <div class="gen2">
                             <div class="child">
-                                <h3>Web server</h3>
+                                <h5>Web server</h5>
                             </div>
                             <ul>
                                 <li>Version information</li>
@@ -389,7 +892,7 @@
                     </div>
                         <div class="gen2">
                             <div class="child">
-                                <h3>phpMyAdmin</h3>
+                                <h5>phpMyAdmin</h5>
                             </div>
                             <ul>
                                 <li>Version information</li>
