@@ -840,7 +840,6 @@ function myFunction(x) {
 
 
     }
-
     else {
         document.getElementById('general').innerHTML ="<table id=\"structureTable\" class=\"data\">Table1\n" +
             "            <thead>\n" +
@@ -1225,42 +1224,46 @@ togDropdown();
 
 
 
-let menus=[
-    {name:"nav-item", img:"img/s_db.png", title:"Databases"
-    },
-    {name:"nav-item", img:"img/b_sql.png", title:"Sql"
-    },
-    {name: "nav-item", img: "img/s_status.png", title: "Status"
-    },
-    {name: "nav-item", img: "img/s_host.png", title: "Users"
-    },
-    {name: "nav-item", img: "img/b_export.png", title: "Export"
-    },
-    {name:"nav-item", img:"img/b_import.png", title:"Import"
-    },
-    {name: "nav-item", img: "img/b_tblops.png", title: "Settings"
-    }
-];
+let menus=[];
+//     {name:"nav-item", img:"img/s_db.png", title:"Databases"
+//     },
+//     {name:"nav-item", img:"img/b_sql.png", title:"Sql"
+//     },
+//     {name: "nav-item", img: "img/s_status.png", title: "Status"
+//     },
+//     {name: "nav-item", img: "img/s_host.png", title: "Users"
+//     },
+//     {name: "nav-item", img: "img/b_export.png", title: "Export"
+//     },
+//     {name:"nav-item", img:"img/b_import.png", title:"Import"
+//     },
+//     {name: "nav-item", img: "img/b_tblops.png", title: "Settings"
+//     }
+// ];
 var parent = document.getElementById('navigate');
-for (var i of menus){
-    var li=document.createElement('li');
-    li.setAttribute('class', i.name);
-    parent.appendChild(li);
-    var img = document.createElement('img');
-    img.src =i.img;
-    img.setAttribute('class','home');
-    img.setAttribute('alt','');
-    img.style.width=("16px");
-    img.style.height=("16px");
-    li.appendChild(img);
-    var ah=document.createElement('a');
-    ah.setAttribute('class', 'nav-link btn btn');
-    ah.setAttribute('href', '#');
-    ah.setAttribute('role', 'button');
-    ah.style.fontSize="17px";
-    ah.innerHTML=i.title;
-    li.appendChild(ah);
-}
+$(document).ready(function() {
+    $.ajax({url: "ajax/db.json", data:menus,dataType:'json',success:function (data) {
+        }});
+    for (var i of menus) {
+        var li = document.createElement('li');
+        li.setAttribute('class', i.name);
+        parent.appendChild(li);
+        var img = document.createElement('img');
+        img.src = i.img;
+        img.setAttribute('class', 'home');
+        img.setAttribute('alt', '');
+        img.style.width = ("16px");
+        img.style.height = ("16px");
+        li.appendChild(img);
+        var ah = document.createElement('a');
+        ah.setAttribute('class', 'nav-link btn btn');
+        ah.setAttribute('href', '#');
+        ah.setAttribute('role', 'button');
+        ah.style.fontSize = "17px";
+        ah.innerHTML = i.title;
+        li.appendChild(ah);
+    }
+});
 var arr=[
     {img:"img/b_plus.png",inner:"collapse multi-collapse inner",thirdName:"Toggle 1.1.2",id:"multiCollapseExample1",tog:"row",thirdId:"demo",child:"col",btn:"btn btn",classname:"btn btn-link",data:"collapse",href:"#multiCollapseExample1",secondName:"Toggle 1.1 element",onclick:"myFunction(1)", secondId:"multiCollapseExample11",target:"#demo",name:"Toggle 1 element",class:"plus",secondHref:"#multiCollapseExample11",src:"multiCollapseExample1"
     },

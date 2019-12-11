@@ -1,0 +1,24 @@
+{
+  "menus": [
+
+    {"name":"nav-item", "img":"img/s_db.png", "title":"Databases"
+    },
+    {"name":"nav-item", "img":"img/b_sql.png", "title":"Sql"
+    },
+    {"name": "nav-item", "img": "img/s_status.png", "title": "Status"
+    },
+    {"name": "nav-item", "img": "img/s_host.png", "title": "Users"
+    },
+    {"name": "nav-item", "img": "img/b_export.png", "title": "Export"
+    },
+    {"name":"nav-item", "img":"img/b_import.png", "title":"Import"
+    },
+    {"name": "nav-item", "img": "img/b_tblops.png", "title": "Settings"
+    }
+  ]
+
+}
+
+
+
+
