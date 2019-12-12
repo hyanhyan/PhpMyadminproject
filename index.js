@@ -1206,132 +1206,103 @@ function myFunction(x) {
     }
 
 }
-/*
-function togDropdown() {
-    if (document.getElementsByClassName('plus')) {
-        if (document.getElementById('plus').style.display == 'none') {
-            document.getElementById('plus').style.display = 'block';
-            document.getElementById('minus').style.display = 'none';
-        } else {
-            document.getElementById('plus').style.display = 'none';
-            document.getElementById('minus').style.display = 'block';
-        }
-    }
-}
-togDropdown();
-*/
-
-
-
-
-let menus=[];
-//     {name:"nav-item", img:"img/s_db.png", title:"Databases"
-//     },
-//     {name:"nav-item", img:"img/b_sql.png", title:"Sql"
-//     },
-//     {name: "nav-item", img: "img/s_status.png", title: "Status"
-//     },
-//     {name: "nav-item", img: "img/s_host.png", title: "Users"
-//     },
-//     {name: "nav-item", img: "img/b_export.png", title: "Export"
-//     },
-//     {name:"nav-item", img:"img/b_import.png", title:"Import"
-//     },
-//     {name: "nav-item", img: "img/b_tblops.png", title: "Settings"
-//     }
-// ];
 var parent = document.getElementById('navigate');
 $(document).ready(function() {
-    $.ajax({url: "ajax/db.json", data:menus,dataType:'json',success:function (data) {
-        }});
-    for (var i of menus) {
-        var li = document.createElement('li');
-        li.setAttribute('class', i.name);
-        parent.appendChild(li);
-        var img = document.createElement('img');
-        img.src = i.img;
-        img.setAttribute('class', 'home');
-        img.setAttribute('alt', '');
-        img.style.width = ("16px");
-        img.style.height = ("16px");
-        li.appendChild(img);
-        var ah = document.createElement('a');
-        ah.setAttribute('class', 'nav-link btn btn');
-        ah.setAttribute('href', '#');
-        ah.setAttribute('role', 'button');
-        ah.style.fontSize = "17px";
-        ah.innerHTML = i.title;
-        li.appendChild(ah);
+    $.ajax({
+        url: "ajax/db.json",
+        dataType: "json",
+        success: function (data) {
+            for (var i of data.menus) {
+                var li = document.createElement('li');
+                li.setAttribute('class', i.name);
+                parent.appendChild(li);
+                var img = document.createElement('img');
+                img.src = i.img;
+                img.setAttribute('class', 'home');
+                img.setAttribute('alt', '');
+                img.style.width = ("16px");
+                img.style.height = ("16px");
+                li.appendChild(img);
+                var ah = document.createElement('a');
+                ah.setAttribute('class', 'nav-link btn btn');
+                ah.setAttribute('href', '#');
+                ah.setAttribute('role', 'button');
+                ah.style.fontSize = "17px";
+                ah.innerHTML = i.title;
+                li.appendChild(ah);
+            }
+        },
+        error:function(xhr,status,error) {
+            var ttt=document.createElement('p');
+            ttt.innerText='you cant enter to your page';
+            parent.appendChild(ttt);
     }
-});
-var arr=[
-    {img:"img/b_plus.png",inner:"collapse multi-collapse inner",thirdName:"Toggle 1.1.2",id:"multiCollapseExample1",tog:"row",thirdId:"demo",child:"col",btn:"btn btn",classname:"btn btn-link",data:"collapse",href:"#multiCollapseExample1",secondName:"Toggle 1.1 element",onclick:"myFunction(1)", secondId:"multiCollapseExample11",target:"#demo",name:"Toggle 1 element",class:"plus",secondHref:"#multiCollapseExample11",src:"multiCollapseExample1"
-    },
-    {img:"img/b_plus.png",inner:"collapse multi-collapse inner",thirdName:"Toggle 2.1.2",id:"multiCollapseExample2",tog:"row",thirdId:"demo",child:"col",btn:"btn btn",classname:"btn btn-link",data:"collapse", href:"#multiCollapseExample2",secondName:"Toggle 2.1 element",onclick:"myFunction(2)", secondId:"multiCollapseExample22",target:"#demo1",name:"Toggle 2 element",class:"plus",secondHref:"#multiCollapseExample22",src:"multiCollapseExample2"
-    },
-    {img:"img/b_plus.png",inner:"collapse multi-collapse inner",thirdName:"Toggle 3.1.2",id:"multiCollapseExample3",tog:"row",thirdId:"demo",child:"col",btn:"btn btn",classname:"btn btn-link",secondControls:"multiCollapseExample33",data:"collapse", href:"#multiCollapseExample3",secondName:"Toggle 3.1 element",onclick:"myFunction(3)", target:"#demo3",name:"Toggle 3 element", secondId:"multiCollapseExample33",class:"plus",secondHref:"#multiCollapseExample33",src:"multiCollapseExample3"
-    }
-
-];
-/*$('<div>',{class:i.classname,css:{width:100,height:100}}).appendTo('#all');*/
+    });
+    });
 var all=document.getElementById('all');
 $(document).ready(function(){
-    for(var i of arr) {
-        var p=(document.createElement('p'));
-        $(p).appendTo(all);
-        var img=(document.createElement('img'));
-        img.src=i.img;
-        img.setAttribute('href',i.href);
-        img.setAttribute('data-toggle',i.data);
-        $(img).appendTo(p);
-        var ah=document.createElement('a');
-        ah.setAttribute('data-toggle',i.data);
-        ah.setAttribute('href',i.href);
-        ah.setAttribute('onclick',i.onclick);
-        $(ah).text(i.name);
-        $(ah).appendTo(p);
-        var row=(document.createElement('div'));
-        row.setAttribute('class',i.tog);
-        $(row).appendTo(all);
-        var col=(document.createElement('div'));
-        col.setAttribute('class',i.child);
-        $(col).appendTo(row);
-        var inner1=(document.createElement('div'));
-        inner1.setAttribute('id',i.id);
-        inner1.setAttribute('class',i.inner);
-        var p1=(document.createElement('p'));
-        $(p1).appendTo(inner1);
-        var img11=(document.createElement('img'));
-        img11.src=i.img;
-        img11.setAttribute('href',i.secondHref);
-        img11.setAttribute('data-toggle',i.data);
-        img11.style.width=("16px");
-        img11.style.height=("16px");
-        $(img11).appendTo(p1);
-        var ah1=document.createElement('a');
-        ah1.setAttribute('data-toggle',i.data);
-        ah1.setAttribute('href',i.secondHref);
-        ah1.setAttribute('onclick',i.onclick);
-        $(ah1).text(i.secondName);
-        $(ah1).appendTo(p1);
-        $(inner1).appendTo(col);
-        var inner2=(document.createElement('div'));
-        inner2.setAttribute('id',i.secondId);
-        inner2.setAttribute('class',i.inner);
-        $(inner2).appendTo(inner1);
-        var a2=(document.createElement('a'));
-        $(a2).text(i.thirdName);
-        $(a2).appendTo(inner2);
-        var a3=(document.createElement('a'));
-        a3.setAttribute('id',i.thirdId);
-        a3.setAttribute('onclick',i.onclick);
-        $(a3).appendTo(inner2);
-    }
+    $.ajax({url: "ajax/aside.json",
+        dataType:"json",
+        success: function (data) {
+            for (var i of data.arr) {
+                var p = (document.createElement('p'));
+                $(p).appendTo(all);
+                var img = (document.createElement('img'));
+                img.src = i.img;
+                img.setAttribute('href', i.href);
+                img.setAttribute('data-toggle', i.data);
+                $(img).appendTo(p);
+                var ah = document.createElement('a');
+                ah.setAttribute('data-toggle', i.data);
+                ah.setAttribute('href', i.href);
+                ah.setAttribute('onclick', i.onclick);
+                $(ah).text(i.name);
+                $(ah).appendTo(p);
+                var row = (document.createElement('div'));
+                row.setAttribute('class', i.tog);
+                $(row).appendTo(all);
+                var col = (document.createElement('div'));
+                col.setAttribute('class', i.child);
+                $(col).appendTo(row);
+                var inner1 = (document.createElement('div'));
+                inner1.setAttribute('id', i.id);
+                inner1.setAttribute('class', i.inner);
+                var p1 = (document.createElement('p'));
+                $(p1).appendTo(inner1);
+                var img11 = (document.createElement('img'));
+                img11.src = i.img;
+                img11.setAttribute('href', i.secondHref);
+                img11.setAttribute('data-toggle', i.data);
+                img11.style.width = ("16px");
+                img11.style.height = ("16px");
+                $(img11).appendTo(p1);
+                var ah1 = document.createElement('a');
+                ah1.setAttribute('data-toggle', i.data);
+                ah1.setAttribute('href', i.secondHref);
+                ah1.setAttribute('onclick', i.onclick);
+                $(ah1).text(i.secondName);
+                $(ah1).appendTo(p1);
+                $(inner1).appendTo(col);
+                var inner2 = (document.createElement('div'));
+                inner2.setAttribute('id', i.secondId);
+                inner2.setAttribute('class', i.inner);
+                $(inner2).appendTo(inner1);
+                var a2 = (document.createElement('a'));
+                $(a2).text(i.thirdName);
+                $(a2).appendTo(inner2);
+                var a3 = (document.createElement('a'));
+                a3.setAttribute('id', i.thirdId);
+                a3.setAttribute('onclick', i.onclick);
+                $(a3).appendTo(inner2);
+            }
+        },
+        error:function(xhr,status,error) {
+            var ddt=document.createElement('p');
+            ddt.innerText='you cant enter to your page';
+            all.appendChild(ddt);
+        }
 });
-
-
-
-
+});
 function switchVisible() {
     if (document.getElementById('Div1')) {
 
