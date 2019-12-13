@@ -1,0 +1,22 @@
+{
+  "tableArr": [
+    {
+      "name": "Table",
+      "type": "Checkbox",
+      "titleSec": "Character sets",
+      "img": "img/b_no_favorite.png"
+    },
+    {
+      "name": "Doing",
+      "type": "Checkbox",
+      "titleSec": "Show",
+      "img": "img/b_no_favorite.png"
+    },
+    {
+      "name": "Rows",
+      "type": "Checkbox",
+      "titleSec": "Structure",
+      "img": "img/b_no_favorite.png"
+    }
+  ]
+}
