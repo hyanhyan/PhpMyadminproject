@@ -1,22 +1,72 @@
 {
   "tableArr": [
     {
+      "secondName": "Structure",
+      "secTitle": "Show",
       "name": "Table",
+      "type": "Checkbox",
+      "titleSec": "Character sets",
+      "img": "img/b_no_favorite.png"
+
+    },
+    {
+      "secondName": "Structure",
+      "secTitle": "Show",
+      "name": "Doing",
+      "type": "Checkbox",
+      "titleSec": "Character sets",
+      "img": "img/b_no_favorite.png"
+
+    },
+    {
+      "secondName": "Structure",
+      "secTitle": "Show",
+      "name": "Rows",
+      "type": "Checkbox",
+      "titleSec": "Character sets",
+      "img": "img/b_no_favorite.png"
+
+    },
+    {
+      "secondName": "Structure",
+      "secTitle": "Show",
+      "name": "Type",
       "type": "Checkbox",
       "titleSec": "Character sets",
       "img": "img/b_no_favorite.png"
     },
     {
-      "name": "Doing",
+      "secondName": "Structure",
+      "secTitle": "Show",
+      "name": "Compare",
       "type": "Checkbox",
-      "titleSec": "Show",
+      "titleSec": "Character sets",
       "img": "img/b_no_favorite.png"
+
     },
     {
-      "name": "Rows",
+      "secondName": "Structure",
+      "secTitle": "Show",
       "type": "Checkbox",
-      "titleSec": "Structure",
+      "titleSec": "Character sets",
       "img": "img/b_no_favorite.png"
+
+    },
+    {
+      "secondName": "Structure",
+      "secTitle": "Show",
+      "type": "Checkbox",
+      "titleSec": "Character sets",
+      "img": "img/b_no_favorite.png"
+
+    },
+    {
+      "secondName": "Structure",
+      "secTitle": "Show",
+      "type": "Checkbox",
+      "titleSec": "Character sets",
+      "img": "img/b_no_favorite.png"
+
     }
   ]
 }

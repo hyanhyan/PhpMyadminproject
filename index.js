@@ -1,9 +1,21 @@
 function myFunction(x) {
-    if (x === 0) {
-        (document.getElementById('general').innerHTML = " <div id=\"general\">\n" +
+     if (x === 1) {
+        nnn.style.display="block";
+        document.getElementById('general').innerHTML = "<div id=\"nnn\"></div>";
+    }
+    else if (x === 2) {
+        nnn.style.display="block";
+        document.getElementById('general').innerHTML = "<div id=\"nnn\"></div>";
+    }
+    else if (x === 3) {
+        nnn.style.display="block";
+        document.getElementById('general').innerHTML = "<div id=\"nnn\"></div>";
+    }
+    else if (x === 4) {
+        (document.getElementById('general').innerHTML = "<div id=\"general\">\n" +
             "        <div class=\"row\">\n" +
             "            <div class=\"col-8\">\n" +
-            "                 <div class=\"gen\">\n" +
+            "                 <div class=\"gen\"><div id=\"nnt\"></div>\n" +
             "                     <div class=\"child\">\n" +
             "                         <h5>Demo server phpMyAdmin</h5>\n" +
             "                         <p class=\"desc\">simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text\n" +
@@ -78,1016 +90,604 @@ function myFunction(x) {
             "             </div>\n" +
             "            <div class=\"col-4\">\n" +
             "                <div class=\"general\">\n" +
-            "                        <div class=\"gen2\">\n" +
-            "                            <div class=\"child\">\n" +
-            "                                <h5>Database server</h5>\n" +
+            "                        <div class=\"card mt-4\">\n" +
+            "                            <div class=\"card-header\">\n" +
+            "                                Server database            </div>\n" +
+            "                            <div class=\"card-body\">\n" +
+            "                                <ul>\n" +
+            "                                    <li id=\"li_server_info\">\n" +
+            "                                        Сервер:                phpMyAdmin demo - MySQL (192.168.30.23 via TCP/IP)\n" +
+            "                                    </li>\n" +
+            "                                    <li id=\"li_server_type\">\n" +
+            "                                        Тип сервера:                MySQL\n" +
+            "                                    </li>\n" +
+            "                                    <li id=\"li_server_connection\">\n" +
+            "                                        Соединение сервера:                <span class=\"caution\">SSL не используется</span> <a href=\"./url.php?url=https%3A%2F%2Fdocs.phpmyadmin.net%2Fen%2Flatest%2Fsetup.html%23ssl\" target=\"documentation\"><img src=\"img/b_docs.png\" title=\"Документация\" alt=\"Документация\" class=\"icon ic_b_help\"></a>\n" +
+            "                                    </li>\n" +
+            "                                    <li id=\"li_server_version\">\n" +
+            "                                        Версия сервера:                8.0.18 - MySQL Community Server - GPL\n" +
+            "                                    </li>\n" +
+            "                                    <li id=\"li_mysql_proto\">\n" +
+            "                                        Версия протокола:                10\n" +
+            "                                    </li>\n" +
+            "                                    <li id=\"li_user_info\">\n" +
+            "                                        Пользователь:                root@192.168.30.20\n" +
+            "                                    </li>\n" +
+            "                                    <li id=\"li_mysql_charset\">\n" +
+            "                                        Кодировка сервера:                <span lang=\"en\" dir=\"ltr\">\n" +
+            "                  UTF-8 Unicode (utf8mb4)\n" +
+            "                </span>\n" +
+            "                                    </li>\n" +
+            "                                </ul>\n" +
             "                            </div>\n" +
-            "                            <ul>\n" +
-            "                                <li>Version information</li>\n" +
-            "                                <li>Version information</li>\n" +
-            "                                <li>Version information</li>\n" +
-            "                                <li>Version information</li>\n" +
-            "                                <li>Version information</li>\n" +
-            "                                <li>Version information</li>\n" +
-            "                            </ul>\n" +
-            "                    </div>\n" +
-            "                        <div class=\"gen2\">\n" +
-            "                            <div class=\"child\">\n" +
-            "                                <h5>Web server</h5>\n" +
-            "                            </div>\n" +
-            "                            <ul>\n" +
-            "                                <li>Version information</li>\n" +
-            "                                <li>Version information</li>\n" +
-            "                                <li>Version information</li>\n" +
-            "                                <li>Version information</li>\n" +
-            "                                <li>Version information</li>\n" +
-            "                                <li>Version information</li>\n" +
+            "                        </div>\n" +
             "\n" +
-            "                            </ul>\n" +
-            "                    </div>\n" +
-            "                        <div class=\"gen2\">\n" +
-            "                            <div class=\"child\">\n" +
-            "                                <h5>phpMyAdmin</h5>\n" +
+            "                        <div class=\"card mt-4\">\n" +
+            "                            <div class=\"card-header\">\n" +
+            "                                Web server           </div>\n" +
+            "                            <div class=\"card-body\">\n" +
+            "                                <ul>\n" +
+            "                                    <li id=\"li_web_server_software\">\n" +
+            "                                        nginx/1.10.3\n" +
+            "                                    </li>\n" +
+            "                                    <li id=\"li_mysql_client_version\">\n" +
+            "                                        Версия клиента базы данных:                  libmysql - mysqlnd 7.4.0\n" +
+            "                                    </li>\n" +
+            "                                    <li id=\"li_used_php_extension\">\n" +
+            "                                        PHP расширение:                                      mysqli\n" +
+            "                                        <a href=\"./url.php?url=https%3A%2F%2Fsecure.php.net%2Fmanual%2Fru%2Fbook.mysqli.php\" target=\"documentation\"><img src=\"img/b_docs.png\" title=\"Документация\" alt=\"Документация\" class=\"icon ic_b_help\"></a>\n" +
+            "                                        curl\n" +
+            "                                        <a href=\"./url.php?url=https%3A%2F%2Fsecure.php.net%2Fmanual%2Fru%2Fbook.curl.php\" target=\"documentation\"><img src=\"img/b_docs.png\" title=\"Документация\" alt=\"Документация\" class=\"icon ic_b_help\"></a>\n" +
+            "                                        mbstring\n" +
+            "                                        <a href=\"./url.php?url=https%3A%2F%2Fsecure.php.net%2Fmanual%2Fru%2Fbook.mbstring.php\" target=\"documentation\"><img src=\"img/b_docs.png\" title=\"Документация\" alt=\"Документация\" class=\"icon ic_b_help\"></a>\n" +
+            "                                    </li>\n" +
+            "                                    <li id=\"li_used_php_version\">\n" +
+            "                                        Версия PHP:                  7.4.0\n" +
+            "                                    </li>\n" +
+            "                                </ul>\n" +
             "                            </div>\n" +
-            "                            <ul>\n" +
-            "                                <li>Version information</li>\n" +
-            "                                <li>Version information</li>\n" +
-            "                                <li>Version information</li>\n" +
-            "                                <li>Version information</li>\n" +
-            "                                <li>Version information</li>\n" +
-            "                                <li>Version information</li>\n" +
+            "                        </div>\n" +
             "\n" +
-            "                            </ul>\n" +
+            "                        <div class=\"card mt-4\">\n" +
+            "                            <div class=\"card-header\">\n" +
+            "                                phpMyAdmin\n" +
+            "                            </div>\n" +
+            "                            <div class=\"card-body\">\n" +
+            "                                <ul>\n" +
+            "                                    <li id=\"li_pma_version\" class=\"jsversioncheck\">\n" +
+            "                                        Информация о версии:                <span class=\"version\">5.1.0-dev</span><span class=\"latest\">, последняя стабильная версия: <a href=\"https://www.phpmyadmin.net/files/4.9.2/\" class=\"disableAjax\">4.9.2</a></span></li><li id=\"li_pma_version_git\">\n" +
+            "\n" +
+            "                                    Git ревизия: <a href=\"./url.php?url=https%3A%2F%2Fgithub.com%2Fphpmyadmin%2Fphpmyadmin%2Fcommit%2F72ddaccdab9bc870e0296b09908333c218cee521\" rel=\"noopener noreferrer\" target=\"_blank\"><strong title=\"Merge pull request #15647 from gurrrung/15618\n" +
+            "\n" +
+            "fixed the font size\n" +
+            "\n" +
+            "fixes #15618\n" +
+            "\n" +
+            "earlier font-size:1em was used which was\n" +
+            "being overrided by a default BS styling\n" +
+            "reverted back to old styling by overriding\n" +
+            "it.\n" +
+            "\n" +
+            "Closes #15645\">72ddacc</strong></a> из <a href=\"./url.php?url=https%3A%2F%2Fgithub.com%2Fphpmyadmin%2Fphpmyadmin%2Ftree%2Fmaster\" rel=\"noopener noreferrer\" target=\"_blank\">master</a> ветки,<br> отправлено Дек 15 2019 г., 15:40, <a href=\"mailto:noreply@github.com\">GitHub</a>, <br>создано Дек 15 2019 г., 15:40, <a href=\"mailto:mauricio@fauth.dev\">Maurício Meneghini Fauth</a>\n" +
+            "                                </li>\n" +
+            "                                    <li id=\"li_pma_docs\">\n" +
+            "                                        <a href=\"./url.php?url=https%3A%2F%2Fdocs.phpmyadmin.net%2Fen%2Flatest%2Findex.html\" target=\"_blank\" rel=\"noopener noreferrer\">\n" +
+            "                                            Документация                </a>\n" +
+            "                                    </li>\n" +
+            "                                    <li id=\"li_pma_homepage\">\n" +
+            "                                        <a href=\"./url.php?url=https%3A%2F%2Fwww.phpmyadmin.net%2F\" target=\"_blank\" rel=\"noopener noreferrer\">\n" +
+            "                                            Официальная страница phpMyAdmin                </a>\n" +
+            "                                    </li>\n" +
+            "                                    <li id=\"li_pma_contribute\">\n" +
+            "                                        <a href=\"./url.php?url=https%3A%2F%2Fwww.phpmyadmin.net%2Fcontribute%2F\" target=\"_blank\" rel=\"noopener noreferrer\">\n" +
+            "                                            Пожертвовать                </a>\n" +
+            "                                    </li>\n" +
+            "                                    <li id=\"li_pma_support\">\n" +
+            "                                        <a href=\"./url.php?url=https%3A%2F%2Fwww.phpmyadmin.net%2Fsupport%2F\" target=\"_blank\" rel=\"noopener noreferrer\">\n" +
+            "                                            Получить помощь                </a>\n" +
+            "                                    </li>\n" +
+            "                                    <li id=\"li_pma_changes\">\n" +
+            "                                        <a href=\"index.php?route=/changelog\" target=\"_blank\">\n" +
+            "                                            Список изменений                </a>\n" +
+            "                                    </li>\n" +
+            "                                    <li id=\"li_pma_license\">\n" +
+            "                                        <a href=\"index.php?route=/license\" target=\"_blank\">\n" +
+            "                                            Лицензия                </a>\n" +
+            "                                    </li>\n" +
+            "                                </ul>\n" +
+            "                            </div>\n" +
+            "                        </div>\n" +
             "                    </div>\n" +
-            "                </div>\n" +
             "        </div>\n" +
             "        </div>\n" +
             "        </div>")
-
     }
-    else if (x === 2) {
-        $(".remove").remove();
-        $(document).ready(function () {
-            $.ajax({
-                url: "ajax/table.json",
-                dataType: "json",
-                success: function (data) {
-                    for (var i of data.tableArr) {
-                        var table = document.createElement('table');
-                        var th = document.createElement('th');
-                        var a = document.createElement('a');
-                        $(a).text(i.name);
-                        $(a).appendTo(th);
-                        $(th).appendTo(table);
-                        var tr = document.createElement('tr');
-                        $(tr).appendTo(table);
-                        var td = document.createElement('td');
-                        $(td).text(i.titleSec);
-                        $(td).appendTo(tr);
-                        var input = document.createElement('input');
-                        input.setAttribute('type', i.type);
-                        $(input).appendTo(td);
-                        var img = document.createElement('img');
-                        img.src = i.img;
-                        $(img).appendTo(td);
-
-                    }
-                }
-            });
-        });
-
-}
-    else if (x === 3) {
-        document.getElementById('general').innerHTML = "<table id=\"structureTable\" class=\"data\">Table3\n" +
-            "            <thead>\n" +
-            "            <tr>\n" +
-            "                <th class=\"print_ignore\"></th>\n" +
-            "                <th><a href=\"index.php?route=/database/structure&amp;db=information_schema&amp;pos=0&amp;sort=table&amp;sort_order=DESC\" title=\"Отсортировать\">Таблица </a></th>\n" +
-            "\n" +
-            "                <th colspan=\"4\" class=\"print_ignore\">\n" +
-            "                    Действие</th>\n" +
-            "                <th>\n" +
-            "                    <a href=\"index.php?route=/database/structure&amp;db=information_schema&amp;pos=0&amp;sort=records&amp;sort_order=DESC\" title=\"Отсортировать\">Строки</a>\n" +
-            "                </th>\n" +
-            "                <th><a href=\"index.php?route=/database/structure&amp;db=information_schema&amp;pos=0&amp;sort=type&amp;sort_order=ASC\" title=\"Отсортировать\">Тип</a></th>\n" +
-            "                <th><a href=\"index.php?route=/database/structure&amp;db=information_schema&amp;pos=0&amp;sort=collation&amp;sort_order=ASC\" title=\"Отсортировать\">Сравнение</a></th>\n" +
-            "            </tr>\n" +
-            "            </thead>\n" +
-            "            <thbody>\n" +
-            "            <tr id=\"row_tbl_1\" class=\"is_view\" data-filter-row=\"CHARACTER_SETS\">\n" +
-            "                <td class=\"text-center print_ignore\">\n" +
-            "                    <input type=\"checkbox\" name=\"selected_tbl[]\" class=\"checkall\" value=\"CHARACTER_SETS\" id=\"checkbox_tbl_1\">\n" +
-            "                </td>\n" +
-            "                <th>\n" +
-            "                    <a href=\"index.php?route=/sql&amp;db=information_schema&amp;table=CHARACTER_SETS&amp;pos=0\" title=\"\">\n" +
-            "                        CHARACTER_SETS\n" +
-            "                    </a>\n" +
-            "                </th>\n" +
-            "                <td class=\"text-center print_ignore\">\n" +
-            "                    <a id=\"7db57eec4b97d698ee5050078fd74dee_favorite_anchorr\" class=\"ajax favorite_table_anchor\" href=\"index.php?route=/database/structure/favorite-table&amp;db=information_schema&amp;ajax_request=1&amp;favorite_table=CHARACTER_SETS&amp;add_favorite=1\" title=\"Добавить в Избранное\" data-favtargets=\"6a7169e432a959576d70fee96ae17555\">\n" +
-            "                        <span class=\"nowrap\"><img src=\"img/b_no_favorite.png\" title=\"\" alt=\"\" class=\"icon ic_b_no_favorite\">&nbsp;</span>\n" +
-            "                    </a>\n" +
-            "                </td>\n" +
-            "                <td class=\"text-center print_ignore\">\n" +
-            "                    <a href=\"index.php?route=/sql&amp;db=information_schema&amp;table=CHARACTER_SETS&amp;pos=0\">\n" +
-            "                        <span class=\"nowrap\"><img src=\"img/b_browse.png\" title=\"Обзор\"  class=\"icon ic_b_browse\">&nbsp;Обзор</span>\n" +
-            "                    </a>\n" +
-            "                </td>\n" +
-            "                <td class=\"text-center print_ignore\">\n" +
-            "                    <a href=\"index.php?route=/table/structure&amp;db=information_schema&amp;table=CHARACTER_SETS\">\n" +
-            "                        <span class=\"nowrap\"><img src=\"img/b_props.png\" title=\"Структура\"  class=\"icon ic_b_props\">&nbsp;Структура</span>\n" +
-            "                    </a>\n" +
-            "                </td>\n" +
-            "                <td class=\"text-center print_ignore\">\n" +
-            "                    <a href=\"index.php?route=/table/search&amp;db=information_schema&amp;table=CHARACTER_SETS\">\n" +
-            "                        <span class=\"nowrap\"><img src=\"img/b_select.png\" title=\"Поиск\"  class=\"icon ic_b_select\">&nbsp;Поиск</span>\n" +
-            "                    </a>\n" +
-            "                </td>\n" +
-            "                <td class=\"value tbl_rows\" data-table=\"CHARACTER_SETS\">\n" +
-            "                    <a href=\"index.php?route=/database/structure/real-row-count&amp;ajax_request=1&amp;db=information_schema&amp;table=CHARACTER_SETS\" class=\"ajax real_row_count\">\n" +
-            "                        <bdi>\n" +
-            "                            ~0\n" +
-            "                        </bdi>\n" +
-            "                    </a>\n" +
-            "                    <span class=\"pma_hint\"><img src=\"img/b_help.png\" title=\"\" alt=\"\" class=\"icon ic_b_help\"><span class=\"hide\"><a href=\"./url.php?url=https%3A%2F%2Fdocs.phpmyadmin.net%2Fen%2Flatest%2Fconfig.html%23cfg_MaxExactCountViews\" target=\"documentation\"></a></span></span>\n" +
-            "                </td>\n" +
-            "\n" +
-            "                <td class=\"nowrap\">\n" +
-            "                    Представление</td>\n" +
-            "                <td class=\"nowrap\">\n" +
-            "                </td>\n" +
-            "            </tr>\n" +
-            "            <tr id=\"row_tbl_2\" class=\"is_view\" data-filter-row=\"CHARACTER_SETS\">\n" +
-            "                <td class=\"text-center print_ignore\">\n" +
-            "                    <input type=\"checkbox\" name=\"selected_tbl[]\" class=\"checkall\" value=\"CHARACTER_SETS\" id=\"checkbo_tbl_1\">\n" +
-            "                </td>\n" +
-            "                <th>\n" +
-            "                    <a href=\"index.php?route=/sql&amp;db=information_schema&amp;table=CHARACTER_SETS&amp;pos=0\" title=\"\">\n" +
-            "                        CHARACTER_SETS\n" +
-            "                    </a>\n" +
-            "                </th>\n" +
-            "                <td class=\"text-center print_ignore\">\n" +
-            "                    <a id=\"7db57eec4b97d698ee5050078fd74dee_favorite_ancho\" class=\"ajax favorite_table_anchor\" href=\"index.php?route=/database/structure/favorite-table&amp;db=information_schema&amp;ajax_request=1&amp;favorite_table=CHARACTER_SETS&amp;add_favorite=1\" title=\"Добавить в Избранное\" data-favtargets=\"6a7169e432a959576d70fee96ae17555\">\n" +
-            "                        <span class=\"nowrap\"><img src=\"img/b_no_favorite.png\" title=\"\" alt=\"\" class=\"icon ic_b_no_favorite\">&nbsp;</span>\n" +
-            "                    </a>\n" +
-            "                </td>\n" +
-            "                <td class=\"text-center print_ignore\">\n" +
-            "                    <a href=\"index.php?route=/sql&amp;db=information_schema&amp;table=CHARACTER_SETS&amp;pos=0\">\n" +
-            "                        <span class=\"nowrap\"><img src=\"img/b_browse.png\" title=\"Обзор\"  class=\"icon ic_b_browse\">&nbsp;Обзор</span>\n" +
-            "                    </a>\n" +
-            "                </td>\n" +
-            "                <td class=\"text-center print_ignore\">\n" +
-            "                    <a href=\"index.php?route=/table/structure&amp;db=information_schema&amp;table=CHARACTER_SETS\">\n" +
-            "                        <span class=\"nowrap\"><img src=\"img/b_props.png\" title=\"Структура\"  class=\"icon ic_b_props\">&nbsp;Структура</span>\n" +
-            "                    </a>\n" +
-            "                </td>\n" +
-            "                <td class=\"text-center print_ignore\">\n" +
-            "                    <a href=\"index.php?route=/table/search&amp;db=information_schema&amp;table=CHARACTER_SETS\">\n" +
-            "                        <span class=\"nowrap\"><img src=\"img/b_select.png\" title=\"Поиск\"  class=\"icon ic_b_select\">&nbsp;Поиск</span>\n" +
-            "                    </a>\n" +
-            "                </td>\n" +
-            "                <td class=\"value tbl_rows\" data-table=\"CHARACTER_SETS\">\n" +
-            "                    <a href=\"index.php?route=/database/structure/real-row-count&amp;ajax_request=1&amp;db=information_schema&amp;table=CHARACTER_SETS\" class=\"ajax real_row_count\">\n" +
-            "                        <bdi>\n" +
-            "                            ~0\n" +
-            "                        </bdi>\n" +
-            "                    </a>\n" +
-            "                    <span class=\"pma_hint\"><img src=\"img/b_help.png\" title=\"\" alt=\"\" class=\"icon ic_b_help\"><span class=\"hide\"><a href=\"./url.php?url=https%3A%2F%2Fdocs.phpmyadmin.net%2Fen%2Flatest%2Fconfig.html%23cfg_MaxExactCountViews\" target=\"documentation\"></a></span></span>\n" +
-            "                </td>\n" +
-            "\n" +
-            "                <td class=\"nowrap\">\n" +
-            "                    Представление</td>\n" +
-            "                <td class=\"nowrap\">\n" +
-            "                </td>\n" +
-            "            </tr>\n" +
-            "            <tr id=\"row_tbl_3\" class=\"is_view\" data-filter-row=\"CHARACTER_SETS\">\n" +
-            "                <td class=\"text-center print_ignore\">\n" +
-            "                    <input type=\"checkbox\" name=\"selected_tbl[]\" class=\"checkall\" value=\"CHARACTER_SETS\" id=\"checkbox_tb_1\">\n" +
-            "                </td>\n" +
-            "                <th>\n" +
-            "                    <a href=\"index.php?route=/sql&amp;db=information_schema&amp;table=CHARACTER_SETS&amp;pos=0\" title=\"\">\n" +
-            "                        CHARACTER_SETS\n" +
-            "                    </a>\n" +
-            "                </th>\n" +
-            "                <td class=\"text-center print_ignore\">\n" +
-            "                    <a id=\"7db57eec4b97d698ee5050078fd74dee_favorite_anchor\" class=\"ajax favorite_table_anchor\" href=\"index.php?route=/database/structure/favorite-table&amp;db=information_schema&amp;ajax_request=1&amp;favorite_table=CHARACTER_SETS&amp;add_favorite=1\" title=\"Добавить в Избранное\" data-favtargets=\"6a7169e432a959576d70fee96ae17555\">\n" +
-            "                        <span class=\"nowrap\"><img src=\"img/b_no_favorite.png\" title=\"\" alt=\"\" class=\"icon ic_b_no_favorite\">&nbsp;</span>\n" +
-            "                    </a>\n" +
-            "                </td>\n" +
-            "                <td class=\"text-center print_ignore\">\n" +
-            "                    <a href=\"index.php?route=/sql&amp;db=information_schema&amp;table=CHARACTER_SETS&amp;pos=0\">\n" +
-            "                        <span class=\"nowrap\"><img src=\"img/b_browse.png\" title=\"Обзор\"  class=\"icon ic_b_browse\">&nbsp;Обзор</span>\n" +
-            "                    </a>\n" +
-            "                </td>\n" +
-            "                <td class=\"text-center print_ignore\">\n" +
-            "                    <a href=\"index.php?route=/table/structure&amp;db=information_schema&amp;table=CHARACTER_SETS\">\n" +
-            "                        <span class=\"nowrap\"><img src=\"img/b_props.png\" title=\"Структура\"  class=\"icon ic_b_props\">&nbsp;Структура</span>\n" +
-            "                    </a>\n" +
-            "                </td>\n" +
-            "                <td class=\"text-center print_ignore\">\n" +
-            "                    <a href=\"index.php?route=/table/search&amp;db=information_schema&amp;table=CHARACTER_SETS\">\n" +
-            "                        <span class=\"nowrap\"><img src=\"img/b_select.png\" title=\"Поиск\"  class=\"icon ic_b_select\">&nbsp;Поиск</span>\n" +
-            "                    </a>\n" +
-            "                </td>\n" +
-            "                <td class=\"value tbl_rows\" data-table=\"CHARACTER_SETS\">\n" +
-            "                    <a href=\"index.php?route=/database/structure/real-row-count&amp;ajax_request=1&amp;db=information_schema&amp;table=CHARACTER_SETS\" class=\"ajax real_row_count\">\n" +
-            "                        <bdi>\n" +
-            "                            ~0\n" +
-            "                        </bdi>\n" +
-            "                    </a>\n" +
-            "                    <span class=\"pma_hint\"><img src=\"img/b_help.png\" title=\"\" alt=\"\" class=\"icon ic_b_help\"><span class=\"hide\"><a href=\"./url.php?url=https%3A%2F%2Fdocs.phpmyadmin.net%2Fen%2Flatest%2Fconfig.html%23cfg_MaxExactCountViews\" target=\"documentation\"></a></span></span>\n" +
-            "                </td>\n" +
-            "\n" +
-            "                <td class=\"nowrap\">\n" +
-            "                    Представление</td>\n" +
-            "                <td class=\"nowrap\">\n" +
-            "                </td>\n" +
-            "            </tr>\n" +
-            "            </thbody>\n" +
-            "        </table>"
-    }
-    else if (x === 5) {
+    else if(x===5) {
         document.getElementById('general').innerHTML = "<table id=\"tabledatabases\" class=\"data\">\n" +
-            "            <thead>\n" +
-            "            <tr>\n" +
-            "                <th></th>\n" +
-            "                <th>\n" +
-            "                    <a href=\"index.php?route=/server/databases&amp;statistics=0&amp;pos=0&amp;sort_by=SCHEMA_NAME&amp;sort_order=desc\">\n" +
-            "                        База данных<img src=\"img/s_asc.png\" title=\"По возрастанию\"  class=\"icon ic_s_asc\">\n" +
-            "                    </a>\n" +
-            "                </th>\n" +
-            "\n" +
-            "                <th>\n" +
-            "                    <a href=\"index.php?route=/server/databases&amp;statistics=0&amp;pos=0&amp;sort_by=DEFAULT_COLLATION_NAME&amp;sort_order=asc\">\n" +
-            "                        Сравнение                                  </a>\n" +
-            "                </th>\n" +
-            "\n" +
-            "\n" +
-            "                <th>Репликация головного сервера</th>\n" +
-            "\n" +
-            "\n" +
-            "                <th>Действие</th>\n" +
-            "            </tr>\n" +
-            "            </thead>\n" +
-            "\n" +
-            "            <tbody>\n" +
-            "            <tr class=\"db-row\" data-filter-row=\"DB96\">\n" +
-            "                <td class=\"tool\">\n" +
-            "                    <input type=\"checkbox\" name=\"selected_dbs[]\" class=\"checkall\" title=\"db96\" value=\"db96\">\n" +
-            "                </td>\n" +
-            "\n" +
-            "                <td class=\"name\">\n" +
-            "                    <a href=\"index.php?route=/database/structure&amp;db=db96\" title=\"Перейти к базе данных 'db96'\">\n" +
-            "                        db96\n" +
-            "                    </a>\n" +
-            "                </td>\n" +
-            "\n" +
-            "                <td class=\"value\">\n" +
-            "                    <dfn title=\"Юникод (UCA 9.0.0), акценто-независимый, регистро-независимый\">\n" +
-            "                        utf8mb4_0900_ai_ci\n" +
-            "                    </dfn>\n" +
-            "                </td>\n" +
-            "\n" +
-            "\n" +
-            "                <td class=\"tool text-center\">\n" +
-            "                    <span class=\"nowrap\"><img src=\"img/s_cancel.png\" title=\"Не реплицировано\"  class=\"icon ic_s_cancel\">&nbsp;Не реплицировано</span>\n" +
-            "                </td>\n" +
-            "\n" +
-            "\n" +
-            "                <td class=\"tool\">\n" +
-            "                    <a class=\"server_databases\" data=\"`db96`\" href=\"index.php?route=/server/privileges&amp;db=db96&amp;checkprivsdb=db96\" title=\"Проверить привилегии для базы данных &quot;db96&quot;.\">\n" +
-            "                        <span class=\"nowrap\"><img src=\"img/s_rights.png\" title=\"Проверить привилегии\" alt=\"Проверить привилегии\" class=\"icon ic_s_rights\">&nbsp;Проверить привилегии</span>\n" +
-            "                    </a>\n" +
-            "                </td>\n" +
-            "            </tr>\n" +
-            "            <tr class=\"db-row\" data-filter-row=\"DB96\">\n" +
-            "                <td class=\"tool\">\n" +
-            "                    <input type=\"checkbox\" name=\"selected_dbs[]\" class=\"checkall\" title=\"db96\" value=\"db96\">\n" +
-            "                </td>\n" +
-            "\n" +
-            "                <td class=\"name\">\n" +
-            "                    <a href=\"index.php?route=/database/structure&amp;db=db96\" title=\"Перейти к базе данных 'db96'\">\n" +
-            "                        db96\n" +
-            "                    </a>\n" +
-            "                </td>\n" +
-            "\n" +
-            "                <td class=\"value\">\n" +
-            "                    <dfn title=\"Юникод (UCA 9.0.0), акценто-независимый, регистро-независимый\">\n" +
-            "                        utf8mb4_0900_ai_ci\n" +
-            "                    </dfn>\n" +
-            "                </td>\n" +
-            "\n" +
-            "\n" +
-            "                <td class=\"tool text-center\">\n" +
-            "                    <span class=\"nowrap\"><img src=\"img/s_cancel.png\" title=\"Не реплицировано\"  class=\"icon ic_s_cancel\">&nbsp;Не реплицировано</span>\n" +
-            "                </td>\n" +
-            "\n" +
-            "\n" +
-            "                <td class=\"tool\">\n" +
-            "                    <a class=\"server_databases\" data=\"`db96`\" href=\"index.php?route=/server/privileges&amp;db=db96&amp;checkprivsdb=db96\" title=\"Проверить привилегии для базы данных &quot;db96&quot;.\">\n" +
-            "                        <span class=\"nowrap\"><img src=\"img/s_rights.png\" title=\"Проверить привилегии\" alt=\"Проверить привилегии\" class=\"icon ic_s_rights\">&nbsp;Проверить привилегии</span>\n" +
-            "                    </a>\n" +
-            "                </td>\n" +
-            "            </tr>\n" +
-            "            <tr class=\"db-row\" data-filter-row=\"DB96\">\n" +
-            "                <td class=\"tool\">\n" +
-            "                    <input type=\"checkbox\" name=\"selected_dbs[]\" class=\"checkall\" title=\"db96\" value=\"db96\">\n" +
-            "                </td>\n" +
-            "\n" +
-            "                <td class=\"name\">\n" +
-            "                    <a href=\"index.php?route=/database/structure&amp;db=db96\" title=\"Перейти к базе данных 'db96'\">\n" +
-            "                        db96\n" +
-            "                    </a>\n" +
-            "                </td>\n" +
-            "\n" +
-            "                <td class=\"value\">\n" +
-            "                    <dfn title=\"Юникод (UCA 9.0.0), акценто-независимый, регистро-независимый\">\n" +
-            "                        utf8mb4_0900_ai_ci\n" +
-            "                    </dfn>\n" +
-            "                </td>\n" +
-            "\n" +
-            "\n" +
-            "                <td class=\"tool text-center\">\n" +
-            "                    <span class=\"nowrap\"><img src=\"img/s_cancel.png\" title=\"Не реплицировано\"  class=\"icon ic_s_cancel\">&nbsp;Не реплицировано</span>\n" +
-            "                </td>\n" +
-            "\n" +
-            "\n" +
-            "                <td class=\"tool\">\n" +
-            "                    <a class=\"server_databases\" data=\"`db96`\" href=\"index.php?route=/server/privileges&amp;db=db96&amp;checkprivsdb=db96\" title=\"Проверить привилегии для базы данных &quot;db96&quot;.\">\n" +
-            "                        <span class=\"nowrap\"><img src=\"img/s_rights.png\" title=\"Проверить привилегии\" alt=\"Проверить привилегии\" class=\"icon ic_s_rights\">&nbsp;Проверить привилегии</span>\n" +
-            "                    </a>\n" +
-            "                </td>\n" +
-            "            </tr>\n" +
-            "            <tr class=\"db-row\" data-filter-row=\"DB96\">\n" +
-            "                <td class=\"tool\">\n" +
-            "                    <input type=\"checkbox\" name=\"selected_dbs[]\" class=\"checkall\" title=\"db96\" value=\"db96\">\n" +
-            "                </td>\n" +
-            "\n" +
-            "                <td class=\"name\">\n" +
-            "                    <a href=\"index.php?route=/database/structure&amp;db=db96\" title=\"Перейти к базе данных 'db96'\">\n" +
-            "                        db96\n" +
-            "                    </a>\n" +
-            "                </td>\n" +
-            "\n" +
-            "                <td class=\"value\">\n" +
-            "                    <dfn title=\"Юникод (UCA 9.0.0), акценто-независимый, регистро-независимый\">\n" +
-            "                        utf8mb4_0900_ai_ci\n" +
-            "                    </dfn>\n" +
-            "                </td>\n" +
-            "\n" +
-            "\n" +
-            "                <td class=\"tool text-center\">\n" +
-            "                    <span class=\"nowrap\"><img src=\"img/s_cancel.png\" title=\"Не реплицировано\"  class=\"icon ic_s_cancel\">&nbsp;Не реплицировано</span>\n" +
-            "                </td>\n" +
-            "\n" +
-            "\n" +
-            "                <td class=\"tool\">\n" +
-            "                    <a class=\"server_databases\" data=\"`db96`\" href=\"index.php?route=/server/privileges&amp;db=db96&amp;checkprivsdb=db96\" title=\"Проверить привилегии для базы данных &quot;db96&quot;.\">\n" +
-            "                        <span class=\"nowrap\"><img src=\"img/s_rights.png\" title=\"Проверить привилегии\" alt=\"Проверить привилегии\" class=\"icon ic_s_rights\">&nbsp;Проверить привилегии</span>\n" +
-            "                    </a>\n" +
-            "                </td>\n" +
-            "            </tr>\n" +
-            "            <tr class=\"db-row\" data-filter-row=\"DB96\">\n" +
-            "                <td class=\"tool\">\n" +
-            "                    <input type=\"checkbox\" name=\"selected_dbs[]\" class=\"checkall\" title=\"db96\" value=\"db96\">\n" +
-            "                </td>\n" +
-            "\n" +
-            "                <td class=\"name\">\n" +
-            "                    <a href=\"index.php?route=/database/structure&amp;db=db96\" title=\"Перейти к базе данных 'db96'\">\n" +
-            "                        db96\n" +
-            "                    </a>\n" +
-            "                </td>\n" +
-            "\n" +
-            "                <td class=\"value\">\n" +
-            "                    <dfn title=\"Юникод (UCA 9.0.0), акценто-независимый, регистро-независимый\">\n" +
-            "                        utf8mb4_0900_ai_ci\n" +
-            "                    </dfn>\n" +
-            "                </td>\n" +
-            "\n" +
-            "\n" +
-            "                <td class=\"tool text-center\">\n" +
-            "                    <span class=\"nowrap\"><img src=\"img/s_cancel.png\" title=\"Не реплицировано\"  class=\"icon ic_s_cancel\">&nbsp;Не реплицировано</span>\n" +
-            "                </td>\n" +
-            "\n" +
-            "\n" +
-            "                <td class=\"tool\">\n" +
-            "                    <a class=\"server_databases\" data=\"`db96`\" href=\"index.php?route=/server/privileges&amp;db=db96&amp;checkprivsdb=db96\" title=\"Проверить привилегии для базы данных &quot;db96&quot;.\">\n" +
-            "                        <span class=\"nowrap\"><img src=\"img/s_rights.png\" title=\"Проверить привилегии\" alt=\"Проверить привилегии\" class=\"icon ic_s_rights\">&nbsp;Проверить привилегии</span>\n" +
-            "                    </a>\n" +
-            "                </td>\n" +
-            "            </tr>\n" +
-            "            <tr class=\"db-row\" data-filter-row=\"DB96\">\n" +
-            "                <td class=\"tool\">\n" +
-            "                    <input type=\"checkbox\" name=\"selected_dbs[]\" class=\"checkall\" title=\"db96\" value=\"db96\">\n" +
-            "                </td>\n" +
-            "\n" +
-            "                <td class=\"name\">\n" +
-            "                    <a href=\"index.php?route=/database/structure&amp;db=db96\" title=\"Перейти к базе данных 'db96'\">\n" +
-            "                        db96\n" +
-            "                    </a>\n" +
-            "                </td>\n" +
-            "\n" +
-            "                <td class=\"value\">\n" +
-            "                    <dfn title=\"Юникод (UCA 9.0.0), акценто-независимый, регистро-независимый\">\n" +
-            "                        utf8mb4_0900_ai_ci\n" +
-            "                    </dfn>\n" +
-            "                </td>\n" +
-            "\n" +
-            "\n" +
-            "                <td class=\"tool text-center\">\n" +
-            "                    <span class=\"nowrap\"><img src=\"img/s_cancel.png\" title=\"Не реплицировано\"  class=\"icon ic_s_cancel\">&nbsp;Не реплицировано</span>\n" +
-            "                </td>\n" +
-            "\n" +
-            "\n" +
-            "                <td class=\"tool\">\n" +
-            "                    <a class=\"server_databases\" data=\"`db96`\" href=\"index.php?route=/server/privileges&amp;db=db96&amp;checkprivsdb=db96\" title=\"Проверить привилегии для базы данных &quot;db96&quot;.\">\n" +
-            "                        <span class=\"nowrap\"><img src=\"img/s_rights.png\" title=\"Проверить привилегии\" alt=\"Проверить привилегии\" class=\"icon ic_s_rights\">&nbsp;Проверить привилегии</span>\n" +
-            "                    </a>\n" +
-            "                </td>\n" +
-            "            </tr>\n" +
-            "            <tr class=\"db-row\" data-filter-row=\"DB96\">\n" +
-            "                <td class=\"tool\">\n" +
-            "                    <input type=\"checkbox\" name=\"selected_dbs[]\" class=\"checkall\" title=\"db96\" value=\"db96\">\n" +
-            "                </td>\n" +
-            "\n" +
-            "                <td class=\"name\">\n" +
-            "                    <a href=\"index.php?route=/database/structure&amp;db=db96\" title=\"Перейти к базе данных 'db96'\">\n" +
-            "                        db96\n" +
-            "                    </a>\n" +
-            "                </td>\n" +
-            "\n" +
-            "                <td class=\"value\">\n" +
-            "                    <dfn title=\"Юникод (UCA 9.0.0), акценто-независимый, регистро-независимый\">\n" +
-            "                        utf8mb4_0900_ai_ci\n" +
-            "                    </dfn>\n" +
-            "                </td>\n" +
-            "\n" +
-            "\n" +
-            "                <td class=\"tool text-center\">\n" +
-            "                    <span class=\"nowrap\"><img src=\"img/s_cancel.png\" title=\"Не реплицировано\"  class=\"icon ic_s_cancel\">&nbsp;Не реплицировано</span>\n" +
-            "                </td>\n" +
-            "\n" +
-            "\n" +
-            "                <td class=\"tool\">\n" +
-            "                    <a class=\"server_databases\" data=\"`db96`\" href=\"index.php?route=/server/privileges&amp;db=db96&amp;checkprivsdb=db96\" title=\"Проверить привилегии для базы данных &quot;db96&quot;.\">\n" +
-            "                        <span class=\"nowrap\"><img src=\"img/s_rights.png\" title=\"Проверить привилегии\" alt=\"Проверить привилегии\" class=\"icon ic_s_rights\">&nbsp;Проверить привилегии</span>\n" +
-            "                    </a>\n" +
-            "                </td>\n" +
-            "            </tr>\n" +
-            "            <tr class=\"db-row\" data-filter-row=\"DB96\">\n" +
-            "                <td class=\"tool\">\n" +
-            "                    <input type=\"checkbox\" name=\"selected_dbs[]\" class=\"checkall\" title=\"db96\" value=\"db96\">\n" +
-            "                </td>\n" +
-            "\n" +
-            "                <td class=\"name\">\n" +
-            "                    <a href=\"index.php?route=/database/structure&amp;db=db96\" title=\"Перейти к базе данных 'db96'\">\n" +
-            "                        db96\n" +
-            "                    </a>\n" +
-            "                </td>\n" +
-            "\n" +
-            "                <td class=\"value\">\n" +
-            "                    <dfn title=\"Юникод (UCA 9.0.0), акценто-независимый, регистро-независимый\">\n" +
-            "                        utf8mb4_0900_ai_ci\n" +
-            "                    </dfn>\n" +
-            "                </td>\n" +
-            "\n" +
-            "\n" +
-            "                <td class=\"tool text-center\">\n" +
-            "                    <span class=\"nowrap\"><img src=\"img/s_cancel.png\" title=\"Не реплицировано\"  class=\"icon ic_s_cancel\">&nbsp;Не реплицировано</span>\n" +
-            "                </td>\n" +
-            "\n" +
-            "\n" +
-            "                <td class=\"tool\">\n" +
-            "                    <a class=\"server_databases\" data=\"`db96`\" href=\"index.php?route=/server/privileges&amp;db=db96&amp;checkprivsdb=db96\" title=\"Проверить привилегии для базы данных &quot;db96&quot;.\">\n" +
-            "                        <span class=\"nowrap\"><img src=\"img/s_rights.png\" title=\"Проверить привилегии\" alt=\"Проверить привилегии\" class=\"icon ic_s_rights\">&nbsp;Проверить привилегии</span>\n" +
-            "                    </a>\n" +
-            "                </td>\n" +
-            "            </tr>\n" +
-            "            <tr class=\"db-row\" data-filter-row=\"DB96\">\n" +
-            "                <td class=\"tool\">\n" +
-            "                    <input type=\"checkbox\" name=\"selected_dbs[]\" class=\"checkall\" title=\"db96\" value=\"db96\">\n" +
-            "                </td>\n" +
-            "\n" +
-            "                <td class=\"name\">\n" +
-            "                    <a href=\"index.php?route=/database/structure&amp;db=db96\" title=\"Перейти к базе данных 'db96'\">\n" +
-            "                        db96\n" +
-            "                    </a>\n" +
-            "                </td>\n" +
-            "\n" +
-            "                <td class=\"value\">\n" +
-            "                    <dfn title=\"Юникод (UCA 9.0.0), акценто-независимый, регистро-независимый\">\n" +
-            "                        utf8mb4_0900_ai_ci\n" +
-            "                    </dfn>\n" +
-            "                </td>\n" +
-            "\n" +
-            "\n" +
-            "                <td class=\"tool text-center\">\n" +
-            "                    <span class=\"nowrap\"><img src=\"img/s_cancel.png\" title=\"Не реплицировано\"  class=\"icon ic_s_cancel\">&nbsp;Не реплицировано</span>\n" +
-            "                </td>\n" +
-            "\n" +
-            "\n" +
-            "                <td class=\"tool\">\n" +
-            "                    <a class=\"server_databases\" data=\"`db96`\" href=\"index.php?route=/server/privileges&amp;db=db96&amp;checkprivsdb=db96\" title=\"Проверить привилегии для базы данных &quot;db96&quot;.\">\n" +
-            "                        <span class=\"nowrap\"><img src=\"img/s_rights.png\" title=\"Проверить привилегии\" alt=\"Проверить привилегии\" class=\"icon ic_s_rights\">&nbsp;Проверить привилегии</span>\n" +
-            "                    </a>\n" +
-            "                </td>\n" +
-            "            </tr>\n" +
-            "\n" +
-            "            </tbody>\n" +
-            "        </table>";
-    }
-    else if (x === 4) {
-        (document.getElementById('general').innerHTML = " <div id=\"general\">\n" +
-            "        <div class=\"row\">\n" +
-            "            <div class=\"col-8\">\n" +
-            "                 <div class=\"gen\">\n" +
-            "                     <div class=\"child\">\n" +
-            "                         <h3>Demo server phpMyAdmin</h3>\n" +
-            "                         <p class=\"desc\">simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text\n" +
-            "                             ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>\n" +
-            "                     </div>\n" +
-            "                 </div>\n" +
-            "                 <div class=\"gen1\">\n" +
-            "                     <div class=\"child\">\n" +
-            "                         <h3>General settings</h3>\n" +
-            "                     </div>\n" +
-            "                     <img src=\"img/s_passwd.png\"  alt=\"\" width=\"16px\" height=\"16px\">\n" +
-            "                         <a href=\"#\">Change password</a>\n" +
-            "                     <br>\n" +
-            "                     <img src=\"img/s_asci.png\"  alt=\"\" width=\"16px\" height=\"16px\">\n" +
-            "                     <a href=\"#\">Server connection collation</a>\n" +
-            "                     <img src=\"img/b_docs.png\"  alt=\"\" width=\"16px\" height=\"16px\">\n" +
-            "                     <select>\n" +
-            "                         <option>\n" +
-            "                             All that you need\n" +
-            "                         </option>\n" +
-            "                         <option>\n" +
-            "                             All\n" +
-            "                         </option>\n" +
-            "                     </select>\n" +
-            "                 </div>\n" +
-            "                     <div class=\"gen2\">\n" +
-            "                         <div class=\"child\">\n" +
-            "                        <h3>Appearance Settings</h3>\n" +
-            "                     </div>\n" +
-            "                         <img src=\"img/s_lang.png\"  alt=\"\" width=\"16px\" height=\"16px\">\n" +
-            "                         <a href=\"#\">Server connection collation</a>\n" +
-            "                         <img src=\"img/b_docs.png\"  alt=\"\" width=\"16px\" height=\"16px\">\n" +
-            "                         <select>\n" +
-            "                             <option>\n" +
-            "                                 Language\n" +
-            "                             </option>\n" +
-            "                             <option>\n" +
-            "                                 English\n" +
-            "                             </option>\n" +
-            "                             <option>\n" +
-            "                                 Russian\n" +
-            "                             </option>\n" +
-            "                         </select>\n" +
-            "                         <br>\n" +
-            "                         <img src=\"img/s_theme.png\" alt=\"\" width=\"16px\" height=\"16px\">\n" +
-            "                         <a href=\"#\">Theme:</a>\n" +
-            "                         <select>\n" +
-            "                             <option>\n" +
-            "                                 Language\n" +
-            "                             </option>\n" +
-            "                             <option>\n" +
-            "                                 English\n" +
-            "                             </option>\n" +
-            "                             <option>\n" +
-            "                                 Russian\n" +
-            "                             </option>\n" +
-            "                         </select>\n" +
-            "                         <br>\n" +
-            "                             <li></li>\n" +
-            "                             <select class=\"bbb\">\n" +
-            "                                 <option>\n" +
-            "                                     Font size\n" +
-            "                                 </option>\n" +
-            "                                 <option>\n" +
-            "                                     All\n" +
-            "                                 </option>\n" +
-            "                             </select>\n" +
-            "                         <br>\n" +
-            "                         <img src=\"img/b_tblops.png\" alt=\"\" width=\"16px\" height=\"16px\">\n" +
-            "                         <a href=\"#\">More settings</a>\n" +
-            "                 </div>\n" +
-            "             </div>\n" +
-            "            <div class=\"col-4\">\n" +
-            "                <div class=\"general\">\n" +
-            "                        <div class=\"gen2\">\n" +
-            "                            <div class=\"child\">\n" +
-            "                                <h3>Database server</h3>\n" +
-            "                            </div>\n" +
-            "                            <ul>\n" +
-            "                                <li>Version information</li>\n" +
-            "                                <li>Version information</li>\n" +
-            "                                <li>Version information</li>\n" +
-            "                                <li>Version information</li>\n" +
-            "                                <li>Version information</li>\n" +
-            "                                <li>Version information</li>\n" +
-            "                            </ul>\n" +
-            "                    </div>\n" +
-            "                        <div class=\"gen2\">\n" +
-            "                            <div class=\"child\">\n" +
-            "                                <h3>Web server</h3>\n" +
-            "                            </div>\n" +
-            "                            <ul>\n" +
-            "                                <li>Version information</li>\n" +
-            "                                <li>Version information</li>\n" +
-            "                                <li>Version information</li>\n" +
-            "                                <li>Version information</li>\n" +
-            "                                <li>Version information</li>\n" +
-            "                                <li>Version information</li>\n" +
-            "\n" +
-            "                            </ul>\n" +
-            "                    </div>\n" +
-            "                        <div class=\"gen2\">\n" +
-            "                            <div class=\"child\">\n" +
-            "                                <h3>phpMyAdmin</h3>\n" +
-            "                            </div>\n" +
-            "                            <ul>\n" +
-            "                                <li>Version information</li>\n" +
-            "                                <li>Version information</li>\n" +
-            "                                <li>Version information</li>\n" +
-            "                                <li>Version information</li>\n" +
-            "                                <li>Version information</li>\n" +
-            "                                <li>Version information</li>\n" +
-            "\n" +
-            "                            </ul>\n" +
-            "                    </div>\n" +
-            "                </div>\n" +
-            "        </div>\n" +
-            "        </div>\n" +
-            "        </div>")
+             "            <thead>\n" +
+             "            <tr>\n" +
+             "                <th></th>\n" +
+             "                <th>\n" +
+             "                    <a href=\"index.php?route=/server/databases&amp;statistics=0&amp;pos=0&amp;sort_by=SCHEMA_NAME&amp;sort_order=desc\">\n" +
+             "                        База данных<img src=\"img/s_asc.png\" title=\"По возрастанию\"  class=\"icon ic_s_asc\">\n" +
+             "                    </a>\n" +
+             "                </th>\n" +
+             "\n" +
+             "                <th>\n" +
+             "                    <a href=\"index.php?route=/server/databases&amp;statistics=0&amp;pos=0&amp;sort_by=DEFAULT_COLLATION_NAME&amp;sort_order=asc\">\n" +
+             "                        Сравнение                                  </a>\n" +
+             "                </th>\n" +
+             "\n" +
+             "\n" +
+             "                <th>Репликация головного сервера</th>\n" +
+             "\n" +
+             "\n" +
+             "                <th>Действие</th>\n" +
+             "            </tr>\n" +
+             "            </thead>\n" +
+             "\n" +
+             "            <tbody>\n" +
+             "            <tr class=\"db-row\" data-filter-row=\"DB96\">\n" +
+             "                <td class=\"tool\">\n" +
+             "                    <input type=\"checkbox\" name=\"selected_dbs[]\" class=\"checkall\" title=\"db96\" value=\"db96\">\n" +
+             "                </td>\n" +
+             "\n" +
+             "                <td class=\"name\">\n" +
+             "                    <a href=\"index.php?route=/database/structure&amp;db=db96\" title=\"Перейти к базе данных 'db96'\">\n" +
+             "                        db96\n" +
+             "                    </a>\n" +
+             "                </td>\n" +
+             "\n" +
+             "                <td class=\"value\">\n" +
+             "                    <dfn title=\"Юникод (UCA 9.0.0), акценто-независимый, регистро-независимый\">\n" +
+             "                        utf8mb4_0900_ai_ci\n" +
+             "                    </dfn>\n" +
+             "                </td>\n" +
+             "\n" +
+             "\n" +
+             "                <td class=\"tool text-center\">\n" +
+             "                    <span class=\"nowrap\"><img src=\"img/s_cancel.png\" title=\"Не реплицировано\"  class=\"icon ic_s_cancel\">&nbsp;Не реплицировано</span>\n" +
+             "                </td>\n" +
+             "\n" +
+             "\n" +
+             "                <td class=\"tool\">\n" +
+             "                    <a class=\"server_databases\" data=\"`db96`\" href=\"index.php?route=/server/privileges&amp;db=db96&amp;checkprivsdb=db96\" title=\"Проверить привилегии для базы данных &quot;db96&quot;.\">\n" +
+             "                        <span class=\"nowrap\"><img src=\"img/s_rights.png\" title=\"Проверить привилегии\" alt=\"Проверить привилегии\" class=\"icon ic_s_rights\">&nbsp;Проверить привилегии</span>\n" +
+             "                    </a>\n" +
+             "                </td>\n" +
+             "            </tr>\n" +
+             "            <tr class=\"db-row\" data-filter-row=\"DB96\">\n" +
+             "                <td class=\"tool\">\n" +
+             "                    <input type=\"checkbox\" name=\"selected_dbs[]\" class=\"checkall\" title=\"db96\" value=\"db96\">\n" +
+             "                </td>\n" +
+             "\n" +
+             "                <td class=\"name\">\n" +
+             "                    <a href=\"index.php?route=/database/structure&amp;db=db96\" title=\"Перейти к базе данных 'db96'\">\n" +
+             "                        db96\n" +
+             "                    </a>\n" +
+             "                </td>\n" +
+             "\n" +
+             "                <td class=\"value\">\n" +
+             "                    <dfn title=\"Юникод (UCA 9.0.0), акценто-независимый, регистро-независимый\">\n" +
+             "                        utf8mb4_0900_ai_ci\n" +
+             "                    </dfn>\n" +
+             "                </td>\n" +
+             "\n" +
+             "\n" +
+             "                <td class=\"tool text-center\">\n" +
+             "                    <span class=\"nowrap\"><img src=\"img/s_cancel.png\" title=\"Не реплицировано\"  class=\"icon ic_s_cancel\">&nbsp;Не реплицировано</span>\n" +
+             "                </td>\n" +
+             "\n" +
+             "\n" +
+             "                <td class=\"tool\">\n" +
+             "                    <a class=\"server_databases\" data=\"`db96`\" href=\"index.php?route=/server/privileges&amp;db=db96&amp;checkprivsdb=db96\" title=\"Проверить привилегии для базы данных &quot;db96&quot;.\">\n" +
+             "                        <span class=\"nowrap\"><img src=\"img/s_rights.png\" title=\"Проверить привилегии\" alt=\"Проверить привилегии\" class=\"icon ic_s_rights\">&nbsp;Проверить привилегии</span>\n" +
+             "                    </a>\n" +
+             "                </td>\n" +
+             "            </tr>\n" +
+             "            <tr class=\"db-row\" data-filter-row=\"DB96\">\n" +
+             "                <td class=\"tool\">\n" +
+             "                    <input type=\"checkbox\" name=\"selected_dbs[]\" class=\"checkall\" title=\"db96\" value=\"db96\">\n" +
+             "                </td>\n" +
+             "\n" +
+             "                <td class=\"name\">\n" +
+             "                    <a href=\"index.php?route=/database/structure&amp;db=db96\" title=\"Перейти к базе данных 'db96'\">\n" +
+             "                        db96\n" +
+             "                    </a>\n" +
+             "                </td>\n" +
+             "\n" +
+             "                <td class=\"value\">\n" +
+             "                    <dfn title=\"Юникод (UCA 9.0.0), акценто-независимый, регистро-независимый\">\n" +
+             "                        utf8mb4_0900_ai_ci\n" +
+             "                    </dfn>\n" +
+             "                </td>\n" +
+             "\n" +
+             "\n" +
+             "                <td class=\"tool text-center\">\n" +
+             "                    <span class=\"nowrap\"><img src=\"img/s_cancel.png\" title=\"Не реплицировано\"  class=\"icon ic_s_cancel\">&nbsp;Не реплицировано</span>\n" +
+             "                </td>\n" +
+             "\n" +
+             "\n" +
+             "                <td class=\"tool\">\n" +
+             "                    <a class=\"server_databases\" data=\"`db96`\" href=\"index.php?route=/server/privileges&amp;db=db96&amp;checkprivsdb=db96\" title=\"Проверить привилегии для базы данных &quot;db96&quot;.\">\n" +
+             "                        <span class=\"nowrap\"><img src=\"img/s_rights.png\" title=\"Проверить привилегии\" alt=\"Проверить привилегии\" class=\"icon ic_s_rights\">&nbsp;Проверить привилегии</span>\n" +
+             "                    </a>\n" +
+             "                </td>\n" +
+             "            </tr>\n" +
+             "            <tr class=\"db-row\" data-filter-row=\"DB96\">\n" +
+             "                <td class=\"tool\">\n" +
+             "                    <input type=\"checkbox\" name=\"selected_dbs[]\" class=\"checkall\" title=\"db96\" value=\"db96\">\n" +
+             "                </td>\n" +
+             "\n" +
+             "                <td class=\"name\">\n" +
+             "                    <a href=\"index.php?route=/database/structure&amp;db=db96\" title=\"Перейти к базе данных 'db96'\">\n" +
+             "                        db96\n" +
+             "                    </a>\n" +
+             "                </td>\n" +
+             "\n" +
+             "                <td class=\"value\">\n" +
+             "                    <dfn title=\"Юникод (UCA 9.0.0), акценто-независимый, регистро-независимый\">\n" +
+             "                        utf8mb4_0900_ai_ci\n" +
+             "                    </dfn>\n" +
+             "                </td>\n" +
+             "\n" +
+             "\n" +
+             "                <td class=\"tool text-center\">\n" +
+             "                    <span class=\"nowrap\"><img src=\"img/s_cancel.png\" title=\"Не реплицировано\"  class=\"icon ic_s_cancel\">&nbsp;Не реплицировано</span>\n" +
+             "                </td>\n" +
+             "\n" +
+             "\n" +
+             "                <td class=\"tool\">\n" +
+             "                    <a class=\"server_databases\" data=\"`db96`\" href=\"index.php?route=/server/privileges&amp;db=db96&amp;checkprivsdb=db96\" title=\"Проверить привилегии для базы данных &quot;db96&quot;.\">\n" +
+             "                        <span class=\"nowrap\"><img src=\"img/s_rights.png\" title=\"Проверить привилегии\" alt=\"Проверить привилегии\" class=\"icon ic_s_rights\">&nbsp;Проверить привилегии</span>\n" +
+             "                    </a>\n" +
+             "                </td>\n" +
+             "            </tr>\n" +
+             "            <tr class=\"db-row\" data-filter-row=\"DB96\">\n" +
+             "                <td class=\"tool\">\n" +
+             "                    <input type=\"checkbox\" name=\"selected_dbs[]\" class=\"checkall\" title=\"db96\" value=\"db96\">\n" +
+             "                </td>\n" +
+             "\n" +
+             "                <td class=\"name\">\n" +
+             "                    <a href=\"index.php?route=/database/structure&amp;db=db96\" title=\"Перейти к базе данных 'db96'\">\n" +
+             "                        db96\n" +
+             "                    </a>\n" +
+             "                </td>\n" +
+             "\n" +
+             "                <td class=\"value\">\n" +
+             "                    <dfn title=\"Юникод (UCA 9.0.0), акценто-независимый, регистро-независимый\">\n" +
+             "                        utf8mb4_0900_ai_ci\n" +
+             "                    </dfn>\n" +
+             "                </td>\n" +
+             "\n" +
+             "\n" +
+             "                <td class=\"tool text-center\">\n" +
+             "                    <span class=\"nowrap\"><img src=\"img/s_cancel.png\" title=\"Не реплицировано\"  class=\"icon ic_s_cancel\">&nbsp;Не реплицировано</span>\n" +
+             "                </td>\n" +
+             "\n" +
+             "\n" +
+             "                <td class=\"tool\">\n" +
+             "                    <a class=\"server_databases\" data=\"`db96`\" href=\"index.php?route=/server/privileges&amp;db=db96&amp;checkprivsdb=db96\" title=\"Проверить привилегии для базы данных &quot;db96&quot;.\">\n" +
+             "                        <span class=\"nowrap\"><img src=\"img/s_rights.png\" title=\"Проверить привилегии\" alt=\"Проверить привилегии\" class=\"icon ic_s_rights\">&nbsp;Проверить привилегии</span>\n" +
+             "                    </a>\n" +
+             "                </td>\n" +
+             "            </tr>\n" +
+             "            <tr class=\"db-row\" data-filter-row=\"DB96\">\n" +
+             "                <td class=\"tool\">\n" +
+             "                    <input type=\"checkbox\" name=\"selected_dbs[]\" class=\"checkall\" title=\"db96\" value=\"db96\">\n" +
+             "                </td>\n" +
+             "\n" +
+             "                <td class=\"name\">\n" +
+             "                    <a href=\"index.php?route=/database/structure&amp;db=db96\" title=\"Перейти к базе данных 'db96'\">\n" +
+             "                        db96\n" +
+             "                    </a>\n" +
+             "                </td>\n" +
+             "\n" +
+             "                <td class=\"value\">\n" +
+             "                    <dfn title=\"Юникод (UCA 9.0.0), акценто-независимый, регистро-независимый\">\n" +
+             "                        utf8mb4_0900_ai_ci\n" +
+             "                    </dfn>\n" +
+             "                </td>\n" +
+             "\n" +
+             "\n" +
+             "                <td class=\"tool text-center\">\n" +
+             "                    <span class=\"nowrap\"><img src=\"img/s_cancel.png\" title=\"Не реплицировано\"  class=\"icon ic_s_cancel\">&nbsp;Не реплицировано</span>\n" +
+             "                </td>\n" +
+             "\n" +
+             "\n" +
+             "                <td class=\"tool\">\n" +
+             "                    <a class=\"server_databases\" data=\"`db96`\" href=\"index.php?route=/server/privileges&amp;db=db96&amp;checkprivsdb=db96\" title=\"Проверить привилегии для базы данных &quot;db96&quot;.\">\n" +
+             "                        <span class=\"nowrap\"><img src=\"img/s_rights.png\" title=\"Проверить привилегии\" alt=\"Проверить привилегии\" class=\"icon ic_s_rights\">&nbsp;Проверить привилегии</span>\n" +
+             "                    </a>\n" +
+             "                </td>\n" +
+             "            </tr>\n" +
+             "            <tr class=\"db-row\" data-filter-row=\"DB96\">\n" +
+             "                <td class=\"tool\">\n" +
+             "                    <input type=\"checkbox\" name=\"selected_dbs[]\" class=\"checkall\" title=\"db96\" value=\"db96\">\n" +
+             "                </td>\n" +
+             "\n" +
+             "                <td class=\"name\">\n" +
+             "                    <a href=\"index.php?route=/database/structure&amp;db=db96\" title=\"Перейти к базе данных 'db96'\">\n" +
+             "                        db96\n" +
+             "                    </a>\n" +
+             "                </td>\n" +
+             "\n" +
+             "                <td class=\"value\">\n" +
+             "                    <dfn title=\"Юникод (UCA 9.0.0), акценто-независимый, регистро-независимый\">\n" +
+             "                        utf8mb4_0900_ai_ci\n" +
+             "                    </dfn>\n" +
+             "                </td>\n" +
+             "\n" +
+             "\n" +
+             "                <td class=\"tool text-center\">\n" +
+             "                    <span class=\"nowrap\"><img src=\"img/s_cancel.png\" title=\"Не реплицировано\"  class=\"icon ic_s_cancel\">&nbsp;Не реплицировано</span>\n" +
+             "                </td>\n" +
+             "\n" +
+             "\n" +
+             "                <td class=\"tool\">\n" +
+             "                    <a class=\"server_databases\" data=\"`db96`\" href=\"index.php?route=/server/privileges&amp;db=db96&amp;checkprivsdb=db96\" title=\"Проверить привилегии для базы данных &quot;db96&quot;.\">\n" +
+             "                        <span class=\"nowrap\"><img src=\"img/s_rights.png\" title=\"Проверить привилегии\" alt=\"Проверить привилегии\" class=\"icon ic_s_rights\">&nbsp;Проверить привилегии</span>\n" +
+             "                    </a>\n" +
+             "                </td>\n" +
+             "            </tr>\n" +
+             "            <tr class=\"db-row\" data-filter-row=\"DB96\">\n" +
+             "                <td class=\"tool\">\n" +
+             "                    <input type=\"checkbox\" name=\"selected_dbs[]\" class=\"checkall\" title=\"db96\" value=\"db96\">\n" +
+             "                </td>\n" +
+             "\n" +
+             "                <td class=\"name\">\n" +
+             "                    <a href=\"index.php?route=/database/structure&amp;db=db96\" title=\"Перейти к базе данных 'db96'\">\n" +
+             "                        db96\n" +
+             "                    </a>\n" +
+             "                </td>\n" +
+             "\n" +
+             "                <td class=\"value\">\n" +
+             "                    <dfn title=\"Юникод (UCA 9.0.0), акценто-независимый, регистро-независимый\">\n" +
+             "                        utf8mb4_0900_ai_ci\n" +
+             "                    </dfn>\n" +
+             "                </td>\n" +
+             "\n" +
+             "\n" +
+             "                <td class=\"tool text-center\">\n" +
+             "                    <span class=\"nowrap\"><img src=\"img/s_cancel.png\" title=\"Не реплицировано\"  class=\"icon ic_s_cancel\">&nbsp;Не реплицировано</span>\n" +
+             "                </td>\n" +
+             "\n" +
+             "\n" +
+             "                <td class=\"tool\">\n" +
+             "                    <a class=\"server_databases\" data=\"`db96`\" href=\"index.php?route=/server/privileges&amp;db=db96&amp;checkprivsdb=db96\" title=\"Проверить привилегии для базы данных &quot;db96&quot;.\">\n" +
+             "                        <span class=\"nowrap\"><img src=\"img/s_rights.png\" title=\"Проверить привилегии\" alt=\"Проверить привилегии\" class=\"icon ic_s_rights\">&nbsp;Проверить привилегии</span>\n" +
+             "                    </a>\n" +
+             "                </td>\n" +
+             "            </tr>\n" +
+             "            <tr class=\"db-row\" data-filter-row=\"DB96\">\n" +
+             "                <td class=\"tool\">\n" +
+             "                    <input type=\"checkbox\" name=\"selected_dbs[]\" class=\"checkall\" title=\"db96\" value=\"db96\">\n" +
+             "                </td>\n" +
+             "\n" +
+             "                <td class=\"name\">\n" +
+             "                    <a href=\"index.php?route=/database/structure&amp;db=db96\" title=\"Перейти к базе данных 'db96'\">\n" +
+             "                        db96\n" +
+             "                    </a>\n" +
+             "                </td>\n" +
+             "\n" +
+             "                <td class=\"value\">\n" +
+             "                    <dfn title=\"Юникод (UCA 9.0.0), акценто-независимый, регистро-независимый\">\n" +
+             "                        utf8mb4_0900_ai_ci\n" +
+             "                    </dfn>\n" +
+             "                </td>\n" +
+             "\n" +
+             "\n" +
+             "                <td class=\"tool text-center\">\n" +
+             "                    <span class=\"nowrap\"><img src=\"img/s_cancel.png\" title=\"Не реплицировано\"  class=\"icon ic_s_cancel\">&nbsp;Не реплицировано</span>\n" +
+             "                </td>\n" +
+             "\n" +
+             "\n" +
+             "                <td class=\"tool\">\n" +
+             "                    <a class=\"server_databases\" data=\"`db96`\" href=\"index.php?route=/server/privileges&amp;db=db96&amp;checkprivsdb=db96\" title=\"Проверить привилегии для базы данных &quot;db96&quot;.\">\n" +
+             "                        <span class=\"nowrap\"><img src=\"img/s_rights.png\" title=\"Проверить привилегии\" alt=\"Проверить привилегии\" class=\"icon ic_s_rights\">&nbsp;Проверить привилегии</span>\n" +
+             "                    </a>\n" +
+             "                </td>\n" +
+             "            </tr>\n" +
+             "\n" +
+             "            </tbody>\n" +
+             "        </table>";
+}
 
-
-    }
-    else {
-        document.getElementById('general').innerHTML ="<table id=\"structureTable\" class=\"data\">Table1\n" +
-            "            <thead>\n" +
-            "            <tr>\n" +
-            "                <th class=\"print_ignore\"></th>\n" +
-            "                <th><a href=\"index.php?route=/database/structure&amp;db=information_schema&amp;pos=0&amp;sort=table&amp;sort_order=DESC\" title=\"Отсортировать\">Таблица </a></th>\n" +
-            "\n" +
-            "                <th colspan=\"4\" class=\"print_ignore\">\n" +
-            "                    Действие</th>\n" +
-            "                <th>\n" +
-            "                    <a href=\"index.php?route=/database/structure&amp;db=information_schema&amp;pos=0&amp;sort=records&amp;sort_order=DESC\" title=\"Отсортировать\">Строки</a>\n" +
-            "                </th>\n" +
-            "                <th><a href=\"index.php?route=/database/structure&amp;db=information_schema&amp;pos=0&amp;sort=type&amp;sort_order=ASC\" title=\"Отсортировать\">Тип</a></th>\n" +
-            "                <th><a href=\"index.php?route=/database/structure&amp;db=information_schema&amp;pos=0&amp;sort=collation&amp;sort_order=ASC\" title=\"Отсортировать\">Сравнение</a></th>\n" +
-            "            </tr>\n" +
-            "            </thead>\n" +
-            "            <thbody>\n" +
-            "            <tr id=\"row_tbl_1\" class=\"is_view\" data-filter-row=\"CHARACTER_SETS\">\n" +
-            "                <td class=\"text-center print_ignore\">\n" +
-            "                    <input type=\"checkbox\" name=\"selected_tbl[]\" class=\"checkall\" value=\"CHARACTER_SETS\" id=\"chekbox_tbl_1\">\n" +
-            "                </td>\n" +
-            "                <th>\n" +
-            "                    <a href=\"index.php?route=/sql&amp;db=information_schema&amp;table=CHARACTER_SETS&amp;pos=0\" title=\"\">\n" +
-            "                        CHARACTER_SETS\n" +
-            "                    </a>\n" +
-            "                </th>\n" +
-            "                <td class=\"text-center print_ignore\">\n" +
-            "                    <a id=\"7db57eec4b97d698ee5050078fd74dee_favrite_anchorr\" class=\"ajax favorite_table_anchor\" href=\"index.php?route=/database/structure/favorite-table&amp;db=information_schema&amp;ajax_request=1&amp;favorite_table=CHARACTER_SETS&amp;add_favorite=1\" title=\"Добавить в Избранное\" data-favtargets=\"6a7169e432a959576d70fee96ae17555\">\n" +
-            "                        <span class=\"nowrap\"><img src=\"img/b_no_favorite.png\" title=\"\" alt=\"\" class=\"icon ic_b_no_favorite\">&nbsp;</span>\n" +
-            "                    </a>\n" +
-            "                </td>\n" +
-            "                <td class=\"text-center print_ignore\">\n" +
-            "                    <a href=\"index.php?route=/sql&amp;db=information_schema&amp;table=CHARACTER_SETS&amp;pos=0\">\n" +
-            "                        <span class=\"nowrap\"><img src=\"img/b_browse.png\" title=\"Обзор\"  class=\"icon ic_b_browse\">&nbsp;Обзор</span>\n" +
-            "                    </a>\n" +
-            "                </td>\n" +
-            "                <td class=\"text-center print_ignore\">\n" +
-            "                    <a href=\"index.php?route=/table/structure&amp;db=information_schema&amp;table=CHARACTER_SETS\">\n" +
-            "                        <span class=\"nowrap\"><img src=\"img/b_props.png\" title=\"Структура\"  class=\"icon ic_b_props\">&nbsp;Структура</span>\n" +
-            "                    </a>\n" +
-            "                </td>\n" +
-            "                <td class=\"text-center print_ignore\">\n" +
-            "                    <a href=\"index.php?route=/table/search&amp;db=information_schema&amp;table=CHARACTER_SETS\">\n" +
-            "                        <span class=\"nowrap\"><img src=\"img/b_select.png\" title=\"Поиск\"  class=\"icon ic_b_select\">&nbsp;Поиск</span>\n" +
-            "                    </a>\n" +
-            "                </td>\n" +
-            "                <td class=\"value tbl_rows\" data-table=\"CHARACTER_SETS\">\n" +
-            "                    <a href=\"index.php?route=/database/structure/real-row-count&amp;ajax_request=1&amp;db=information_schema&amp;table=CHARACTER_SETS\" class=\"ajax real_row_count\">\n" +
-            "                        <bdi>\n" +
-            "                            ~0\n" +
-            "                        </bdi>\n" +
-            "                    </a>\n" +
-            "                    <span class=\"pma_hint\"><img src=\"img/b_help.png\" title=\"\" alt=\"\" class=\"icon ic_b_help\"><span class=\"hide\"><a href=\"./url.php?url=https%3A%2F%2Fdocs.phpmyadmin.net%2Fen%2Flatest%2Fconfig.html%23cfg_MaxExactCountViews\" target=\"documentation\"></a></span></span>\n" +
-            "                </td>\n" +
-            "\n" +
-            "                <td class=\"nowrap\">\n" +
-            "                    Представление</td>\n" +
-            "                <td class=\"nowrap\">\n" +
-            "                </td>\n" +
-            "            </tr>\n" +
-            "                <tr id=\"row_tbl_\" class=\"is_view\" data-filter-row=\"CHARACTER_SETS\">\n" +
-            "                    <td class=\"text-center print_ignore\">\n" +
-            "                        <input type=\"checkbox\" name=\"selected_tbl[]\" class=\"checkall\" value=\"CHARACTER_SETS\" id=\"chckbox_tbl_1\">\n" +
-            "                    </td>\n" +
-            "                    <th>\n" +
-            "                        <a href=\"index.php?route=/sql&amp;db=information_schema&amp;table=CHARACTER_SETS&amp;pos=0\" title=\"\">\n" +
-            "                            CHARACTER_SETS\n" +
-            "                        </a>\n" +
-            "                    </th>\n" +
-            "                    <td class=\"text-center print_ignore\">\n" +
-            "                        <a id=\"7db57eec4b97d698e5050078fd74dee_favorite_anchorr\" class=\"ajax favorite_table_anchor\" href=\"index.php?route=/database/structure/favorite-table&amp;db=information_schema&amp;ajax_request=1&amp;favorite_table=CHARACTER_SETS&amp;add_favorite=1\" title=\"Добавить в Избранное\" data-favtargets=\"6a7169e432a959576d70fee96ae17555\">\n" +
-            "                            <span class=\"nowrap\"><img src=\"img/b_no_favorite.png\" title=\"\" alt=\"\" class=\"icon ic_b_no_favorite\">&nbsp;</span>\n" +
-            "                        </a>\n" +
-            "                    </td>\n" +
-            "                    <td class=\"text-center print_ignore\">\n" +
-            "                        <a href=\"index.php?route=/sql&amp;db=information_schema&amp;table=CHARACTER_SETS&amp;pos=0\">\n" +
-            "                            <span class=\"nowrap\"><img src=\"img/b_browse.png\" title=\"Обзор\"  class=\"icon ic_b_browse\">&nbsp;Обзор</span>\n" +
-            "                        </a>\n" +
-            "                    </td>\n" +
-            "                    <td class=\"text-center print_ignore\">\n" +
-            "                        <a href=\"index.php?route=/table/structure&amp;db=information_schema&amp;table=CHARACTER_SETS\">\n" +
-            "                            <span class=\"nowrap\"><img src=\"img/b_props.png\" title=\"Структура\"  class=\"icon ic_b_props\">&nbsp;Структура</span>\n" +
-            "                        </a>\n" +
-            "                    </td>\n" +
-            "                    <td class=\"text-center print_ignore\">\n" +
-            "                        <a href=\"index.php?route=/table/search&amp;db=information_schema&amp;table=CHARACTER_SETS\">\n" +
-            "                            <span class=\"nowrap\"><img src=\"img/b_select.png\" title=\"Поиск\"  class=\"icon ic_b_select\">&nbsp;Поиск</span>\n" +
-            "                        </a>\n" +
-            "                    </td>\n" +
-            "                    <td class=\"value tbl_rows\" data-table=\"CHARACTER_SETS\">\n" +
-            "                        <a href=\"index.php?route=/database/structure/real-row-count&amp;ajax_request=1&amp;db=information_schema&amp;table=CHARACTER_SETS\" class=\"ajax real_row_count\">\n" +
-            "                            <bdi>\n" +
-            "                                ~0\n" +
-            "                            </bdi>\n" +
-            "                        </a>\n" +
-            "                        <span class=\"pma_hint\"><img src=\"img/b_help.png\" title=\"\" alt=\"\" class=\"icon ic_b_help\"><span class=\"hide\"><a href=\"./url.php?url=https%3A%2F%2Fdocs.phpmyadmin.net%2Fen%2Flatest%2Fconfig.html%23cfg_MaxExactCountViews\" target=\"documentation\"></a></span></span>\n" +
-            "                    </td>\n" +
-            "\n" +
-            "                    <td class=\"nowrap\">\n" +
-            "                        Представление</td>\n" +
-            "                    <td class=\"nowrap\">\n" +
-            "                    </td>\n" +
-            "                </tr>\n" +
-            "                <tr id=\"row_tbl\" class=\"is_view\" data-filter-row=\"CHARACTER_SETS\">\n" +
-            "                    <td class=\"text-center print_ignore\">\n" +
-            "                        <input type=\"checkbox\" name=\"selected_tbl[]\" class=\"checkall\" value=\"CHARACTER_SETS\" id=\"chkbox_tbl_1\">\n" +
-            "                    </td>\n" +
-            "                    <th>\n" +
-            "                        <a href=\"index.php?route=/sql&amp;db=information_schema&amp;table=CHARACTER_SETS&amp;pos=0\" title=\"\">\n" +
-            "                            CHARACTER_SETS\n" +
-            "                        </a>\n" +
-            "                    </th>\n" +
-            "                    <td class=\"text-center print_ignore\">\n" +
-            "                        <a id=\"7db57eec4b97d698ee5050078fd74dee_avorite_anchorr\" class=\"ajax favorite_table_anchor\" href=\"index.php?route=/database/structure/favorite-table&amp;db=information_schema&amp;ajax_request=1&amp;favorite_table=CHARACTER_SETS&amp;add_favorite=1\" title=\"Добавить в Избранное\" data-favtargets=\"6a7169e432a959576d70fee96ae17555\">\n" +
-            "                            <span class=\"nowrap\"><img src=\"img/b_no_favorite.png\" title=\"\" alt=\"\" class=\"icon ic_b_no_favorite\">&nbsp;</span>\n" +
-            "                        </a>\n" +
-            "                    </td>\n" +
-            "                    <td class=\"text-center print_ignore\">\n" +
-            "                        <a href=\"index.php?route=/sql&amp;db=information_schema&amp;table=CHARACTER_SETS&amp;pos=0\">\n" +
-            "                            <span class=\"nowrap\"><img src=\"img/b_browse.png\" title=\"Обзор\"  class=\"icon ic_b_browse\">&nbsp;Обзор</span>\n" +
-            "                        </a>\n" +
-            "                    </td>\n" +
-            "                    <td class=\"text-center print_ignore\">\n" +
-            "                        <a href=\"index.php?route=/table/structure&amp;db=information_schema&amp;table=CHARACTER_SETS\">\n" +
-            "                            <span class=\"nowrap\"><img src=\"img/b_props.png\" title=\"Структура\"  class=\"icon ic_b_props\">&nbsp;Структура</span>\n" +
-            "                        </a>\n" +
-            "                    </td>\n" +
-            "                    <td class=\"text-center print_ignore\">\n" +
-            "                        <a href=\"index.php?route=/table/search&amp;db=information_schema&amp;table=CHARACTER_SETS\">\n" +
-            "                            <span class=\"nowrap\"><img src=\"img/b_select.png\" title=\"Поиск\"  class=\"icon ic_b_select\">&nbsp;Поиск</span>\n" +
-            "                        </a>\n" +
-            "                    </td>\n" +
-            "                    <td class=\"value tbl_rows\" data-table=\"CHARACTER_SETS\">\n" +
-            "                        <a href=\"index.php?route=/database/structure/real-row-count&amp;ajax_request=1&amp;db=information_schema&amp;table=CHARACTER_SETS\" class=\"ajax real_row_count\">\n" +
-            "                            <bdi>\n" +
-            "                                ~0\n" +
-            "                            </bdi>\n" +
-            "                        </a>\n" +
-            "                        <span class=\"pma_hint\"><img src=\"img/b_help.png\" title=\"\" alt=\"\" class=\"icon ic_b_help\"><span class=\"hide\"><a href=\"./url.php?url=https%3A%2F%2Fdocs.phpmyadmin.net%2Fen%2Flatest%2Fconfig.html%23cfg_MaxExactCountViews\" target=\"documentation\"></a></span></span>\n" +
-            "                    </td>\n" +
-            "\n" +
-            "                    <td class=\"nowrap\">\n" +
-            "                        Представление</td>\n" +
-            "                    <td class=\"nowrap\">\n" +
-            "                    </td>\n" +
-            "                </tr>\n" +
-            "                <tr id=\"row_t1\" class=\"is_view\" data-filter-row=\"CHARACTER_SETS\">\n" +
-            "                    <td class=\"text-center print_ignore\">\n" +
-            "                        <input type=\"checkbox\" name=\"selected_tbl[]\" class=\"checkall\" value=\"CHARACTER_SETS\" id=\"chbox_tbl_1\">\n" +
-            "                    </td>\n" +
-            "                    <th>\n" +
-            "                        <a href=\"index.php?route=/sql&amp;db=information_schema&amp;table=CHARACTER_SETS&amp;pos=0\" title=\"\">\n" +
-            "                            CHARACTER_SETS\n" +
-            "                        </a>\n" +
-            "                    </th>\n" +
-            "                    <td class=\"text-center print_ignore\">\n" +
-            "                        <a id=\"7db57eec4b998ee5050078fd74dee_favorite_anchorr\" class=\"ajax favorite_table_anchor\" href=\"index.php?route=/database/structure/favorite-table&amp;db=information_schema&amp;ajax_request=1&amp;favorite_table=CHARACTER_SETS&amp;add_favorite=1\" title=\"Добавить в Избранное\" data-favtargets=\"6a7169e432a959576d70fee96ae17555\">\n" +
-            "                            <span class=\"nowrap\"><img src=\"img/b_no_favorite.png\" title=\"\" alt=\"\" class=\"icon ic_b_no_favorite\">&nbsp;</span>\n" +
-            "                        </a>\n" +
-            "                    </td>\n" +
-            "                    <td class=\"text-center print_ignore\">\n" +
-            "                        <a href=\"index.php?route=/sql&amp;db=information_schema&amp;table=CHARACTER_SETS&amp;pos=0\">\n" +
-            "                            <span class=\"nowrap\"><img src=\"img/b_browse.png\" title=\"Обзор\"  class=\"icon ic_b_browse\">&nbsp;Обзор</span>\n" +
-            "                        </a>\n" +
-            "                    </td>\n" +
-            "                    <td class=\"text-center print_ignore\">\n" +
-            "                        <a href=\"index.php?route=/table/structure&amp;db=information_schema&amp;table=CHARACTER_SETS\">\n" +
-            "                            <span class=\"nowrap\"><img src=\"img/b_props.png\" title=\"Структура\"  class=\"icon ic_b_props\">&nbsp;Структура</span>\n" +
-            "                        </a>\n" +
-            "                    </td>\n" +
-            "                    <td class=\"text-center print_ignore\">\n" +
-            "                        <a href=\"index.php?route=/table/search&amp;db=information_schema&amp;table=CHARACTER_SETS\">\n" +
-            "                            <span class=\"nowrap\"><img src=\"img/b_select.png\" title=\"Поиск\"  class=\"icon ic_b_select\">&nbsp;Поиск</span>\n" +
-            "                        </a>\n" +
-            "                    </td>\n" +
-            "                    <td class=\"value tbl_rows\" data-table=\"CHARACTER_SETS\">\n" +
-            "                        <a href=\"index.php?route=/database/structure/real-row-count&amp;ajax_request=1&amp;db=information_schema&amp;table=CHARACTER_SETS\" class=\"ajax real_row_count\">\n" +
-            "                            <bdi>\n" +
-            "                                ~0\n" +
-            "                            </bdi>\n" +
-            "                        </a>\n" +
-            "                        <span class=\"pma_hint\"><img src=\"img/b_help.png\" title=\"\" alt=\"\" class=\"icon ic_b_help\"><span class=\"hide\"><a href=\"./url.php?url=https%3A%2F%2Fdocs.phpmyadmin.net%2Fen%2Flatest%2Fconfig.html%23cfg_MaxExactCountViews\" target=\"documentation\"></a></span></span>\n" +
-            "                    </td>\n" +
-            "\n" +
-            "                    <td class=\"nowrap\">\n" +
-            "                        Представление</td>\n" +
-            "                    <td class=\"nowrap\">\n" +
-            "                    </td>\n" +
-            "                </tr>\n" +
-            "                <tr id=\"row__1\" class=\"is_view\" data-filter-row=\"CHARACTER_SETS\">\n" +
-            "                    <td class=\"text-center print_ignore\">\n" +
-            "                        <input type=\"checkbox\" name=\"selected_tbl[]\" class=\"checkall\" value=\"CHARACTER_SETS\" id=\"cckbox_tbl_1\">\n" +
-            "                    </td>\n" +
-            "                    <th>\n" +
-            "                        <a href=\"index.php?route=/sql&amp;db=information_schema&amp;table=CHARACTER_SETS&amp;pos=0\" title=\"\">\n" +
-            "                            CHARACTER_SETS\n" +
-            "                        </a>\n" +
-            "                    </th>\n" +
-            "                    <td class=\"text-center print_ignore\">\n" +
-            "                        <a id=\"7db57eec4b97d698ee5050078fd7h4dee_favorite_anchorr\" class=\"ajax favorite_table_anchor\" href=\"index.php?route=/database/structure/favorite-table&amp;db=information_schema&amp;ajax_request=1&amp;favorite_table=CHARACTER_SETS&amp;add_favorite=1\" title=\"Добавить в Избранное\" data-favtargets=\"6a7169e432a959576d70fee96ae17555\">\n" +
-            "                            <span class=\"nowrap\"><img src=\"img/b_no_favorite.png\" title=\"\" alt=\"\" class=\"icon ic_b_no_favorite\">&nbsp;</span>\n" +
-            "                        </a>\n" +
-            "                    </td>\n" +
-            "                    <td class=\"text-center print_ignore\">\n" +
-            "                        <a href=\"index.php?route=/sql&amp;db=information_schema&amp;table=CHARACTER_SETS&amp;pos=0\">\n" +
-            "                            <span class=\"nowrap\"><img src=\"img/b_browse.png\" title=\"Обзор\"  class=\"icon ic_b_browse\">&nbsp;Обзор</span>\n" +
-            "                        </a>\n" +
-            "                    </td>\n" +
-            "                    <td class=\"text-center print_ignore\">\n" +
-            "                        <a href=\"index.php?route=/table/structure&amp;db=information_schema&amp;table=CHARACTER_SETS\">\n" +
-            "                            <span class=\"nowrap\"><img src=\"img/b_props.png\" title=\"Структура\"  class=\"icon ic_b_props\">&nbsp;Структура</span>\n" +
-            "                        </a>\n" +
-            "                    </td>\n" +
-            "                    <td class=\"text-center print_ignore\">\n" +
-            "                        <a href=\"index.php?route=/table/search&amp;db=information_schema&amp;table=CHARACTER_SETS\">\n" +
-            "                            <span class=\"nowrap\"><img src=\"img/b_select.png\" title=\"Поиск\"  class=\"icon ic_b_select\">&nbsp;Поиск</span>\n" +
-            "                        </a>\n" +
-            "                    </td>\n" +
-            "                    <td class=\"value tbl_rows\" data-table=\"CHARACTER_SETS\">\n" +
-            "                        <a href=\"index.php?route=/database/structure/real-row-count&amp;ajax_request=1&amp;db=information_schema&amp;table=CHARACTER_SETS\" class=\"ajax real_row_count\">\n" +
-            "                            <bdi>\n" +
-            "                                ~0\n" +
-            "                            </bdi>\n" +
-            "                        </a>\n" +
-            "                        <span class=\"pma_hint\"><img src=\"img/b_help.png\" title=\"\" alt=\"\" class=\"icon ic_b_help\"><span class=\"hide\"><a href=\"./url.php?url=https%3A%2F%2Fdocs.phpmyadmin.net%2Fen%2Flatest%2Fconfig.html%23cfg_MaxExactCountViews\" target=\"documentation\"></a></span></span>\n" +
-            "                    </td>\n" +
-            "\n" +
-            "                    <td class=\"nowrap\">\n" +
-            "                        Представление</td>\n" +
-            "                    <td class=\"nowrap\">\n" +
-            "                    </td>\n" +
-            "                </tr>\n" +
-            "                <tr id=\"rowl_1\" class=\"is_view\" data-filter-row=\"CHARACTER_SETS\">\n" +
-            "                    <td class=\"text-center print_ignore\">\n" +
-            "                        <input type=\"checkbox\" name=\"selected_tbl[]\" class=\"checkall\" value=\"CHARACTER_SETS\" id=\"checkbox_tbl_1\">\n" +
-            "                    </td>\n" +
-            "                    <th>\n" +
-            "                        <a href=\"index.php?route=/sql&amp;db=information_schema&amp;table=CHARACTER_SETS&amp;pos=0\" title=\"\">\n" +
-            "                            CHARACTER_SETS\n" +
-            "                        </a>\n" +
-            "                    </th>\n" +
-            "                    <td class=\"text-center print_ignore\">\n" +
-            "                        <a id=\"7db57eec4b97d698ee5050078fd74dee_favorite_anchorr\" class=\"ajax favorite_table_anchor\" href=\"index.php?route=/database/structure/favorite-table&amp;db=information_schema&amp;ajax_request=1&amp;favorite_table=CHARACTER_SETS&amp;add_favorite=1\" title=\"Добавить в Избранное\" data-favtargets=\"6a7169e432a959576d70fee96ae17555\">\n" +
-            "                            <span class=\"nowrap\"><img src=\"img/b_no_favorite.png\" title=\"\" alt=\"\" class=\"icon ic_b_no_favorite\">&nbsp;</span>\n" +
-            "                        </a>\n" +
-            "                    </td>\n" +
-            "                    <td class=\"text-center print_ignore\">\n" +
-            "                        <a href=\"index.php?route=/sql&amp;db=information_schema&amp;table=CHARACTER_SETS&amp;pos=0\">\n" +
-            "                            <span class=\"nowrap\"><img src=\"img/b_browse.png\" title=\"Обзор\"  class=\"icon ic_b_browse\">&nbsp;Обзор</span>\n" +
-            "                        </a>\n" +
-            "                    </td>\n" +
-            "                    <td class=\"text-center print_ignore\">\n" +
-            "                        <a href=\"index.php?route=/table/structure&amp;db=information_schema&amp;table=CHARACTER_SETS\">\n" +
-            "                            <span class=\"nowrap\"><img src=\"img/b_props.png\" title=\"Структура\"  class=\"icon ic_b_props\">&nbsp;Структура</span>\n" +
-            "                        </a>\n" +
-            "                    </td>\n" +
-            "                    <td class=\"text-center print_ignore\">\n" +
-            "                        <a href=\"index.php?route=/table/search&amp;db=information_schema&amp;table=CHARACTER_SETS\">\n" +
-            "                            <span class=\"nowrap\"><img src=\"img/b_select.png\" title=\"Поиск\"  class=\"icon ic_b_select\">&nbsp;Поиск</span>\n" +
-            "                        </a>\n" +
-            "                    </td>\n" +
-            "                    <td class=\"value tbl_rows\" data-table=\"CHARACTER_SETS\">\n" +
-            "                        <a href=\"index.php?route=/database/structure/real-row-count&amp;ajax_request=1&amp;db=information_schema&amp;table=CHARACTER_SETS\" class=\"ajax real_row_count\">\n" +
-            "                            <bdi>\n" +
-            "                                ~0\n" +
-            "                            </bdi>\n" +
-            "                        </a>\n" +
-            "                        <span class=\"pma_hint\"><img src=\"img/b_help.png\" title=\"\" alt=\"\" class=\"icon ic_b_help\"><span class=\"hide\"><a href=\"./url.php?url=https%3A%2F%2Fdocs.phpmyadmin.net%2Fen%2Flatest%2Fconfig.html%23cfg_MaxExactCountViews\" target=\"documentation\"></a></span></span>\n" +
-            "                    </td>\n" +
-            "\n" +
-            "                    <td class=\"nowrap\">\n" +
-            "                        Представление</td>\n" +
-            "                    <td class=\"nowrap\">\n" +
-            "                    </td>\n" +
-            "                </tr>\n" +
-            "            <tr id=\"row_tbl_2\" class=\"is_view\" data-filter-row=\"CHARACTER_SETS\">\n" +
-            "                <td class=\"text-center print_ignore\">\n" +
-            "                    <input type=\"checkbox\" name=\"selected_tbl[]\" class=\"checkall\" value=\"CHARACTER_SETS\" id=\"checkbo_tbl_1\">\n" +
-            "                </td>\n" +
-            "                <th>\n" +
-            "                    <a href=\"index.php?route=/sql&amp;db=information_schema&amp;table=CHARACTER_SETS&amp;pos=0\" title=\"\">\n" +
-            "                        CHARACTER_SETS\n" +
-            "                    </a>\n" +
-            "                </th>\n" +
-            "                <td class=\"text-center print_ignore\">\n" +
-            "                    <a id=\"7db57eec4b97d698ee5050078fd74dee_favorite_ancho\" class=\"ajax favorite_table_anchor\" href=\"index.php?route=/database/structure/favorite-table&amp;db=information_schema&amp;ajax_request=1&amp;favorite_table=CHARACTER_SETS&amp;add_favorite=1\" title=\"Добавить в Избранное\" data-favtargets=\"6a7169e432a959576d70fee96ae17555\">\n" +
-            "                        <span class=\"nowrap\"><img src=\"img/b_no_favorite.png\" title=\"\" alt=\"\" class=\"icon ic_b_no_favorite\">&nbsp;</span>\n" +
-            "                    </a>\n" +
-            "                </td>\n" +
-            "                <td class=\"text-center print_ignore\">\n" +
-            "                    <a href=\"index.php?route=/sql&amp;db=information_schema&amp;table=CHARACTER_SETS&amp;pos=0\">\n" +
-            "                        <span class=\"nowrap\"><img src=\"img/b_browse.png\" title=\"Обзор\"  class=\"icon ic_b_browse\">&nbsp;Обзор</span>\n" +
-            "                    </a>\n" +
-            "                </td>\n" +
-            "                <td class=\"text-center print_ignore\">\n" +
-            "                    <a href=\"index.php?route=/table/structure&amp;db=information_schema&amp;table=CHARACTER_SETS\">\n" +
-            "                        <span class=\"nowrap\"><img src=\"img/b_props.png\" title=\"Структура\"  class=\"icon ic_b_props\">&nbsp;Структура</span>\n" +
-            "                    </a>\n" +
-            "                </td>\n" +
-            "                <td class=\"text-center print_ignore\">\n" +
-            "                    <a href=\"index.php?route=/table/search&amp;db=information_schema&amp;table=CHARACTER_SETS\">\n" +
-            "                        <span class=\"nowrap\"><img src=\"img/b_select.png\" title=\"Поиск\"  class=\"icon ic_b_select\">&nbsp;Поиск</span>\n" +
-            "                    </a>\n" +
-            "                </td>\n" +
-            "                <td class=\"value tbl_rows\" data-table=\"CHARACTER_SETS\">\n" +
-            "                    <a href=\"index.php?route=/database/structure/real-row-count&amp;ajax_request=1&amp;db=information_schema&amp;table=CHARACTER_SETS\" class=\"ajax real_row_count\">\n" +
-            "                        <bdi>\n" +
-            "                            ~0\n" +
-            "                        </bdi>\n" +
-            "                    </a>\n" +
-            "                    <span class=\"pma_hint\"><img src=\"img/b_help.png\" title=\"\" alt=\"\" class=\"icon ic_b_help\"><span class=\"hide\"><a href=\"./url.php?url=https%3A%2F%2Fdocs.phpmyadmin.net%2Fen%2Flatest%2Fconfig.html%23cfg_MaxExactCountViews\" target=\"documentation\"></a></span></span>\n" +
-            "                </td>\n" +
-            "\n" +
-            "                <td class=\"nowrap\">\n" +
-            "                    Представление</td>\n" +
-            "                <td class=\"nowrap\">\n" +
-            "                </td>\n" +
-            "            </tr>\n" +
-            "            <tr id=\"row_tbl_3\" class=\"is_view\" data-filter-row=\"CHARACTER_SETS\">\n" +
-            "                <td class=\"text-center print_ignore\">\n" +
-            "                    <input type=\"checkbox\" name=\"selected_tbl[]\" class=\"checkall\" value=\"CHARACTER_SETS\" id=\"checkbox_tb_1\">\n" +
-            "                </td>\n" +
-            "                <th>\n" +
-            "                    <a href=\"index.php?route=/sql&amp;db=information_schema&amp;table=CHARACTER_SETS&amp;pos=0\" title=\"\">\n" +
-            "                        CHARACTER_SETS\n" +
-            "                    </a>\n" +
-            "                </th>\n" +
-            "                <td class=\"text-center print_ignore\">\n" +
-            "                    <a id=\"7db57eec4b97d698ee5050078fd74dee_favorite_anchor\" class=\"ajax favorite_table_anchor\" href=\"index.php?route=/database/structure/favorite-table&amp;db=information_schema&amp;ajax_request=1&amp;favorite_table=CHARACTER_SETS&amp;add_favorite=1\" title=\"Добавить в Избранное\" data-favtargets=\"6a7169e432a959576d70fee96ae17555\">\n" +
-            "                        <span class=\"nowrap\"><img src=\"img/b_no_favorite.png\" title=\"\" alt=\"\" class=\"icon ic_b_no_favorite\">&nbsp;</span>\n" +
-            "                    </a>\n" +
-            "                </td>\n" +
-            "                <td class=\"text-center print_ignore\">\n" +
-            "                    <a href=\"index.php?route=/sql&amp;db=information_schema&amp;table=CHARACTER_SETS&amp;pos=0\">\n" +
-            "                        <span class=\"nowrap\"><img src=\"img/b_browse.png\" title=\"Обзор\"  class=\"icon ic_b_browse\">&nbsp;Обзор</span>\n" +
-            "                    </a>\n" +
-            "                </td>\n" +
-            "                <td class=\"text-center print_ignore\">\n" +
-            "                    <a href=\"index.php?route=/table/structure&amp;db=information_schema&amp;table=CHARACTER_SETS\">\n" +
-            "                        <span class=\"nowrap\"><img src=\"img/b_props.png\" title=\"Структура\"  class=\"icon ic_b_props\">&nbsp;Структура</span>\n" +
-            "                    </a>\n" +
-            "                </td>\n" +
-            "                <td class=\"text-center print_ignore\">\n" +
-            "                    <a href=\"index.php?route=/table/search&amp;db=information_schema&amp;table=CHARACTER_SETS\">\n" +
-            "                        <span class=\"nowrap\"><img src=\"img/b_select.png\" title=\"Поиск\"  class=\"icon ic_b_select\">&nbsp;Поиск</span>\n" +
-            "                    </a>\n" +
-            "                </td>\n" +
-            "                <td class=\"value tbl_rows\" data-table=\"CHARACTER_SETS\">\n" +
-            "                    <a href=\"index.php?route=/database/structure/real-row-count&amp;ajax_request=1&amp;db=information_schema&amp;table=CHARACTER_SETS\" class=\"ajax real_row_count\">\n" +
-            "                        <bdi>\n" +
-            "                            ~0\n" +
-            "                        </bdi>\n" +
-            "                    </a>\n" +
-            "                    <span class=\"pma_hint\"><img src=\"img/b_help.png\" title=\"\" alt=\"\" class=\"icon ic_b_help\"><span class=\"hide\"><a href=\"./url.php?url=https%3A%2F%2Fdocs.phpmyadmin.net%2Fen%2Flatest%2Fconfig.html%23cfg_MaxExactCountViews\" target=\"documentation\"></a></span></span>\n" +
-            "                </td>\n" +
-            "\n" +
-            "                <td class=\"nowrap\">\n" +
-            "                    Представление</td>\n" +
-            "                <td class=\"nowrap\">\n" +
-            "                </td>\n" +
-            "            </tr>\n" +
-            "            </thbody>\n" +
-            "        </table>";
-    }
-
+else if(x===0) {
+         nnn.style.display="none";
+         var gen=(document.getElementById('general').innerHTML ="<div id=\"general\">\n" +
+             "        <div class=\"row\">\n" +
+             "            <div class=\"col-8\">\n" +
+             "                 <div class=\"gen\"><div id=\"nnt\"></div>\n" +
+             "                     <div class=\"child\">\n" +
+             "                         <h5>Demo server phpMyAdmin</h5>\n" +
+             "                         <p class=\"desc\">simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text\n" +
+             "                             ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>\n" +
+             "                     </div>\n" +
+             "                 </div>\n" +
+             "                 <div class=\"gen1\">\n" +
+             "                     <div class=\"child\">\n" +
+             "                         <h5>General settings</h5>\n" +
+             "                     </div>\n" +
+             "                     <img src=\"img/s_passwd.png\"  alt=\"\" width=\"16px\" height=\"16px\">\n" +
+             "                         <a href=\"#\">Change password</a>\n" +
+             "                     <br>\n" +
+             "                     <img src=\"img/s_asci.png\"  alt=\"\" width=\"16px\" height=\"16px\">\n" +
+             "                     <a href=\"#\">Server connection collation</a>\n" +
+             "                     <img src=\"img/b_docs.png\"  alt=\"\" width=\"16px\" height=\"16px\">\n" +
+             "                     <select>\n" +
+             "                         <option>\n" +
+             "                             All that you need\n" +
+             "                         </option>\n" +
+             "                         <option>\n" +
+             "                             All\n" +
+             "                         </option>\n" +
+             "                     </select>\n" +
+             "                 </div>\n" +
+             "                     <div class=\"gen2\">\n" +
+             "                         <div class=\"child\">\n" +
+             "                        <h5>Appearance Settings</h5>\n" +
+             "                     </div>\n" +
+             "                         <img src=\"img/s_lang.png\"  alt=\"\" width=\"16px\" height=\"16px\">\n" +
+             "                         <a href=\"#\">Server connection collation</a>\n" +
+             "                         <img src=\"img/b_docs.png\"  alt=\"\" width=\"16px\" height=\"16px\">\n" +
+             "                         <select>\n" +
+             "                             <option>\n" +
+             "                                 Language\n" +
+             "                             </option>\n" +
+             "                             <option>\n" +
+             "                                 English\n" +
+             "                             </option>\n" +
+             "                             <option>\n" +
+             "                                 Russian\n" +
+             "                             </option>\n" +
+             "                         </select>\n" +
+             "                         <br>\n" +
+             "                         <img src=\"img/s_theme.png\" alt=\"\" width=\"16px\" height=\"16px\">\n" +
+             "                         <a href=\"#\">Theme:</a>\n" +
+             "                         <select>\n" +
+             "                             <option>\n" +
+             "                                 Language\n" +
+             "                             </option>\n" +
+             "                             <option>\n" +
+             "                                 English\n" +
+             "                             </option>\n" +
+             "                             <option>\n" +
+             "                                 Russian\n" +
+             "                             </option>\n" +
+             "                         </select>\n" +
+             "                         <br>\n" +
+             "                             <li class=\"aa\"></li>\n" +
+             "                             <select class=\"bbb\">\n" +
+             "                                 <option>\n" +
+             "                                     Font size\n" +
+             "                                 </option>\n" +
+             "                                 <option>\n" +
+             "                                     All\n" +
+             "                                 </option>\n" +
+             "                             </select>\n" +
+             "                         <br>\n" +
+             "                         <img src=\"img/b_tblops.png\" alt=\"\" width=\"16px\" height=\"16px\">\n" +
+             "                         <a href=\"#\">More settings</a>\n" +
+             "                 </div>\n" +
+             "             </div>\n" +
+             "            <div class=\"col-4\">\n" +
+             "                <div class=\"general\">\n" +
+             "                        <div class=\"card mt-4\">\n" +
+             "                            <div class=\"card-header\">\n" +
+             "                                Server database            </div>\n" +
+             "                            <div class=\"card-body\">\n" +
+             "                                <ul>\n" +
+             "                                    <li id=\"li_server_info\">\n" +
+             "                                        Сервер:                phpMyAdmin demo - MySQL (192.168.30.23 via TCP/IP)\n" +
+             "                                    </li>\n" +
+             "                                    <li id=\"li_server_type\">\n" +
+             "                                        Тип сервера:                MySQL\n" +
+             "                                    </li>\n" +
+             "                                    <li id=\"li_server_connection\">\n" +
+             "                                        Соединение сервера:                <span class=\"caution\">SSL не используется</span> <a href=\"./url.php?url=https%3A%2F%2Fdocs.phpmyadmin.net%2Fen%2Flatest%2Fsetup.html%23ssl\" target=\"documentation\"><img src=\"img/b_docs.png\" title=\"Документация\" alt=\"Документация\" class=\"icon ic_b_help\"></a>\n" +
+             "                                    </li>\n" +
+             "                                    <li id=\"li_server_version\">\n" +
+             "                                        Версия сервера:                8.0.18 - MySQL Community Server - GPL\n" +
+             "                                    </li>\n" +
+             "                                    <li id=\"li_mysql_proto\">\n" +
+             "                                        Версия протокола:                10\n" +
+             "                                    </li>\n" +
+             "                                    <li id=\"li_user_info\">\n" +
+             "                                        Пользователь:                root@192.168.30.20\n" +
+             "                                    </li>\n" +
+             "                                    <li id=\"li_mysql_charset\">\n" +
+             "                                        Кодировка сервера:                <span lang=\"en\" dir=\"ltr\">\n" +
+             "                  UTF-8 Unicode (utf8mb4)\n" +
+             "                </span>\n" +
+             "                                    </li>\n" +
+             "                                </ul>\n" +
+             "                            </div>\n" +
+             "                        </div>\n" +
+             "\n" +
+             "                        <div class=\"card mt-4\">\n" +
+             "                            <div class=\"card-header\">\n" +
+             "                                Web server           </div>\n" +
+             "                            <div class=\"card-body\">\n" +
+             "                                <ul>\n" +
+             "                                    <li id=\"li_web_server_software\">\n" +
+             "                                        nginx/1.10.3\n" +
+             "                                    </li>\n" +
+             "                                    <li id=\"li_mysql_client_version\">\n" +
+             "                                        Версия клиента базы данных:                  libmysql - mysqlnd 7.4.0\n" +
+             "                                    </li>\n" +
+             "                                    <li id=\"li_used_php_extension\">\n" +
+             "                                        PHP расширение:                                      mysqli\n" +
+             "                                        <a href=\"./url.php?url=https%3A%2F%2Fsecure.php.net%2Fmanual%2Fru%2Fbook.mysqli.php\" target=\"documentation\"><img src=\"img/b_docs.png\" title=\"Документация\" alt=\"Документация\" class=\"icon ic_b_help\"></a>\n" +
+             "                                        curl\n" +
+             "                                        <a href=\"./url.php?url=https%3A%2F%2Fsecure.php.net%2Fmanual%2Fru%2Fbook.curl.php\" target=\"documentation\"><img src=\"img/b_docs.png\" title=\"Документация\" alt=\"Документация\" class=\"icon ic_b_help\"></a>\n" +
+             "                                        mbstring\n" +
+             "                                        <a href=\"./url.php?url=https%3A%2F%2Fsecure.php.net%2Fmanual%2Fru%2Fbook.mbstring.php\" target=\"documentation\"><img src=\"img/b_docs.png\" title=\"Документация\" alt=\"Документация\" class=\"icon ic_b_help\"></a>\n" +
+             "                                    </li>\n" +
+             "                                    <li id=\"li_used_php_version\">\n" +
+             "                                        Версия PHP:                  7.4.0\n" +
+             "                                    </li>\n" +
+             "                                </ul>\n" +
+             "                            </div>\n" +
+             "                        </div>\n" +
+             "\n" +
+             "                        <div class=\"card mt-4\">\n" +
+             "                            <div class=\"card-header\">\n" +
+             "                                phpMyAdmin\n" +
+             "                            </div>\n" +
+             "                            <div class=\"card-body\">\n" +
+             "                                <ul>\n" +
+             "                                    <li id=\"li_pma_version\" class=\"jsversioncheck\">\n" +
+             "                                        Информация о версии:                <span class=\"version\">5.1.0-dev</span><span class=\"latest\">, последняя стабильная версия: <a href=\"https://www.phpmyadmin.net/files/4.9.2/\" class=\"disableAjax\">4.9.2</a></span></li><li id=\"li_pma_version_git\">\n" +
+             "\n" +
+             "                                    Git ревизия: <a href=\"./url.php?url=https%3A%2F%2Fgithub.com%2Fphpmyadmin%2Fphpmyadmin%2Fcommit%2F72ddaccdab9bc870e0296b09908333c218cee521\" rel=\"noopener noreferrer\" target=\"_blank\"><strong title=\"Merge pull request #15647 from gurrrung/15618\n" +
+             "\n" +
+             "fixed the font size\n" +
+             "\n" +
+             "fixes #15618\n" +
+             "\n" +
+             "earlier font-size:1em was used which was\n" +
+             "being overrided by a default BS styling\n" +
+             "reverted back to old styling by overriding\n" +
+             "it.\n" +
+             "\n" +
+             "Closes #15645\">72ddacc</strong></a> из <a href=\"./url.php?url=https%3A%2F%2Fgithub.com%2Fphpmyadmin%2Fphpmyadmin%2Ftree%2Fmaster\" rel=\"noopener noreferrer\" target=\"_blank\">master</a> ветки,<br> отправлено Дек 15 2019 г., 15:40, <a href=\"mailto:noreply@github.com\">GitHub</a>, <br>создано Дек 15 2019 г., 15:40, <a href=\"mailto:mauricio@fauth.dev\">Maurício Meneghini Fauth</a>\n" +
+             "                                </li>\n" +
+             "                                    <li id=\"li_pma_docs\">\n" +
+             "                                        <a href=\"./url.php?url=https%3A%2F%2Fdocs.phpmyadmin.net%2Fen%2Flatest%2Findex.html\" target=\"_blank\" rel=\"noopener noreferrer\">\n" +
+             "                                            Документация                </a>\n" +
+             "                                    </li>\n" +
+             "                                    <li id=\"li_pma_homepage\">\n" +
+             "                                        <a href=\"./url.php?url=https%3A%2F%2Fwww.phpmyadmin.net%2F\" target=\"_blank\" rel=\"noopener noreferrer\">\n" +
+             "                                            Официальная страница phpMyAdmin                </a>\n" +
+             "                                    </li>\n" +
+             "                                    <li id=\"li_pma_contribute\">\n" +
+             "                                        <a href=\"./url.php?url=https%3A%2F%2Fwww.phpmyadmin.net%2Fcontribute%2F\" target=\"_blank\" rel=\"noopener noreferrer\">\n" +
+             "                                            Пожертвовать                </a>\n" +
+             "                                    </li>\n" +
+             "                                    <li id=\"li_pma_support\">\n" +
+             "                                        <a href=\"./url.php?url=https%3A%2F%2Fwww.phpmyadmin.net%2Fsupport%2F\" target=\"_blank\" rel=\"noopener noreferrer\">\n" +
+             "                                            Получить помощь                </a>\n" +
+             "                                    </li>\n" +
+             "                                    <li id=\"li_pma_changes\">\n" +
+             "                                        <a href=\"index.php?route=/changelog\" target=\"_blank\">\n" +
+             "                                            Список изменений                </a>\n" +
+             "                                    </li>\n" +
+             "                                    <li id=\"li_pma_license\">\n" +
+             "                                        <a href=\"index.php?route=/license\" target=\"_blank\">\n" +
+             "                                            Лицензия                </a>\n" +
+             "                                    </li>\n" +
+             "                                </ul>\n" +
+             "                            </div>\n" +
+             "                        </div>\n" +
+             "                    </div>\n" +
+             "        </div>\n" +
+             "        </div>\n" +
+             "        </div>")
+     }
+else{
+    console.log('hi');
+}
 }
 var parent = document.getElementById('navigate');
 $(document).ready(function() {
@@ -1186,7 +786,64 @@ $(document).ready(function(){
         }
 });
 });
-
+var nnn=document.getElementById('nnn');
+nnn.style.display="none";
+$(document).ready(function () {
+    $.ajax({
+        url: "ajax/table.json",
+        dataType: "json",
+        success: function (data) {
+            var table = document.createElement('table');
+            var thead = document.createElement('thead');
+            thead.style.display=('flex');
+            thead.style.flexDirection=('row');
+            $(thead).appendTo(table);
+            var tbody=document.createElement('tbody');
+            $(tbody).appendTo(table);
+            for (var i of data.tableArr) {
+                var trh=document.createElement('tr');
+                trh.style.fontWeight=('bold');
+                trh.style.background=('linear-gradient(#fff, #ccc');
+                trh.style.width=('62.5px');
+                var th1 = document.createElement('th');
+                var a = document.createElement('a');
+                $(a).text(i.name);
+                $(a).appendTo(th1);
+                $(th1).appendTo(trh);
+                $(trh).appendTo(thead);
+                var tr = document.createElement('tr');
+                tr.style.display=('flex');
+                tr.style.width=('500px');
+                $(tr).appendTo(tbody);
+                var td = document.createElement('td');
+                td.style.display=('flex');
+                $(td).text(i.titleSec);
+                var input = document.createElement('input');
+                $(input).appendTo(td);
+                input.setAttribute('type', i.type);
+                var img = document.createElement('img');
+                $(img).appendTo(td);
+                img.src = i.img;
+                $(td).appendTo(tr);
+                var td1=document.createElement('td');
+                $(td1).appendTo(tr);
+                var a1=document.createElement('a');
+                $(a1).text(i.secTitle);
+                $(a1).appendTo(td);
+                var a2=document.createElement('a');
+                $(a2).text(i.secondName);
+                $(a2).appendTo(td1);
+                var input = document.createElement('input');
+                $(input).appendTo(td);
+                input.setAttribute('type', i.type);
+                var img = document.createElement('img');
+                $(img).appendTo(td);
+                img.src = i.img;
+            }
+            $(table).appendTo(nnn);
+        }
+    });
+});
 function switchVisible() {
     if (document.getElementById('Div1')) {
 
