@@ -14,6 +14,18 @@
     {"name":"nav-item", "img":"img/b_import.png", "title":"Import"
     },
     {"name": "nav-item", "img": "img/b_tblops.png", "title": "Settings"
+    },
+    {"name": "nav-item", "img": "img/s_tbl.png", "title": "Binary"
+    },
+    {"name": "nav-item", "img": "img/s_replication.png", "title": "Replication"
+    },
+    {"name": "nav-item", "img": "img/s_vars.png", "title": "Variables"
+    },
+    {"name": "nav-item", "img": "img/s_asci.png", "title": "Codes"
+    },
+    {"name": "nav-item", "img": "img/b_engine.png", "title": "Engine"
+    },
+    {"name": "nav-item", "img": "img/b_plugin.png", "title": "Plugins"
     }
   ]
 

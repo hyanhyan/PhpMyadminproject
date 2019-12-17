@@ -1,14 +1,13 @@
 {
-  "tableArr": [
+  "Arr": [
     {
       "secondName": "Structure",
       "secTitle": "Show",
       "name": "Table",
       "type": "Checkbox",
       "titleSec": "Character sets",
-      "img": "img/b_no_favorite.png",
-      "image": "img/s_asc.png"
-
+      "img": "img/s_host.png",
+      "image": "img/s_cancel.png"
     },
     {
       "secondName": "Structure",
@@ -16,8 +15,8 @@
       "name": "Doing",
       "type": "Checkbox",
       "titleSec": "Character sets",
-      "img": "img/b_no_favorite.png",
-      "image": "img/s_asc.png"
+      "img": "img/s_host.png",
+      "image": "img/s_cancel.png"
     },
     {
       "secondName": "Structure",
@@ -25,33 +24,16 @@
       "name": "Rows",
       "type": "Checkbox",
       "titleSec": "Character sets",
-      "img": "img/b_no_favorite.png",
-      "image": "img/s_asc.png"
-    },
-    {
-      "secondName": "Structure",
-      "secTitle": "Show",
-      "name": "Type",
-      "type": "Checkbox",
-      "titleSec": "Character sets",
-      "img": "img/b_no_favorite.png",
-      "image": "img/s_asc.png"
-    },
-    {
-      "secondName": "Structure",
-      "secTitle": "Show",
-      "name": "Compare",
-      "type": "Checkbox",
-      "titleSec": "Character sets",
-      "img": "img/b_no_favorite.png",
-      "image": "img/s_asc.png"
+      "img": "img/s_host.png",
+      "image": "img/s_cancel.png"
     },
     {
       "secondName": "Structure",
       "secTitle": "Show",
       "type": "Checkbox",
       "titleSec": "Character sets",
-      "img": "img/b_no_favorite.png"
+      "img": "img/s_host.png",
+      "image": "img/s_cancel.png"
 
     },
     {
@@ -59,7 +41,8 @@
       "secTitle": "Show",
       "type": "Checkbox",
       "titleSec": "Character sets",
-      "img": "img/b_no_favorite.png"
+      "img": "img/s_host.png",
+      "image": "img/s_cancel.png"
 
     },
     {
@@ -67,8 +50,8 @@
       "secTitle": "Show",
       "type": "Checkbox",
       "titleSec": "Character sets",
-      "img": "img/b_no_favorite.png"
-
+      "img": "img/s_host.png",
+      "image": "img/s_cancel.png"
     }
   ]
 }
