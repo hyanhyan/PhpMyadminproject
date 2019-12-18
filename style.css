@@ -43,7 +43,7 @@ table tbody:first-of-type tr:nth-child(even) th,
 
  }
 table{
-    width:800px;
+    width:100%;
 }
 thead{
     display: flex;
@@ -167,22 +167,28 @@ a:active{
     color: #235a81;
     outline: none;
 }
+#multiCollapseExample1,#multiCollapseExample2,#multiCollapseExample3{
+    margin-left:40px;
+}
 #general {
     width:100%;
-    display:flex;
     flex-direction: column;
 }
-#nnn{
+#table1{
     width:100%;
-    display:flex;
     flex-direction: column;
 }
-#ddd{
+#table2{
     width:100%;
-    display:flex;
     flex-direction: column;
 }
-
+#table3{
+    width:100%;
+    flex-direction: column;
+}
+.collapse multi-collapse inner{
+    margin-left:60px;
+}
 .card {
     position: relative;
     display: flex;

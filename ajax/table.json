@@ -8,7 +8,6 @@
       "titleSec": "Character sets",
       "img": "img/b_no_favorite.png",
       "image": "img/s_asc.png"
-
     },
     {
       "secondName": "Structure",
@@ -68,6 +67,170 @@
       "type": "Checkbox",
       "titleSec": "Character sets",
       "img": "img/b_no_favorite.png"
+
+    }
+  ],
+
+  "Arr": [
+    {
+      "secondName": "Structure",
+      "secTitle": "Show",
+      "name": "Type",
+      "type": "Checkbox",
+      "titleSec": "Database",
+      "img": "img/s_host.png",
+      "image": "img/s_cancel.png"
+    },
+    {
+      "secondName": "Structure",
+      "secTitle": "Show",
+      "name": "Compare",
+      "type": "Checkbox",
+      "titleSec": "Database",
+      "img": "img/s_host.png",
+      "image": "img/s_cancel.png"
+    },
+    {
+      "secondName": "Structure",
+      "secTitle": "Show",
+      "name": "Table",
+      "type": "Checkbox",
+      "titleSec": "Database",
+      "img": "img/s_host.png",
+      "image": "img/s_cancel.png"
+    },
+    {
+      "secondName": "Structure",
+      "secTitle": "Show",
+      "name": "Doing",
+      "type": "Checkbox",
+      "titleSec": "Database",
+      "img": "img/s_host.png",
+      "image": "img/s_cancel.png"
+    },
+    {
+      "secondName": "Structure",
+      "secTitle": "Show",
+      "name": "Rows",
+      "type": "Checkbox",
+      "titleSec": "Database",
+      "img": "img/s_host.png",
+      "image": "img/s_cancel.png"
+    },
+    {
+      "secondName": "Structure",
+      "secTitle": "Show",
+      "type": "Checkbox",
+      "titleSec": "Database",
+      "img": "img/s_host.png",
+      "image": "img/s_cancel.png"
+
+    }
+  ],
+  "Array": [
+    {
+      "secondName": "Structure",
+      "secTitle": "Show",
+      "name": "Table",
+      "type": "Checkbox",
+      "titleSec": "Information",
+      "img": "img/b_sql.png"
+
+    },
+    {
+      "secondName": "Structure",
+      "secTitle": "Show",
+      "type": "Checkbox",
+      "titleSec": "Information",
+      "img": "img/b_sql.png"
+
+    },
+    {
+      "secondName": "Structure",
+      "secTitle": "Show",
+      "type": "Checkbox",
+      "titleSec": "Information",
+      "img": "img/b_sql.png"
+
+    },
+    {
+      "secondName": "Structure",
+      "secTitle": "Show",
+      "type": "Checkbox",
+      "titleSec": "Information",
+      "img": "img/b_sql.png"
+
+    },
+    {
+      "secondName": "Structure",
+      "secTitle": "Show",
+      "type": "Checkbox",
+      "titleSec": "Information",
+      "img": "img/b_sql.png"
+
+    },
+    {
+      "secondName": "Structure",
+      "secTitle": "Show",
+      "type": "Checkbox",
+      "titleSec": "Information",
+      "img": "img/b_sql.png"
+
+    },
+    {
+      "secondName": "Structure",
+      "secTitle": "Show",
+      "name": "Doing",
+      "type": "Checkbox",
+      "titleSec": "Information",
+      "img": "img/b_sql.png"
+    },
+    {
+      "secondName": "Structure",
+      "secTitle": "Show",
+      "name": "Rows",
+      "type": "Checkbox",
+      "titleSec": "Information",
+      "img": "img/b_sql.png"
+    },
+    {
+      "secondName": "Structure",
+      "secTitle": "Show",
+      "name": "Type",
+      "type": "Checkbox",
+      "titleSec": "Information",
+      "img": "img/b_sql.png"
+    },
+    {
+      "secondName": "Structure",
+      "secTitle": "Show",
+      "name": "Compare",
+      "type": "Checkbox",
+      "titleSec": "Information",
+      "img": "img/b_sql.png"
+    },
+    {
+      "secondName": "Structure",
+      "secTitle": "Show",
+      "type": "Checkbox",
+      "titleSec": "Information",
+      "img": "img/b_sql.png"
+
+    },
+    {
+      "secondName": "Structure",
+      "secTitle": "Show",
+      "type": "Checkbox",
+      "titleSec": "Information",
+      "img": "img/b_sql.png"
+
+    },
+    {
+      "secondName": "Structure",
+      "secTitle": "Show",
+      "type": "Checkbox",
+      "titleSec": "Information",
+      "img": "img/b_sql.png"
 
     }
   ]
