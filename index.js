@@ -40,7 +40,7 @@ $(document).ready(function () {
                 parent.appendChild(li);
                 var img = document.createElement('img');
                 img.src = i.img;
-                img.setAttribute('class', 'home');
+                img.setAttribute('class',i.class);
                 img.setAttribute('alt', '');
                 li.appendChild(img);
                 var ah = document.createElement('a');
@@ -251,14 +251,7 @@ $(document).ready(function () {
             $(thead).appendTo(table);
             var tbody = document.createElement('tbody');
             $(tbody).appendTo(table);
-            var trh = document.createElement('tr');
-            var th1 = document.createElement('th');
-            var a = document.createElement('a');
             for (var i of data.Array) {
-                $(a).text(i.name);
-                $(a).appendTo(th1);
-                $(th1).appendTo(trh);
-                $(trh).appendTo(thead);
                 var tr = document.createElement('tr');
                 $(tr).appendTo(tbody);
                 var td = document.createElement('td');

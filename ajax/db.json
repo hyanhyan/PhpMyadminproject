@@ -1,31 +1,31 @@
 {
   "menus": [
 
-    {"name":"nav-item", "img":"img/s_db.png", "title":"Databases"
+    {"name":"nav-item", "img":"img/s_db.png", "title":"Databases","class": "home"
     },
-    {"name":"nav-item", "img":"img/b_sql.png", "title":"Sql"
+    {"name":"nav-item", "img":"img/b_sql.png", "title":"Sql","class": "home"
     },
-    {"name": "nav-item", "img": "img/s_status.png", "title": "Status"
+    {"name": "nav-item", "img": "img/s_status.png", "title": "Status","class": "home"
     },
-    {"name": "nav-item", "img": "img/s_host.png", "title": "Users"
+    {"name": "nav-item", "img": "img/s_host.png", "title": "Users","class": "home"
     },
-    {"name": "nav-item", "img": "img/b_export.png", "title": "Export"
+    {"name": "nav-item", "img": "img/b_export.png", "title": "Export","class": "home"
     },
-    {"name":"nav-item", "img":"img/b_import.png", "title":"Import"
+    {"name":"nav-item", "img":"img/b_import.png", "title":"Import","class": "home"
     },
-    {"name": "nav-item", "img": "img/b_tblops.png", "title": "Settings"
+    {"name": "nav-item", "img": "img/b_tblops.png", "title": "Settings","class": "home"
     },
-    {"name": "nav-item", "img": "img/s_tbl.png", "title": "Binary"
+    {"name": "nav-item", "img": "img/s_tbl.png", "title": "Binary","class": "home"
     },
-    {"name": "nav-item", "img": "img/s_replication.png", "title": "Replication"
+    {"name": "nav-item", "img": "img/s_replication.png", "title": "Replication","class": "home"
     },
-    {"name": "nav-item", "img": "img/s_vars.png", "title": "Variables"
+    {"name": "nav-item", "img": "img/s_vars.png", "title": "Variables","class": "home"
     },
-    {"name": "nav-item", "img": "img/s_asci.png", "title": "Codes"
+    {"name": "nav-item", "img": "img/s_asci.png", "title": "Codes","class": "home"
     },
-    {"name": "nav-item", "img": "img/b_engine.png", "title": "Engine"
+    {"name": "nav-item", "img": "img/b_engine.png", "title": "Engine","class": "home"
     },
-    {"name": "nav-item", "img": "img/b_plugin.png", "title": "Plugins"
+    {"name": "nav-item", "img": "img/b_plugin.png", "title": "Plugins","class": "home"
     }
   ]
 

@@ -1,9 +1,14 @@
 body {
-    margin:0;
-    padding:0;
+    margin: 0;
+    font-family: sans-serif;
     font-size: 0.82rem;
     font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    background-color: #fff;
+
 }
+
 h1,h2,h3,h5,h6 {
     color:#fff;
 }
@@ -24,6 +29,7 @@ h1,h2,h3,h5,h6 {
     margin-bottom:-16px;
 }
 .rut {
+    width:210px;
     z-index:800;
     top: 0;
     left: 0;
@@ -43,7 +49,7 @@ table tbody:first-of-type tr:nth-child(even) th,
 
  }
 table{
-    width:100%;
+    margin-top:50px;
 }
 thead{
     display: flex;
@@ -93,6 +99,12 @@ tr{
 th{
     background: linear-gradient(#fff, #ccc);
 }
+td{
+    padding: 20px;
+}
+td>a{
+    padding: 20px;
+}
 .pluss{
     margin-bottom:20px;
 }
@@ -112,8 +124,12 @@ th{
     margin-top:50px;
 
 }
+#nnn{
+    width:500px;
+    margin-top:50px;
+}
 .general{
-    margin-top:49px;
+    margin-top:50px;
     position: relative;
     width: 100%;
     padding-right: 15px;
@@ -167,12 +183,14 @@ a:active{
     color: #235a81;
     outline: none;
 }
+
 #multiCollapseExample1,#multiCollapseExample2,#multiCollapseExample3{
     margin-left:40px;
 }
 #general {
     width:100%;
     flex-direction: column;
+    z-index: -1;
 }
 #table1{
     width:100%;
@@ -236,6 +254,7 @@ span.caution {
 }
 .desc {
     margin-top:20px;
+    margin-left:35px;
 }
 
 .gen2 {
@@ -248,7 +267,9 @@ span.caution {
     border: 1px solid #999;
     border-radius: .25rem;
 }
-
+.gen1 img,.gen2 img{
+    margin-left:35px;
+}
 .bbb {
     margin-top:-60px;
     margin-bottom: 13px;

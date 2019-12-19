@@ -59,7 +59,7 @@
     "href": "#multiCollapseExample3",
     "secondName": "Toggle 3.1 element",
     "onclick": "myFunction(3)",
-    "click": "myFunction(2)",
+    "click": "myFunction(1)",
     "target": "#demo3",
     "name": "Toggle 3 element",
     "secondId": "multiCollapseExample33",

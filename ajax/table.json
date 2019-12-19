@@ -131,7 +131,6 @@
     {
       "secondName": "Structure",
       "secTitle": "Show",
-      "name": "Table",
       "type": "Checkbox",
       "titleSec": "Information",
       "img": "img/b_sql.png"
@@ -180,7 +179,6 @@
     {
       "secondName": "Structure",
       "secTitle": "Show",
-      "name": "Doing",
       "type": "Checkbox",
       "titleSec": "Information",
       "img": "img/b_sql.png"
@@ -188,7 +186,6 @@
     {
       "secondName": "Structure",
       "secTitle": "Show",
-      "name": "Rows",
       "type": "Checkbox",
       "titleSec": "Information",
       "img": "img/b_sql.png"
@@ -196,7 +193,6 @@
     {
       "secondName": "Structure",
       "secTitle": "Show",
-      "name": "Type",
       "type": "Checkbox",
       "titleSec": "Information",
       "img": "img/b_sql.png"
@@ -204,7 +200,6 @@
     {
       "secondName": "Structure",
       "secTitle": "Show",
-      "name": "Compare",
       "type": "Checkbox",
       "titleSec": "Information",
       "img": "img/b_sql.png"
