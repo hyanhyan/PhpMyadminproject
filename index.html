@@ -6,9 +6,7 @@
     <title>Title</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
 <div class="container-fluid">
@@ -33,11 +31,12 @@
         </div>
 
 <div id="all">
-    <p class="near">Create db</p>
-    <img src="img/b_plus.png" class="pluss" id="Div1" href="#multiCollapseExample" onclick="switchVisible()" data-toggle="collapse" aria-expanded="true" aria-controls="multiCollapseExample1" alt="">
-               <img src="img/b_minus.png" id="Div2" href="#multiCollapseExample" onclick="switchVisible()" class="minus"  data-toggle="collapse" aria-expanded="true" aria-controls="multiCollapseExample1" alt="">
+    <p class="near" onclick="myFunction(4)">Create db</p>
+    <img src="img/b_plus.png" class="pluss" id="Div1" onclick="switchVisible()" alt="">
+               <img src="img/b_minus.png" id="Div2"  onclick="switchVisible()" class="minus" alt="">
         </div>
-</div>
+
+    </div>
 </div>
     <div class="col-lg-11">
         <div class="d-flex flex-row">
@@ -47,7 +46,55 @@
             </ul>
         </nav>
         </div>
+        <div id="create">
+            <div class="row">
+                <h2>
+                    Database</h2>
+            </div>
+            <div class="row">
+                <ul>
+                    <li id="li_create_database" class="no_bullets">
+                        <form>
+                            <p>
+                                <strong>
+                                    <label for="text_create_db">
+                                        <img src="img/b_newdb.png" title="" alt="" class="icon ic_b_newdb">
+                                        Create database</label>
+                                    <a href="#"><img src="img/b_help.png" title="Документация"  class="icon ic_b_help"></a>
+                                </strong>
+                            </p>
+                            <input type="text" name="new_db" maxlength="64" class="textfield" id="text_create_db" placeholder="Name of database" required="" >
+                            <select lang="en" dir="ltr" name="db_collation">
+                                <option value="">Compare</option>
+                                <option value=""></option>
+                                <optgroup label="armscii8" title="ARMSCII-8 Armenian">
+                                    <option value="armscii8_bin" title="Армянский, двоичный">armscii8_bin</option>
+                                    <option value="armscii8_general_ci" title="Армянский, регистро-независимый">armscii8_general_ci</option>
+                                </optgroup>
+                                <optgroup label="ascii" title="US ASCII">
+                                    <option value="ascii_bin" title="Западно-Европейский, двоичный">ascii_bin</option>
+                                    <option value="ascii_general_ci" title="Западно-Европейский, регистро-независимый">ascii_general_ci</option>
+                                </optgroup>
 
+                            </select>
+
+                            <button class="btn btn-primary"  onclick = "myFunction(5)">Create</button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <fieldset id="tableFilter">
+                        <legend>Фильтры</legend>
+                        <div class="formelement">
+                            <label for="filterText">Содержит слово:</label>
+                            <input name="filterText" type="text" id="filterText" value="">
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
         <div id="table1"></div>
         <div id="table2"></div>
         <div id="table3"></div>
@@ -201,14 +248,14 @@ being overrided by a default BS styling
 reverted back to old styling by overriding
 it.
 
-Closes #15645">72ddacc</strong></a> из <a href="./url.php?url=https%3A%2F%2Fgithub.com%2Fphpmyadmin%2Fphpmyadmin%2Ftree%2Fmaster" rel="noopener noreferrer" target="_blank">master</a> ветки,<br> отправлено Дек 15 2019 г., 15:40, <a href="mailto:noreply@github.com">GitHub</a>, <br>создано Дек 15 2019 г., 15:40, <a href="mailto:mauricio@fauth.dev">Maurício Meneghini Fauth</a>
+Closes #15645">72ddacc</strong></a> из <a href="#" rel="noopener noreferrer" target="_blank">master</a> ветки,<br> отправлено Дек 15 2019 г., 15:40, <a href="mailto:noreply@github.com">GitHub</a>, <br>создано Дек 15 2019 г., 15:40, <a href="#">Maurício Meneghini Fauth</a>
                                 </li>
                                     <li id="li_pma_docs">
-                                        <a href="./url.php?url=https%3A%2F%2Fdocs.phpmyadmin.net%2Fen%2Flatest%2Findex.html" target="_blank" rel="noopener noreferrer">
+                                        <a href="#" target="_blank" rel="noopener noreferrer">
                                             Документация</a>
                                     </li>
                                     <li id="li_pma_homepage">
-                                        <a href="./url.php?url=https%3A%2F%2Fwww.phpmyadmin.net%2F" target="_blank" rel="noopener noreferrer">
+                                        <a href="#" target="_blank" rel="noopener noreferrer">
                                             Официальная страница phpMyAdmin</a>
                                     </li>
                                     <li id="li_pma_contribute">
@@ -216,15 +263,15 @@ Closes #15645">72ddacc</strong></a> из <a href="./url.php?url=https%3A%2F%2Fgi
                                             Пожертвовать</a>
                                     </li>
                                     <li id="li_pma_support">
-                                        <a href="./url.php?url=https%3A%2F%2Fwww.phpmyadmin.net%2Fsupport%2F" target="_blank" rel="noopener noreferrer">
+                                        <a href="#" target="_blank" rel="noopener noreferrer">
                                             Получить помощь</a>
                                     </li>
                                     <li id="li_pma_changes">
-                                        <a href="index.php?route=/changelog" target="_blank">
+                                        <a href="#" target="_blank">
                                             Список изменений</a>
                                     </li>
                                     <li id="li_pma_license">
-                                        <a href="index.php?route=/license" target="_blank">
+                                        <a href="#"target="_blank">
                                             Лицензия</a>
                                     </li>
                                 </ul>

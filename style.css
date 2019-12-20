@@ -6,7 +6,6 @@ body {
     line-height: 1.5;
     text-align: left;
     background-color: #fff;
-
 }
 
 h1,h2,h3,h5,h6 {
@@ -63,7 +62,7 @@ thead tr{
 }
 tr{
     display: flex;
-    width:500px;
+
 }
 .card-header:first-child {
     border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
@@ -96,14 +95,59 @@ tr{
     margin-bottom: -18px;
     margin-left: 23px;
 }
+#create{
+    display: none;
+}
+#li_create_database{
+    list-style-type: none;
+}
+#create h2{
+    font-size: 2em;
+    font-weight: normal;
+    text-shadow: 0 1px 0 #fff;
+    padding: 10px 0 10px;
+    padding-left: 3px;
+    color: #777;
+}
+thead tr{
+    width:5vw;
+}
+tbody{
+    width:5vw;
+}
 th{
     background: linear-gradient(#fff, #ccc);
 }
-td{
-    padding: 20px;
+fieldset{
+    margin-top: 1em;
+    border: #aaa solid 1px;
+    background: #eee;
+    box-shadow: 1px 1px 2px #fff inset;
 }
-td>a{
-    padding: 20px;
+fieldset legend {
+    font-weight: bold;
+    color: #444;
+    padding: 10px 10px;
+    border: 1px solid #aaa;
+    background-color: #fff;
+    max-width: 100%;
+    box-shadow: 3px 3px 15px #bbb;
+    width: initial;
+    font-size: 1rem;
+}
+.btn-primary, .btn-secondary {
+    border-color: #aaa;
+    text-shadow: 0 1px 0 #fff;
+    background-image: linear-gradient(#f8f8f8, #d8d8d8);
+}
+.btn-primary {
+    font-weight: 700;
+}
+.btn-primary {
+    color: #212529;
+    background: #ddd linear-gradient(180deg, #e2e2e2, #ddd) repeat-x;
+    border-color: #ddd;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.15), 0 1px 1px rgba(0,0,0,.075);
 }
 .pluss{
     margin-bottom:20px;
@@ -190,7 +234,6 @@ a:active{
 #general {
     width:100%;
     flex-direction: column;
-    z-index: -1;
 }
 #table1{
     width:100%;

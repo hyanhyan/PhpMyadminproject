@@ -4,12 +4,14 @@ function myFunction(x) {
         table3.style.display = "none";
         table1.style.display = "block";
         document.getElementById('general').style.display="none";
+        document.getElementById('create').style.display="none";
 
     } else if (x === 2) {
         table2.style.display = "block";
         table1.style.display = "none";
         table3.style.display = "none";
         document.getElementById('general').style.display="none";
+        document.getElementById('create').style.display="none";
 
 
     } else if (x === 3) {
@@ -17,15 +19,26 @@ function myFunction(x) {
         table2.style.display = "none";
         table1.style.display = "none";
         document.getElementById('general').style.display="none";
-    } else if (x === 0) {
+        document.getElementById('create').style.display="none";
 
+    }
+        else if (x === 4) {
+        table3.style.display = "none";
+        table2.style.display = "none";
+        table1.style.display = "none";
+        document.getElementById('general').style.display = "none";
+        document.getElementById('create').style.display="block";
+} else if (x === 0) {
         table2.style.display = "none";
         table1.style.display = "none";
         table3.style.display = "none";
-       document.getElementById('general').style.display="block";
-    } else {
-        console.log('hi');
+        document.getElementById('general').style.display="block";
+        document.getElementById('create').style.display="none";
+    } else if (x === 5){
+        let z=document.getElementById('text_create_db').value;
+        console.log(z, 111);
     }
+
 }
 
 var parent = document.getElementById('navigate');
@@ -124,17 +137,6 @@ $(document).ready(function () {
                 $(inner2).appendTo(inner1);
             }
         },
-    //     var inner2 = (document.createElement('div'));
-    // inner2.setAttribute('id', i.secondId);
-    // inner2.setAttribute('class', i.inner);
-    // $(inner2).appendTo(inner1);
-    // var a2 = (document.createElement('a'));
-    // $(a2).text(i.thirdName);
-    // $(a2).appendTo(inner2);
-    // var a3 = (document.createElement('a'));
-    // a3.setAttribute('id', i.thirdId);
-    // a3.setAttribute('onclick', i.onclick);
-    // $(a3).appendTo(inner2);
         error: function (xhr, status, error) {
             var ddt = document.createElement('p');
             ddt.innerText = 'you cant enter to your page';
@@ -280,6 +282,124 @@ $(document).ready(function () {
     });
 });
 
+let CreateArr=[
+    {
+        secondName: "Structure",
+        secTitle: "Show",
+        name: "Database",
+        type: "Checkbox",
+        titleSec: "Database",
+        img: "img/s_host.png",
+        image: "img/s_cancel.png"
+    },
+        {
+            secondName: "Structure",
+            secTitle: "Show",
+            name: "Compare",
+            type: "Checkbox",
+            titleSec: "Database",
+            img: "img/s_host.png",
+            image: "img/s_cancel.png"
+        },
+        {
+            secondName: "Structure",
+            secTitle: "Show",
+            name: "Replication",
+            type: "Checkbox",
+            titleSec: "Database",
+            img: "img/s_host.png",
+            image: "img/s_cancel.png"
+        },
+        {
+            secondName: "Structure",
+            secTitle: "Show",
+            name: "Doing",
+            type: "Checkbox",
+            titleSec: "Database",
+            img: "img/s_host.png",
+            image: "img/s_cancel.png"
+        },
+        {
+            secondName: "Structure",
+            secTitle: "Show",
+            name: "Type",
+            type: "Checkbox",
+            titleSec: "Database",
+            img: "img/s_host.png",
+            image: "img/s_cancel.png"
+        }
+];
+var cr = document.getElementById('create');
+    var table = document.createElement('table');
+    var thead = document.createElement('thead');
+    $(thead).appendTo(table);
+    var tbody = document.createElement('tbody');
+    $(tbody).appendTo(table);
+for(var i of CreateArr){
+        var trh = document.createElement('tr');
+        var th1 = document.createElement('th');
+        var a = document.createElement('a');
+        $(a).text(i.name);
+        $(a).appendTo(th1);
+        $(th1).appendTo(trh);
+        $(trh).appendTo(thead);
+        var tr = document.createElement('tr');
+        $(tr).appendTo(tbody);
+        var td = document.createElement('td');
+        $(td).text(i.titleSec);
+        var input = document.createElement('input');
+        $(input).appendTo(td);
+        input.setAttribute('type', i.type);
+        var img = document.createElement('img');
+        $(img).appendTo(td);
+        img.src = i.img;
+        $(td).appendTo(tr);
+        var td1 = document.createElement('td');
+        $(td1).appendTo(tr);
+        var a1 = document.createElement('a');
+        $(a1).text(i.secTitle);
+        $(a1).appendTo(td);
+        var a2 = document.createElement('a');
+        $(a2).text(i.secondName);
+        $(a2).appendTo(td1);
+        var input = document.createElement('input');
+        $(input).appendTo(td);
+        input.setAttribute('type', i.type);
+        var img = document.createElement('img');
+        $(img).appendTo(td);
+        img.src = i.image;
+    }
+    $(table).appendTo(cr);
+
+
+// let CrArr=[
+//     {
+//         name:z.value
+//     }
+//     ];
+// for(var i of CrArr) {
+//     var trh = document.createElement('tr');
+//     var th1 = document.createElement('th');
+//     var a = document.createElement('a');
+//     $(a).text(i.name);
+//     $(a).appendTo(th1);
+//     $(th1).appendTo(trh);
+//     $(trh).appendTo(thead);
+//     var tr = document.createElement('tr');
+//     $(tr).appendTo(tbody);
+//     var td = document.createElement('td');
+//     $(td).text(i.titleSec);
+//     var input = document.createElement('input');
+//     $(input).appendTo(td);
+//     input.setAttribute('type', i.type);
+//     var img = document.createElement('img');
+//     $(img).appendTo(td);
+//     img.src = i.img;
+//     $(td).appendTo(tr);
+// }
+
+
+
 function switchVisible() {
     if (document.getElementById('Div1')) {
 
@@ -292,3 +412,6 @@ function switchVisible() {
         }
     }
 }
+
+
+
