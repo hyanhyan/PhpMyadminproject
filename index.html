@@ -63,22 +63,22 @@
                                     <a href="#"><img src="img/b_help.png" title="Документация"  class="icon ic_b_help"></a>
                                 </strong>
                             </p>
-                            <input type="text" name="new_db" maxlength="64" class="textfield" id="text_create_db" placeholder="Name of database" required="" >
+                            <input type="text" name="new_db" maxlength="64" class="textfield" id="text_create_db" placeholder="Name of database" value="" required="" >
                             <select lang="en" dir="ltr" name="db_collation">
-                                <option value="">Compare</option>
+                                <option value="" class="select">Compare</option>
                                 <option value=""></option>
-                                <optgroup label="armscii8" title="ARMSCII-8 Armenian">
-                                    <option value="armscii8_bin" title="Армянский, двоичный">armscii8_bin</option>
-                                    <option value="armscii8_general_ci" title="Армянский, регистро-независимый">armscii8_general_ci</option>
+                                <optgroup label="armscii8" class="select" title="ARMSCII-8 Armenian">
+                                    <option value="armscii8_bin" class="select"  title="Армянский, двоичный">armscii8_bin</option>
+                                    <option value="armscii8_general_ci" class="select"  title="Армянский, регистро-независимый">armscii8_general_ci</option>
                                 </optgroup>
-                                <optgroup label="ascii" title="US ASCII">
-                                    <option value="ascii_bin" title="Западно-Европейский, двоичный">ascii_bin</option>
-                                    <option value="ascii_general_ci" title="Западно-Европейский, регистро-независимый">ascii_general_ci</option>
+                                <optgroup label="ascii"  title="US ASCII">
+                                    <option value="ascii_bin" class="select"  title="Западно-Европейский, двоичный">ascii_bin</option>
+                                    <option value="ascii_general_ci" class="select"  title="Западно-Европейский, регистро-независимый">ascii_general_ci</option>
                                 </optgroup>
 
                             </select>
 
-                            <button class="btn btn-primary"  onclick = "myFunction(5)">Create</button>
+                            <input id="buttonGo" class="btn btn-primary" type="submit" value="Create" onclick="pushObj()">
                         </form>
                     </li>
                 </ul>

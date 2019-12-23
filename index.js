@@ -3,42 +3,41 @@ function myFunction(x) {
         table2.style.display = "none";
         table3.style.display = "none";
         table1.style.display = "block";
-        document.getElementById('general').style.display="none";
-        document.getElementById('create').style.display="none";
+        document.getElementById('general').style.display = "none";
+        document.getElementById('create').style.display = "none";
 
     } else if (x === 2) {
         table2.style.display = "block";
         table1.style.display = "none";
         table3.style.display = "none";
-        document.getElementById('general').style.display="none";
-        document.getElementById('create').style.display="none";
+        document.getElementById('general').style.display = "none";
+        document.getElementById('create').style.display = "none";
 
 
     } else if (x === 3) {
         table3.style.display = "block";
         table2.style.display = "none";
         table1.style.display = "none";
-        document.getElementById('general').style.display="none";
-        document.getElementById('create').style.display="none";
+        document.getElementById('general').style.display = "none";
+        document.getElementById('create').style.display = "none";
 
-    }
-        else if (x === 4) {
+    } else if (x === 4) {
         table3.style.display = "none";
         table2.style.display = "none";
         table1.style.display = "none";
         document.getElementById('general').style.display = "none";
-        document.getElementById('create').style.display="block";
-} else if (x === 0) {
+        document.getElementById('create').style.display = "block";
+
+    } else if (x === 0) {
         table2.style.display = "none";
         table1.style.display = "none";
         table3.style.display = "none";
-        document.getElementById('general').style.display="block";
-        document.getElementById('create').style.display="none";
-    } else if (x === 5){
-        let z=document.getElementById('text_create_db').value;
-        console.log(z, 111);
+        document.getElementById('general').style.display = "block";
+        document.getElementById('create').style.display = "none";
     }
-
+    else {
+        console.log('error');
+    }
 }
 
 var parent = document.getElementById('navigate');
@@ -329,6 +328,7 @@ let CreateArr=[
             image: "img/s_cancel.png"
         }
 ];
+
 var cr = document.getElementById('create');
     var table = document.createElement('table');
     var thead = document.createElement('thead');
@@ -397,9 +397,70 @@ for(var i of CreateArr){
 //     img.src = i.img;
 //     $(td).appendTo(tr);
 // }
+// let CrObj=
+//     {
+//         "name":document.getElementById('text_create_db').value,
+//
+//     };
 
 
 
+//    for(var i of CrArr) {
+//     var tr = document.createElement('tr');
+//     var td = document.createElement('td');
+//     $(td).text(i.name);
+//     var input = document.createElement('input');
+//     $(input).appendTo(td);
+//     input.setAttribute('type', i.type);
+//     var img = document.createElement('img');
+//     $(img).appendTo(td);
+//     img.src = i.img;
+//     $(td).appendTo(tr);
+//     var td1 = document.createElement('td');
+//     $(td1).appendTo(tr);
+//     var a1 = document.createElement('a');
+//     $(a1).text(i.secTitle);
+//     $(a1).appendTo(td);
+//     var a2 = document.createElement('a');
+//     $(a2).text(i.secondName);
+//     $(a2).appendTo(td1);
+//     var input = document.createElement('input');
+//     $(input).appendTo(td);
+//     input.setAttribute('type', i.type);
+//
+// }
+
+
+    // "name":document.getElementById('text_create_db').value,
+    // console.log(z);
+    // CreateArr[i].push(CrObj.name);
+
+
+function pushObj() {
+    let myNewObjElement = {
+        "name": document.getElementById('text_create_db').value,
+        "select": document.getElementsByClassName('select').value,
+        type:"Checkbox",
+        secondName: "Structure",
+        secTitle: "Show",
+        img: "img/s_host.png",
+    };
+    var tr = document.createElement('tr');
+    $(tr).appendTo(tbody);
+    for(let key in myNewObjElement) {
+        var td = document.createElement('td');
+        $(td).text(myNewObjElement.name);
+        var input = document.createElement('input');
+        $(input).appendTo(td);
+        input.setAttribute('type', i.type);
+        var img = document.createElement('img');
+        $(img).appendTo(td);
+        img.src = i.img;
+        $(td).appendTo(tr);
+    }
+    CreateArr.push(myNewObjElement);
+    console.log(CreateArr);
+}
 function switchVisible() {
     if (document.getElementById('Div1')) {
 
